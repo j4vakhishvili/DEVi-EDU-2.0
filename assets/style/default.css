@@ -13,12 +13,6 @@
     src: url(../fonts/Bog.ttf);
 }
 
-.container{
-  width: 1750px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 [data-theme="dark"] {
   background-color: #121212;
   transition: 0.3s;
@@ -78,6 +72,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background: #F4F4F4;
 }
 
 /**
