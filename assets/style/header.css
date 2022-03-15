@@ -48,4 +48,21 @@ nav{
     position: fixed;
     background: #ED0049;
     z-index: 1;
+    transition: 0.3s;
+}
+
+.close-nav{
+    height: 8px;
+    width: 100%;
+    background: #BF0045;
+    position: fixed;
+    bottom: 0;
+}
+
+.nav-close{
+    transform: rotate(180deg);
+}
+
+.n-mode{
+    background: #BF0045;
 }
