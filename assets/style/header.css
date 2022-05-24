@@ -112,7 +112,7 @@ button.active{
     position: fixed;
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1600px){
     .menubtn {
         margin-bottom: 18px;
     }
