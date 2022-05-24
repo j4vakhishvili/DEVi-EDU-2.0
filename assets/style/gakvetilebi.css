@@ -1,0 +1,136 @@
+.content{
+    width: 1360px;
+    padding: 20px 40px;
+}
+
+.ads{
+    width: 314px;
+    padding-top: 28px;
+}
+
+.ad{
+    width: 280px;
+    height: 550px;
+    background: #E0E0E0;
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+
+[data-theme="dark"] .ad{
+    background-color: #191919;
+    transition: 0.3s;
+}
+
+main{
+    display: flex;
+    padding-left: 200px;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 50px;
+}
+
+.header{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headbtn{
+    width: 65px;
+    height: 65px;
+    background: #E0E0E0;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+[data-theme="dark"] .headbtn{
+    background-color: #191919;
+    transition: 0.3s;
+}
+
+h1{
+    font-family: 'MarkGeoCaps', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: #0F0700;
+}
+
+[data-theme="dark"] h1{
+    color: #BEBEBE;
+    transition: 0.3s;
+}
+
+p{
+    font-size: 18px;
+    font-family: 'MarkGeo';
+    color: #0F0700;
+}
+
+[data-theme="dark"] p{
+    color: #9F9F9F;
+    transition: 0.3s;
+}
+
+h2{
+    font-size: 22px;
+    font-family: 'MarkGeoCaps';
+    font-weight: bold;
+    color: #0F0700;
+    margin: 0;
+    padding: 0;
+}
+
+[data-theme="dark"] h2{
+    color: #9F9F9F;
+    transition: 0.3s;
+}
+
+p.note{
+    background: #c0033c36;
+    border-radius: 12px;
+    padding: 46px;
+    line-height: 46px;
+}
+
+div.desc{
+    padding: 0 46px;
+    margin-top: 40px;
+}
+
+.basicBtn{
+    width: 330px;
+    height: 58px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 20px;
+    background: linear-gradient(90deg, #ff004b, #ff002a);
+    color:#fff;
+    font-family: 'MarkGeoCaps';
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+[data-theme="dark"] .basicBtn{
+    background: linear-gradient(90deg, #D70140, #D40124);
+    color: #DCD3D5;
+    transition: 0.3s;
+}
+
+ul{
+    padding: 15px;
+    list-style: circle;
+    font-family: 'MarkGeo';
+    color: #0F0700;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+[data-theme="dark"] ul{
+    color: #DCD3D5;
+    transition: 0.3s;
+}

@@ -1,0 +1,22 @@
+footer{
+    height: 80px;
+    border-top: 2px solid #C0033D;
+    font-family: 'MarkGeoCaps';
+    color: #4F4F4F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #4F4F4F;
+    margin-right: 30px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}

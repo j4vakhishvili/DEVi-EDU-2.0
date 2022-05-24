@@ -1,68 +1,113 @@
-header{
-    width: 100%;
+nav{
+    background: #C0033D;
     height: 50px;
-    background: #E0E0E0;
-    position: fixed;
-    bottom: 0;
+    padding-left: 230px;
+    padding-right: 30px;
 }
 
-.nav-container{
-    width: 270px;
-    margin: auto;
+nav a{
+    text-decoration: none;
+    color: #F4F4F4;
+    font-size: 26px;
+    font-family: 'BOG';
+    font-weight: bold;
+    margin-right: 30px;
+    padding: 4px 5px;
+    line-height: 50px;
+}
+
+a.active{
+    border-bottom: 5px solid #F4F4F4;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: #E0E0E0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 }
 
+[data-theme="dark"] header{
+    background-color: #0C0C0C;
+    transition: 0.3s;
+}
+
 .logo{
-    width: 32px;
-    height: 32px;
-    margin: 8px 0px;
+    margin: 40px 50px 25px 50px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-.button{
-    width: 32px;
-    height: 32px;
-    margin: 8px 0px;
+div.dark-mode{
+    float: right;
+    padding: 12px;
+    width: 24px;
+    height: 24px;
+}
+
+.dark-mode input{
+    width: 24px;
+    height: 24px;
+}
+
+.catalogbtn{
     background: #F4F4F4;
-    border-radius: 5px;
+    width: 104px;
+    height: 38px;
+    border: none;
+    border-radius: 6px;
+    color: #252525;
+    font-family: 'MarkGeoCaps';
+    font-weight: bold;
+    cursor: pointer;
 }
 
-nav{
-    width: 100%;
-    height: 10px;
-    background: #ED0049;
+[data-theme="dark"] .catalogbtn{
+    background-color: #191919;
+    color: #C5C5C5;
+    transition: 0.3s;
 }
 
-.nav-top-icon{
-    width: 30px;
-    height: 8px;
-    background: url(../icons/top.svg);
-    background-size: cover;
-    margin: auto;
+.menubtn{
+    width: 100px;
+    height: 100px;
+    background: #F4F4F4;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 34px;
+}
+
+[data-theme="dark"] .menubtn{
+    background-color: #191919;
+    transition: 0.3s;
+}
+
+.separate-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button.active{
+    background: linear-gradient(135deg, #ff0048, #ff002d);
+}
+
+[data-theme="dark"] button.active{
+    background: linear-gradient(135deg, #C00338, #BE0324);
+    transition: 0.3s;
 }
 
 .nav{
     width: 100%;
-    height: 100%;
     position: fixed;
-    background: #ED0049;
-    z-index: 1;
-    transition: 0.3s;
-}
-
-.close-nav{
-    height: 8px;
-    width: 100%;
-    background: #BF0045;
-    position: fixed;
-    bottom: 0;
-}
-
-.nav-close{
-    transform: rotate(180deg);
-}
-
-.n-mode{
-    background: #BF0045;
 }

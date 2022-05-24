@@ -2,37 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEVi EDU</title>
-    <link rel="icon" href="assets/icons/devi icon.png">
+    <title>DEVi • დევი</title>
     <link rel="stylesheet" href="assets/style/default.css">
-    <link rel="stylesheet" href="assets/style/lessons.css">
     <link rel="stylesheet" href="assets/style/header.css">
+    <link rel="stylesheet" href="assets/style/gakvetilebi.css">
+    <link rel="stylesheet" href="assets/style/footer.css">
 </head>
 <body>
-    <header>
-        <div class="nav-container">
-            <a href="#"><img src="assets/icons/DEVi logo.svg" alt="logo" class="logo"></a>
-            <div class="button active"></div>
-            <div class="button"></div>
-            <div class="button"></div>
-            <div class="button"></div>
-            <div class="button"></div>
-        </div>
-    </header>
-    <div class="nav" id="nav">
-        <div class="nav-container">
-            <a href="#"><img src="assets/icons/DEVi logo.svg" alt="logo" class="logo"></a>
-            <div class="button n-mode"></div>
-        </div>
-        <div class="close-nav" onclick="cNav()">
-            <div class="nav-top-icon nav-close"></div>
-        </div>
+    <div class="nav">
+        <nav>
+            <a href="gakvetilebi" class="active">HTML</a>
+            <a href="#">CSS</a>
+            <div class="dark-mode" bis_skin_checked="1">
+                <input type="checkbox" class="form-check-input" id="darkSwitch" title="მუქი თემა">
+            </div>
+        </nav>
     </div>
-    <nav onclick="oNav()">
-        <div class="nav-top-icon"></div>
-    </nav>
+    <header>
+        <section class="separate-header">
+            <img src="assets/icons/DEVi logo.svg" alt="logo" class="logo" onclick="window.location.href='index'">
+            <button class="catalogbtn">სარჩევი</button>
+        </section>
 
-    <script src="assets/script/buttons.js"></script>
+        <section class="separate-header">
+            <button class="menubtn active"></button>
+            <button class="menubtn"></button>
+            <button class="menubtn"></button>
+            <button class="menubtn"></button>
+        </section>
+    </header>
+    <main>
+        <section class="content">
+            <div class="header">
+                <button class="headbtn"></button>
+                <h1>შესავალი</h1>
+                <button class="headbtn"></button>
+            </div>
+            <p class="note">
+                HTML არის სტანდარტული მერქაფ ენა ვებსაიტებისათვის.<br>
+                HTML-ს მეშვეობით შეგიძლია შექმნა საკუთარი ვებსაიტი.<br>
+                HTML საკმაოდ მარტივი ენაა შესასწავლად და დამიჯერე, პროცესში საკმაოდ გაერთობი.<br>
+                <button class="basicBtn">დაიწყე სწავლა ახლა</button>
+            </p>
+            <div class="desc">
+                <h2 class="miniTitle">სწავლის დასრულების შემდეგ, შენ შეძლებ გაიარო ტესტირება და მიიღო სერთიფიკატი</h2>
+                <p>ტესტის გავლა შესაძლებელია საიტის თავში მოცემული ღილაკი “სავარჯიშოები”ზე დაკლიკების მეშვეობით, თუ თვლი, რომ შენ გაქვს უკვე საკმარისი ცოდნა იმისათვის, რომ მიიღო სერთიფიკატი შეგიძლია ტესტირება დაიწყო ახლავე.</p>
+                <button class="basicBtn">ტესტირების დაწყება</button>
+            </div>
+            <footer>
+                <section class="split-footer">
+                    <a href="#">ჩვენს შესახებ</a>
+                    <a href="#">წესდება და პოლიტიკა</a>
+                    <a href="#">რეკლამის განთავსება</a>
+                    <a href="#">კონტაქტი</a>
+                </section>
+                <section class="split-footer">2022 © ყველა უფლება დაცულია</section>
+            </footer>
+        </section>
+        <section class="ads">
+            <div class="ad"></div>
+        </section>
+    </main>
+
+    <script src="assets/script/darkmode.js"></script>
 </body>
 </html>
