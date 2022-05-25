@@ -1,0 +1,90 @@
+.ad{
+    width: 280px;
+    height: 550px;
+    background-color: #E0E0E0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+
+
+[data-theme="dark"] .ad{
+    background-color: #191919;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.3s;
+}
+
+.reklama0{
+    background: url(#);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reklama1{
+    background: url(#);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reklama2{
+    background: url(#);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reklama3{
+    background: url(#);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reklama4{
+    background: url(#);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reklama5{
+    background: url(#);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reklama6{
+    background: url(#);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reklama7{
+    background: url(#);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reklama8{
+    background: url(#);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reklama9{
+    background: url(#);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
