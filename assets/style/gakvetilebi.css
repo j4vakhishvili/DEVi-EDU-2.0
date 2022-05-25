@@ -75,6 +75,7 @@ h1{
 p{
     font-size: 18px;
     font-family: 'MarkGeo';
+    line-height: 30px;
     color: #0F0700;
     transition: 0.3s;
 }
@@ -277,4 +278,10 @@ section.catalog button:hover{
 
 p.note a{
     color: #ff004b;
+}
+
+@media only screen and (max-width: 1550px) {
+    main{
+        padding-left: 170px;
+    }
 }

@@ -209,4 +209,10 @@ button.active > .head-icon{
     button.menubtn{
         margin-bottom: 20px;
     }
+    header{
+        width: 170px;
+    }
+    nav{
+        padding-left: 200px;
+    }
 }
