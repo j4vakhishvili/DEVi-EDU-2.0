@@ -1,0 +1,43 @@
+nav{
+    background: #FFBC01;
+}
+
+footer{
+    border-top: 2px solid #FFBC01;
+}
+
+p.note{
+    background: #FFBC0136;
+}
+
+button.active{
+    background: linear-gradient(135deg, #FABB0C, #FB9207);
+}
+
+[data-theme="dark"] button.active {
+    background: linear-gradient(135deg, #e0a70b, #e18206);
+    transition: 0.3s;
+}
+
+.basicBtn{
+    background: linear-gradient(135deg, #FABB0C, #FB9207);
+}
+
+[data-theme="dark"] .basicBtn {
+    color: #ffffffde;
+    background: linear-gradient(135deg, #e0a70b, #e18206);
+    transition: 0.3s;
+}
+
+.headbtn:hover{
+    background: url(../icons/arrow.svg), #ffe293;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+[data-theme="dark"] .headbtn:hover{
+    background: url(../icons/arrow.svg), #a6beff;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}

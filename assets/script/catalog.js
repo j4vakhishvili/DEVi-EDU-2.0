@@ -22,5 +22,5 @@ function openCatalog() {
 }
   
 function closeCatalog() {
-    document.getElementById("catalog").style.left = "-25%";
+    document.getElementById("catalog").style.left = "-100%";
 }
