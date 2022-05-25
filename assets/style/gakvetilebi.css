@@ -175,7 +175,8 @@ section.catalog{
     top: 0;
     background: #E9E9E9;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
     padding: 20px 0;
     z-index: 3;
     transition: 0.3s;
@@ -187,12 +188,13 @@ section.catalog{
 }
 
 section.catalog input{
-    width: 260px;
+    width: 250px;
     background: url(../icons/search-light.svg);
     background-position-x: 15px;
     font-family: 'MarkGeo';
     padding-left: 50px;
     height: 54px;
+    margin-right: 10px;
 }
 
 section.catalog button{
@@ -233,4 +235,56 @@ section.catalog input{
     border: 1px solid #AAAAAA;
     background-color: #D8D8D8;
     color: #191919;
+}
+
+section.catalog button:hover{
+    background: url(../icons/cross-light.svg) #f2f2f2;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+[data-theme="dark"] section.catalog button:hover{
+    background: url(../icons/cross-light.svg) #343434;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+.separate-catalog{
+    display: flex;
+}
+
+#myUL{
+    padding-inline-start: 0px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#myUL li {
+    margin: 30px 0;
+    display: block;
+}
+
+#myUL li a{
+    text-decoration: none;
+    font-family: 'MarkGeoCaps';
+    color: #191919;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] #myUL li a{
+    color: #BEBEBE;
+    transition: 0.3s;
+}
+
+.catalog-scrollable {
+    overflow-y: scroll;
+    width: 86%;
+}
+
+.on{
+    padding-bottom: 15px;
+    border-bottom: 3px solid #ff004b;
 }
