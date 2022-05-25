@@ -23,25 +23,26 @@
     <header>
         <section class="separate-header">
             <img src="assets/icons/DEVi logo.svg" alt="logo" class="logo" onclick="window.location.href='index'">
-            <button class="catalogbtn">სარჩევი</button>
+            <button class="catalogbtn" onclick="openCatalog()">სარჩევი</button>
         </section>
 
         <section class="separate-header">
-            <button class="menubtn active"></button>
-            <button class="menubtn"></button>
-            <button class="menubtn"></button>
-            <button class="menubtn"></button>
+            <button class="menubtn active" title="გაკვეთილები"><div class="head-icon lessons-icon"></div></button>
+            <button class="menubtn" title="ვიდეო გაკვეთილები"><div class="head-icon vlessons-icon"></div></button>
+            <button class="menubtn" title="სავარჯიშოები"><div class="head-icon exercises-icon"></div></button>
+            <button class="menubtn" title="კოდედიტორი"><div class="head-icon code-editor-icon"></div></button>
         </section>
     </header>
-    <section class="catalog">
-        
+    <section class="catalog" id="catalog">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="მოიძიე კატეგორია..." title="მოიძიე კატეგორია">
+        <button class="closeCatalog" onclick="closeCatalog()"></button>
     </section>
     <main>
         <section class="content">
             <div class="header">
                 <button class="headbtn"></button>
                 <h1>შესავალი</h1>
-                <button class="headbtn"></button>
+                <button class="headbtn hbtn-r"></button>
             </div>
             <p class="note">
                 HTML არის სტანდარტული მერქაფ ენა ვებსაიტებისათვის.<br>
@@ -49,11 +50,11 @@
                 HTML საკმაოდ მარტივი ენაა შესასწავლად და დამიჯერე, პროცესში საკმაოდ გაერთობი.<br>
                 <button class="basicBtn">დაიწყე სწავლა ახლა</button>
             </p>
-            <div class="desc">
+            <article>
                 <h2 class="miniTitle">სწავლის დასრულების შემდეგ, შენ შეძლებ გაიარო ტესტირება და მიიღო სერთიფიკატი</h2>
                 <p>ტესტის გავლა შესაძლებელია საიტის თავში მოცემული ღილაკი “სავარჯიშოები”ზე დაკლიკების მეშვეობით, თუ თვლი, რომ შენ გაქვს უკვე საკმარისი ცოდნა იმისათვის, რომ მიიღო სერთიფიკატი შეგიძლია ტესტირება დაიწყო ახლავე.</p>
                 <button class="basicBtn">ტესტირების დაწყება</button>
-            </div>
+            </article>
             <footer>
                 <section class="split-footer">
                     <a href="#">ჩვენს შესახებ</a>
@@ -71,5 +72,6 @@
 
     <script src="assets/script/darkmode.js"></script>
     <script src="assets/script/basic.js"></script>
+    <script src="assets/script/catalog.js"></script>
 </body>
 </html>

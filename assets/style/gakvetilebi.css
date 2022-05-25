@@ -15,6 +15,7 @@
     background: #E0E0E0;
     border-radius: 12px;
     margin-bottom: 50px;
+    transition: 0.3s;
 }
 
 [data-theme="dark"] .ad{
@@ -45,10 +46,30 @@ main{
     border-radius: 12px;
     border: none;
     cursor: pointer;
+    background: url(../icons/arrow.svg) #E0E0E0;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+.hbtn-r{
+    transform: rotate(180deg);
+}
+
+.headbtn:hover{
+    background-color: #ffb2c9;
+    transition: 0.3s;
 }
 
 [data-theme="dark"] .headbtn{
-    background-color: #191919;
+    filter: invert(1);
+    background-color: #e6e6e6;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] .headbtn:hover{
+    filter: invert(1);
+    background-color: #97ffe0;
     transition: 0.3s;
 }
 
@@ -57,6 +78,7 @@ h1{
     font-weight: bold;
     font-size: 35px;
     color: #0F0700;
+    transition: 0.3s;
 }
 
 [data-theme="dark"] h1{
@@ -68,6 +90,7 @@ p{
     font-size: 18px;
     font-family: 'MarkGeo';
     color: #0F0700;
+    transition: 0.3s;
 }
 
 [data-theme="dark"] p{
@@ -82,6 +105,7 @@ h2{
     color: #0F0700;
     margin: 0;
     padding: 0;
+    transition: 0.3s;
 }
 
 [data-theme="dark"] h2{
@@ -96,7 +120,7 @@ p.note{
     line-height: 46px;
 }
 
-div.desc{
+article{
     padding: 0 46px;
     margin-top: 40px;
 }
@@ -113,6 +137,12 @@ div.desc{
     font-weight: bold;
     cursor: pointer;
     font-size: 18px;
+    transition: 0.3s;
+}
+
+.basicBtn:active, .basicBtn:hover{
+    border: 4px solid #ffffff5e;
+    transition: 0.3s;
 }
 
 
@@ -129,6 +159,7 @@ ul{
     color: #0F0700;
     font-size: 18px;
     line-height: 30px;
+    transition: 0.3s;
 }
 
 [data-theme="dark"] ul{
@@ -136,3 +167,70 @@ ul{
     transition: 0.3s;
 }
 
+section.catalog{
+    width: 420px;
+    height: 100%;
+    position: fixed;
+    left: -25%;
+    top: 0;
+    background: #E9E9E9;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    z-index: 3;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] section.catalog{
+    background: #0D0D0D;
+    transition: 0.3s;
+}
+
+section.catalog input{
+    width: 260px;
+    background: url(../icons/search-light.svg);
+    background-position-x: 15px;
+    font-family: 'MarkGeo';
+    padding-left: 50px;
+    height: 54px;
+}
+
+section.catalog button{
+    width: 58px;
+    height: 58px;
+    background: url(../icons/cross-light.svg);
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section.catalog button, section.catalog input{
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    border: 1px solid #AAAAAA;
+    background-color: #D8D8D8;
+}
+
+[data-theme="dark"] section.catalog button, section.catalog input{
+    border: 1px solid #3E3E3E;
+    background-color: #1f1f1f;
+    color: #BEBEBE;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] section.catalog input{
+    border: 1px solid #3E3E3E;
+    background-color: #1f1f1f;
+    color: #BEBEBE;
+    transition: 0.3s;
+}
+
+section.catalog input{
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    border: 1px solid #AAAAAA;
+    background-color: #D8D8D8;
+    color: #191919;
+}
