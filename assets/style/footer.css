@@ -14,13 +14,20 @@ footer{
 footer a{
     text-decoration: none;
     color: #4F4F4F;
-    margin-right: 30px;
 }
 
 footer a:hover{
     text-decoration: underline;
 }
 
-i#date{
+.split-footer{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.spl-ft-right{
+    justify-content: flex-end;
     font-style: normal;
 }
