@@ -46,3 +46,7 @@ button.active{
     padding-bottom: 15px;
     border-bottom: 3px solid #FFBC01;
 }
+
+p.note a{
+    color: #FABB0C;
+}

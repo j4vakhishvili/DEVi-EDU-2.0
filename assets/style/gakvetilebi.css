@@ -122,7 +122,7 @@ p.note{
 
 article{
     padding: 0 46px;
-    margin-top: 40px;
+    margin: 40px 0;
 }
 
 .basicBtn{
@@ -287,4 +287,8 @@ section.catalog button:hover{
 .on{
     padding-bottom: 15px;
     border-bottom: 3px solid #ff004b;
+}
+
+p.note a{
+    color: #ff004b;
 }
