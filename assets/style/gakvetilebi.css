@@ -361,4 +361,7 @@ p.note a{
         margin: 28px 0;
         padding: 0 28px;
     }
+    ul{
+        font-size: 14px;
+    }
 }
