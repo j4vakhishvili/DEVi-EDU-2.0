@@ -286,6 +286,12 @@ p.note a{
     }
 }
 
+@media only screen and (max-width: 980px) {
+    main{
+        padding-left: 150px;
+    }
+}
+
 @media only screen and (max-width: 720px) {
     .ads{
         display: none;
