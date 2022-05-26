@@ -284,7 +284,7 @@ button.active > .head-icon{
     .nav {
         z-index: 3;
         height: 100%;
-        top: -98%;
+        top: -97%;
         transition: 0.3s;
     }
     nav{

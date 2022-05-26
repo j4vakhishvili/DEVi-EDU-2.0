@@ -10,7 +10,7 @@ function openNav() {
 }
   
 function closeNav() {
-    document.getElementById("nav").style.top = "-98%";
+    document.getElementById("nav").style.top = "-97%";
     document.getElementById("openNav").style.display = "block";
     document.getElementById("closeNav").style.display = "none";
 }
