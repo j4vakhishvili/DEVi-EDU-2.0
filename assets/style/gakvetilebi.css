@@ -290,6 +290,9 @@ p.note a{
     main{
         padding-left: 150px;
     }
+    h1{
+        font-size: 28px;
+    }
 }
 
 @media only screen and (max-width: 720px) {
