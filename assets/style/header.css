@@ -328,7 +328,7 @@ button.active > .head-icon{
         flex-direction: column;
         width: 90%;
     }
-    div.dark-mode{
+    div.dark-mode, .dark-mode input{
         width: 100%;
         margin: 0;
     }
