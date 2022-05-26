@@ -13,27 +13,35 @@
     <link rel="stylesheet" href="assets/ads/ads.css">
 </head>
 <body>
-    <div class="nav">
+    <div class="nav" id="nav">
         <nav>
-            <a href="gakvetilebi" class="active">HTML</a>
-            <a href="#">CSS</a>
-            <div class="dark-mode" bis_skin_checked="1">
-                <input type="checkbox" class="form-check-input" id="darkSwitch" title="მუქი თემა">
-            </div>
+            <section class="real-nav">
+                <a href="gakvetilebi" class="active">HTML</a>
+                <a href="#">CSS</a>
+                <div class="dark-mode" bis_skin_checked="1">
+                    <input type="checkbox" class="form-check-input" id="darkSwitch" title="მუქი თემა">
+                </div>
+            </section>
+            <section class="buttons-nav">
+                <button class="openNav" id="openNav" onclick="openNav()"></button>
+                <button class="closeNav" id="closeNav" onclick="closeNav()"></button>
+            </section>
         </nav>
     </div>
     <header>
-        <section class="separate-header">
-            <img src="assets/icons/DEVi logo.svg" alt="logo" class="logo" onclick="window.location.href='index'">
-            <button class="catalogbtn" onclick="openCatalog()">სარჩევი</button>
-        </section>
-
-        <section class="separate-header">
-            <button class="menubtn active" title="გაკვეთილები"><div class="head-icon lessons-icon"></div></button>
-            <button class="menubtn" title="ვიდეო გაკვეთილები"><div class="head-icon vlessons-icon"></div></button>
-            <button class="menubtn" title="სავარჯიშოები"><div class="head-icon exercises-icon"></div></button>
-            <button class="menubtn" title="კოდედიტორი"><div class="head-icon code-editor-icon"></div></button>
-        </section>
+        <div class="container">
+            <section class="separate-header">
+                <img src="assets/icons/DEVi logo.svg" alt="logo" class="logo" onclick="window.location.href='index'">
+                <button class="catalogbtn" onclick="openCatalog()"><div class="head-icon categories-icon"></div>სარჩევი</button>
+            </section>
+    
+            <section class="separate-header">
+                <button class="menubtn active" title="გაკვეთილები"><div class="head-icon lessons-icon"></div></button>
+                <button class="menubtn" title="ვიდეო გაკვეთილები"><div class="head-icon vlessons-icon"></div></button>
+                <button class="menubtn" title="სავარჯიშოები"><div class="head-icon exercises-icon"></div></button>
+                <button class="menubtn" title="კოდედიტორი"><div class="head-icon code-editor-icon"></div></button>
+            </section>
+        </div>
     </header>
     <section class="catalog" id="catalog">
         <section class="separate-catalog">

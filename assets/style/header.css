@@ -205,6 +205,14 @@ button.active > .head-icon{
     transition: 0.3s;
 }
 
+.buttons-nav{
+    display: none;
+}
+
+.categories-icon{
+    display: none;
+}
+
 @media only screen and (max-width: 1550px) {
     button.menubtn{
         margin-bottom: 20px;
@@ -214,5 +222,123 @@ button.active > .head-icon{
     }
     nav{
         padding-left: 200px;
+    }
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 720px) {
+    header{
+        width: 100%;
+        height: 75px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        bottom: 0;
+        top: auto;
+    }
+    .logo{
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        margin: 0;
+        margin-right: 5px;
+    }
+    .container{
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .separate-header{
+        flex-direction: row;
+    }
+    .menubtn, .catalogbtn {
+        width: 40px;
+        height: 40px;
+        font-size: 0;
+        border-radius: 8px;
+    }
+    .catalogbtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav, main {
+        padding-left: 0;
+    }
+    section.catalog{
+        left: -120%;
+    }
+    .basicBtn{
+        width: 220px;
+    }
+    .head-icon{
+        background-size: 20px;
+    }
+    .nav {
+        z-index: 3;
+        height: 100%;
+        top: -96%;
+    }
+    nav{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+    button.menubtn {
+        margin-bottom: 0;
+        margin-left: 5px;
+    }
+    .buttons-nav{
+        display: flex;
+        width: 100%;
+    }
+    nav section button{
+        width: 100%;
+        height: 20px;
+        border: none;
+        background: url(../icons/arrow-down.svg) transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 10px;
+        filter: invert(1);
+    }
+    .closeNav{
+        display: none;
+        transform: rotate(180deg);
+    }
+    .categories-icon{
+        display: block;
+        background: url(../icons/categories.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20px;
+    }
+    .real-nav{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    div.dark-mode{
+        width: 100%;
+        margin: 0;
+    }
+    a.active {
+        border-bottom: 3px solid #F4F4F4;
+    }
+    nav a {
+        font-size: 20px;
+        margin-right: 0;
+        padding: 0px 0px 0px;
+        line-height: 44px;
     }
 }
