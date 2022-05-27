@@ -325,8 +325,8 @@ iframe#code{
 .editor textarea{
     min-width: 100%;
     max-width: 100%;
-    min-height: 375px;
-    max-height: 375px;
+    min-height: 250px;
+    max-height: 250px;
     font-family: 'MarkGeo';
     border: none;
     overflow-y: scroll;
@@ -352,7 +352,7 @@ iframe#code{
     }
     .separate-codeEditor {
         width: 100%;
-    }
+    height: 250px;}
 }
 
 @media only screen and (max-width: 980px) {
