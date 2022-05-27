@@ -58,3 +58,9 @@ footer a:hover{
         margin-bottom: 90px;
     }
 }
+
+@media only screen and (max-width: 280px) {
+    footer {
+        font-size: 10px;
+    }    
+}
