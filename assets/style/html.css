@@ -20,12 +20,14 @@ button.active{
 }
 
 .basicBtn{
-    background: linear-gradient(135deg, #FABB0C, #FB9207);
+    background: linear-gradient(135deg, #FABB0C, #FB9207, #FABB0C, #FB9207);
+    background-size: 300% 100%;
 }
 
 [data-theme="dark"] .basicBtn {
     color: #ffffffde;
-    background: linear-gradient(135deg, #e0a70b, #e18206);
+    background: linear-gradient(135deg, #e0a70b, #e18206, #e0a70b, #e18206);
+    background-size: 300% 100%;
     transition: 0.3s;
 }
 

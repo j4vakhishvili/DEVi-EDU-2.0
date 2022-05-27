@@ -119,6 +119,7 @@ article{
     border: none;
     margin-top: 20px;
     background: linear-gradient(90deg, #ff004b, #ff002a);
+    background-size: 300% 100%;
     color:#fff;
     font-family: 'MarkGeoCaps';
     font-weight: bold;
@@ -127,8 +128,8 @@ article{
     transition: 0.3s;
 }
 
-.basicBtn:active, .basicBtn:hover{
-    border: 4px solid #ffffff5e;
+.basicBtn:hover{
+    background-position: -300px;
     transition: 0.3s;
 }
 
@@ -136,6 +137,11 @@ article{
 [data-theme="dark"] .basicBtn{
     background: linear-gradient(90deg, #D70140, #D40124);
     color: #DCD3D5;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] .basicBtn:hover{
+    background-position: -300px;
     transition: 0.3s;
 }
 
@@ -313,8 +319,13 @@ iframe#code{
     font-family: 'MarkGeo';
 }
 
-.switchEditor button:hover{
+#htmlBtn{
     background: #D40124;
+    transition: 0.3s;
+}
+
+#htmlBtn:hover, #cssBtn:hover, #jsBtn:hover{
+    background: #D40124 !important;
     transition: 0.3s;
 }
 

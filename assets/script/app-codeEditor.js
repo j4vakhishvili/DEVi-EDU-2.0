@@ -26,16 +26,25 @@ function openHTML() {
     document.getElementById("html").style.display = "block";
     document.getElementById("css").style.display = "none";
     document.getElementById("js").style.display = "none";
+    document.getElementById("htmlBtn").style.background = "#D40124";
+    document.getElementById("cssBtn").style.background = "#ff004b";
+    document.getElementById("jsBtn").style.background = "#ff004b";
 }
 
 function openCSS() {
     document.getElementById("html").style.display = "none";
     document.getElementById("css").style.display = "block";
     document.getElementById("js").style.display = "none";
+    document.getElementById("htmlBtn").style.background = "#ff004b";
+    document.getElementById("cssBtn").style.background = "#D40124";
+    document.getElementById("htmlBtn").style.background = "#ff004b";
 }
 
 function openJS() {
     document.getElementById("html").style.display = "none";
     document.getElementById("css").style.display = "none";
     document.getElementById("js").style.display = "block";
+    document.getElementById("htmlBtn").style.background = "#ff004b";
+    document.getElementById("cssBtn").style.background = "#ff004b";
+    document.getElementById("jsBtn").style.background = "#D40124";
 }
