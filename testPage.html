@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVi • დევი</title>
+    <link rel="icon" href="assets/icons/devi icon.png">
+    <link rel="stylesheet" href="assets/style/default.css">
+    <link rel="stylesheet" href="assets/style/header.css">
+    <link rel="stylesheet" href="assets/style/gakvetilebi.css">
+    <link rel="stylesheet" href="assets/style/footer.css">
+    <link rel="stylesheet" href="assets/style/html.css">
+    <link rel="stylesheet" href="assets/ads/ads.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body onload="compile()">
+    <div class="nav" id="nav">
+        <nav>
+            <section class="real-nav">
+                <a href="gakvetilebi" class="active">HTML</a>
+                <a href="#">CSS</a>
+                <div class="dark-mode" bis_skin_checked="1">
+                    <input type="checkbox" class="form-check-input" id="darkSwitch" title="მუქი თემა">
+                </div>
+            </section>
+            <section class="buttons-nav">
+                <button class="openNav" id="openNav" onclick="openNav()"></button>
+                <button class="closeNav" id="closeNav" onclick="closeNav()"></button>
+            </section>
+        </nav>
+    </div>
+    <header>
+        <div class="container">
+            <section class="separate-header">
+                <img src="assets/icons/DEVi logo.svg" alt="logo" class="logo" onclick="window.location.href='index'">
+                <button class="catalogbtn" onclick="openCatalog()"><div class="head-icon categories-icon"></div>სარჩევი</button>
+            </section>
+    
+            <section class="separate-header">
+                <button class="menubtn active" title="გაკვეთილები"><div class="head-icon lessons-icon"></div></button>
+                <button class="menubtn" title="ვიდეო გაკვეთილები"><div class="head-icon vlessons-icon"></div></button>
+                <button class="menubtn" title="სავარჯიშოები"><div class="head-icon exercises-icon"></div></button>
+                <button class="menubtn" title="კოდედიტორი"><div class="head-icon code-editor-icon"></div></button>
+            </section>
+        </div>
+    </header>
+    <section class="catalog" id="catalog">
+        <section class="separate-catalog">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="მოიძიე კატეგორია..." title="მოიძიე კატეგორია">
+            <button class="closeCatalog" onclick="closeCatalog()"></button>
+        </section>
+        <section class="separate-catalog catalog-scrollable">
+            <ul id="myUL">
+                <li class="on"><a href="gakvetilebi.html">შესავალი</a></li>
+                <li><a href="html-lessons/intro.html">გაცნობა</a></li>
+                <li><a href="html-lessons/code-editors.html">კოდედიტორები</a></li>
+                <li><a href="html-lessons/basics.html">საწყისები</a></li>
+                <li><a href="html-lessons/elements.html">ელემენტები</a></li>
+                <li><a href="html-lessons/attributes.html">ატრიბუტები</a></li>
+                <li><a href="html-lessons/headings.html">Headings</a></li>
+                <li><a href="html-lessons/paragraphs.html">პარაგრაფები</a></li>
+                <li><a href="html-lessons/styles-html.html">სტილები</a></li>
+                <li><a href="html-lessons/formatting.html">ფორმატირება</a></li>
+                <li><a href="html-lessons/citation.html">ციტატები</a></li>
+                <li><a href="html-lessons/comments.html">კომენტარები</a></li>
+                <li><a href="html-lessons/colors.html">ფერები</a></li>
+                <li><a href="html-lessons/css-in-html.html">CSS HTML-ში</a></li>
+                <li><a href="html-lessons/links.html">ლინკები</a></li>
+                <li><a href="html-lessons/photos.html">ფოტოები</a></li>
+                <li><a href="html-lessons/tables.html">ცხრილები</a></li>
+                <li><a href="html-lessons/lists.html">სიები</a></li>
+                <li><a href="html-lessons/clases-and-ids.html">კლასები და ID</a></li>
+                <li><a href="html-lessons/iframes.html">ჩაშენებები</a></li>
+                <li><a href="html-lessons/javascript-in-html.html">JavaScript</a></li>
+                <li><a href="html-lessons/file-paths.html">ფაილების ლოკაციები</a></li>
+                <li><a href="html-lessons/head.html">თავი</a></li>
+                <li><a href="html-lessons/layout.html">წყობა</a></li>
+                <li><a href="html-lessons/responsive-html.html">რესფონსივი</a></li>
+                <li><a href="html-lessons/computercode.html">Computercode</a></li>
+                <li><a href="html-lessons/semantics.html">Semantics</a></li>
+                <li><a href="html-lessons/code-style-guide.html">კოდის ხელოვნება</a></li>
+                <li><a href="html-lessons/symbols.html">სიმბოლოები</a></li>
+                <li><a href="html-lessons/http.html">ბმულები</a></li>
+                <li><a href="html-lessons/charset.html">Charset</a></li>
+                <li><a href="html-lessons/forms.html">ფორმები</a></li>
+                <li><a href="html-lessons/graphic-in-html.html">გრაფიკა</a></li>
+                <li><a href="html-lessons/media.html">მედია</a></li>
+                <li><a href="html-lessons/apis.html">APIs</a></li>
+                <br>
+            </ul>
+        </section>
+    </section>
+    <main>
+        <section class="content">
+            <div class="header">
+                <button class="headbtn"></button>
+                <h1>შესავალი</h1>
+                <button class="headbtn hbtn-r"></button>
+            </div>
+            <p class="note">
+                HTML არის სტანდარტული მერქაფ ენა ვებსაიტებისათვის.<br>
+                HTML-ს მეშვეობით შეგიძლია შექმნა საკუთარი ვებსაიტი.<br>
+                HTML საკმაოდ მარტივი ენაა შესასწავლად და დამიჯერე, პროცესში საკმაოდ გაერთობი.<br>
+                <button class="basicBtn">დაიწყე სწავლა ახლა</button>
+            </p>
+            <article>
+                <h2 class="miniTitle">სწავლის დასრულების შემდეგ, შენ შეძლებ გაიარო ტესტირება და მიიღო სერთიფიკატი</h2>
+                <p>ტესტის გავლა შესაძლებელია საიტის თავში მოცემული ღილაკი “სავარჯიშოები”ზე დაკლიკების მეშვეობით, თუ თვლი, რომ შენ გაქვს უკვე საკმარისი ცოდნა იმისათვის, რომ მიიღო სერთიფიკატი შეგიძლია ტესტირება დაიწყო ახლავე.</p>
+                <button class="basicBtn">ტესტირების დაწყება</button>
+                <ul>
+                    <li>HTML იშიფრება როგორც: Hyper Markup Language.</li>
+                    <li>HTML არის ვებ-გვერდების შექმნისთვის განკუთვნილი სტანდარტული მარკირების ენა.</li>
+                    <li>HTML აღწერს ვებ-გვერდის სტრუქტურას.</li>
+                    <li>HTML მოიცავს ელემენტების მრავალ ჯგუფს.</li>
+                    <li>HTML ელემენტები გადასცემენ ბრაუზერებს კონტენტის გამოსახვის საშუალებებს.</li>
+                </ul>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()">HTML</button>
+                            <button onclick="openCSS()">CSS</button>
+                            <button onclick="openJS()">JavaScript</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML">
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <h1>My First Heading</h1>
+        <p>My first paragraph.</p>
+    </body>
+</html>
+</textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                    <section class="separate-codeEditor">
+                        <iframe id="code"></iframe>
+                    </section>
+                </div>
+            </article>
+            
+            <footer>
+                <section class="split-footer">
+                    <a href="#">ჩვენს შესახებ</a>
+                    <a href="#">წესდება და პოლიტიკა</a>
+                    <a href="#">რეკლამის განთავსება</a>
+                    <a href="#">კონტაქტი</a>
+                </section>
+                <section class="split-footer spl-ft-right"><i id="date" style="font-style: normal;"></i>ㅤ© ყველა უფლება დაცულია</section>
+            </footer>
+        </section>
+        <section class="ads">
+            <div class="ad discordFrame"><iframe src="https://discord.com/widget?id=869528540234805248&amp;theme=dark" width="100%" height="100%" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" class="discord" bis_size="{&quot;x&quot;:1561,&quot;y&quot;:240,&quot;w&quot;:260,&quot;h&quot;:480,&quot;abs_x&quot;:1561,&quot;abs_y&quot;:240}"></iframe></div>
+        </section>
+    </main>
+
+    <script src="assets/script/darkmode.js"></script>
+    <script src="assets/script/basic.js"></script>
+    <script src="assets/script/catalog.js"></script>
+    <script src="assets/script/app-codeEditor.js"></script>
+</body>
+</html>

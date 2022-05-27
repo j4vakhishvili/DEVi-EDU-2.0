@@ -400,27 +400,3 @@ template {
 [hidden] {
   display: none;
 }
-
-@media only screen and (max-width: 1800px) {
-  .container{
-    width: 1500px;
-  }
-}
-
-@media only screen and (max-width: 1550px) {
-  .container{
-    width: 1200px;
-  }
-}
-
-@media only screen and (max-width: 1250px) {
-  .container{
-    width: 700px;
-  }
-}
-
-@media only screen and (max-width: 750px){
-  .container{
-    width: 270px;
-  }
-}
