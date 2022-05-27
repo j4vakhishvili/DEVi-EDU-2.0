@@ -55,3 +55,11 @@ button.active:hover {
     background: linear-gradient(135deg, #FABB0C, #FB9207);
     transition: 0.3s;
 }
+
+td, th {
+    border: 1px solid #fa9907;
+}
+
+tr:nth-child(even) {
+    background-color: #FABB0C30;
+}

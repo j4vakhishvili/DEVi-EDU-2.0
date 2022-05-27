@@ -323,10 +323,10 @@ iframe#code{
 }
 
 .editor textarea{
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 250px;
-    max-height: 250px;
+    min-width: 99.89%;
+    max-width: 150%;
+    min-height: 375px;
+    max-height: 375px;
     font-family: 'MarkGeo';
     border: none;
     overflow-y: scroll;
@@ -335,6 +335,29 @@ iframe#code{
 
 .editor textarea:focus-visible{
     outline: none;
+}
+
+table {
+    font-family: 'MarkGeo';
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+td, th {
+    border: 1px solid #D70140;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #ff004b30;
+}
+
+[data-theme="dark"] table{
+    color: #9F9F9F;
+    transition: 0.3s;
 }
 
 @media only screen and (max-width: 1550px) {
