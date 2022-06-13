@@ -2,33 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEVi EDU</title>
+    <title>ისწავლე პროგრამირება უფასოდ | DEVi EDU • დევი</title>
+    <meta name="language" content="georgian">
+    <meta name="distribution" content="georgian">
+    <meta name="description" content="DEVi EDU • დევი ედუ - პროგრამირების უფასოდ სწავლა">
+    <meta name="author" content="J4vakhishvili, T3MUR1, Merab Kekelidze">
+    <meta name="publisher" content="DEVi, J4vakhisvhili">
+    <meta name="copyright" content="2022 J4vakhishvili">
+    <meta name="keywords" content="პროგრამირების უფასოდ სწავლა, ჰტმლს სწავლა, უფასო გაკვეთილები, როგორ, rogor, ვებდეველოპმენტი, გაკვეთილები, კურსები, web-development, ჰტმლ, ცსს, ჯავასკრიპტი, ufaso gakvetilebi programirebashi, programirebis swavla, ufasod swavla, programirebis ufasod swavla, HTML, CSS, JS, Javascript">
     <link rel="icon" href="assets/icons/devi icon.png">
     <link rel="stylesheet" href="assets/style/default.css">
     <link rel="stylesheet" href="assets/style/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    <h1>DEVi EDU</h1>
-    <div class="box">
-        <img src="assets/icons/DEVi logo.svg" alt="logo" class="logo">
-        <div class="cover"></div>
-        <div class="container">
-            <div class="buttons">
-                <div class="button"><div class="icon"></div> CODE EDITOR</div>
-                <div class="button"><div class="icon"></div> გაკვეთილები</div>
-                <div class="button"><div class="icon"></div> ვიდეო გაკვეთილები</div>
-                <div class="button"><div class="icon"></div> სავარჯიშოები</div>
-                <div class="socials">
-                    <div class="soc-btn"></div>
-                    <div class="soc-btn"></div>
-                    <div class="soc-btn"></div>
-                    <div class="soc-btn"></div>
-                    <div class="soc-btn"></div>
-                    <div class="soc-btn"></div>
-                </div>
+    <header>
+        <nav>
+            <a href="#"><img src="assets/icons/DEVi logo.svg" alt="Devi logo" class="logo"></a>
+            <a href="lessons">გაკვეთილები</a>
+            <a href="#">სავარჯიშოები</a>
+            <a href="#">კოდედიტორი</a>
+            <a href="#">ბლოგი</a>
+            <div class="dark-mode" bis_skin_checked="1">
+                <input type="checkbox" class="form-check-input" id="darkSwitch" title="მუქი თემა">
             </div>
-        </div>
-    </div>
+            <button class="start">სწავლის დაწყება</button>
+        </nav>
+    </header>
+    <div class="cubes-decoration"></div>
+    <main>
+        <section class="content">
+            <section class="sectionInfo">
+                <h2 class="title">რას გთავაზობთ?</h2>
+                <p class="desc">დევი, ეს არის პროექტი, რომელიც ნებისმიერი
+                    ასაკისა და ინტერესის მქონე ადამიანს აძლევს
+                    საშუალებას შეისწავლოს პროგრამირება, 
+                    დიზაინი და სხვა მიმართულებები, რომელიც 
+                    ციფრულ სამყაროს უკავშირდება.</p>
+                <div>
+                    <button class="start">სწავლის დაწყება</button>
+                    <div class="circle-decoration"></div>
+                </div>
+            </section>
+            <section class="sectionImg">
+                <img src="assets/imgs/DEVi decoration.svg" alt="DEVi">
+            </section>
+        </section>
+    </main>
+
+    <script src="assets/script/darkmode.js"></script>
+    <script src="assets/script/basic.js"></script>
 </body>
 </html>
