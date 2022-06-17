@@ -182,6 +182,7 @@ section.start{
     padding-top: 80px;
     background-repeat: no-repeat;
     background-position: 0px 44px;
+    background-size: 212px;
 }
 
 .menu{
@@ -435,4 +436,331 @@ footer{
 
 .powerdby{
     margin-left: 48px;
+}
+
+.menubtn{
+    width: 55px;
+    height: 55px;
+    background: url(../icons/menu-icon.svg) #23232308;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 48%;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    display: none;
+}
+
+[data-theme="dark"] .menubtn {
+    background: url(../icons/menu-icon.svg) #23232308;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 48%;
+    filter: invert(0.8);
+    transition: 0.3s;
+}
+
+.sectionImg img {
+    width: 100%;
+}
+.sectionImg{
+    width: 40%;
+}
+
+.ftlinks a:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 1600px) {
+    .ftOne {
+        width: 85%;
+    }
+    nav a{
+        font-size: 22px;
+    }
+    main{
+        padding-top: 2px;
+    }
+    .cubes-decoration{
+        top: 100px;
+    }
+    .wtime{
+        padding-top: 80px;
+    }
+    .logo, div.dark-mode, .dark-mode input{
+        width: 55px;
+        height: 55px;
+    }
+    nav button.start{
+        height: 55px;
+    }
+    .header{
+        height: 90px;
+    }
+    .title {
+        font-size: 45px;
+    }
+    .desc {
+        font-size: 30px;
+        margin-top: 36px;
+        margin-bottom: 56px;
+    }
+    .startlearningtitle {
+        font-size: 40px;
+    }    
+}
+
+@media only screen and (max-width: 1450px) {
+    .startlearningtitle {
+        font-size: 35px;
+    }    
+}
+
+@media only screen and (max-width: 1400px) {
+    nav a{
+        font-size: 16px;
+    }
+    .navobj{
+        visibility: hidden;
+    }
+    .menubtn{
+        display: inline-block;
+    }
+    .title{
+        font-size: 38px;
+    }
+    .desc{
+        font-size: 26px;
+    }
+    .sectionInfo .start {
+        width: 506px;
+        height: 94px;
+        border-radius: 12px;
+        font-size: 36px;
+    }
+    .circle-decoration {
+        width: 164px;
+        height: 208px;
+        background-size: 164px;
+        padding: 0;
+        margin-left: -100px;
+        background-position: 0px 32px;
+    }
+    .cubes-decoration{
+        width: 120px;
+        background-size: 120px;
+        height: 140px;
+    }
+}
+
+@media only screen and (max-width: 1325px) {
+    .whydevi{
+        margin-top: 100px !important;
+    }
+    section.whyus{
+        height: 304px;
+    }
+    header{
+        height: 85px;
+    }
+    .ftOne :is(a, p, i) {
+        font-size: 20px;
+    }
+    footer, .ftContent {
+        height: 194px;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .startlearningtitle {
+        font-size: 32px;
+    }
+    .dontwwastetime .start{
+        margin-top: 64px;
+        font-size: 44px;
+    }
+    nav a{
+        font-size: 12px;
+    }
+    .icon-watch {
+        height: 135px;
+        width: 120px;
+    }
+    .content:nth-child(odd) {
+        margin-top: 155px;
+    }
+    .cubes-decoration {
+        width: 100px;
+        background-size: 100px;
+        height: 116px;
+    }
+    footer, .ftContent {
+        height: 186px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    header {
+        height: 70px;
+    }
+    .logo, div.dark-mode, .dark-mode input, .menubtn{
+        width: 48px;
+        height: 48px;
+    }
+    nav button.start {
+        height: 48px;
+    }
+    .title {
+        font-size: 32px;
+    }
+    .desc {
+        font-size: 22px;
+        margin-top: 24px;
+        margin-bottom: 30px;
+    }
+    .content:nth-child(odd) {
+        margin-top: 142px;
+    }
+    .startlearningtitle {
+        font-size: 30px;
+    }
+    .icon-watch {
+        height: 110px;
+        width: 100px;
+    }
+    .dontwwastetime .start {
+        height: 112px;
+        margin-top: 44px;
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    nav a {
+        font-size: 6px;
+    }
+    .sectionInfo .start {
+        width: 434px;
+    }
+    .ftOne :is(a, p, i) {
+        font-size: 16px;
+    }
+    .startlearningtitle {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .sectionInfo .start{
+        height: 80px;
+        font-size: 32px;
+    }
+    .content{
+        flex-direction: column-reverse;
+    }
+    .sectionInfo {
+        width: 100%;
+        margin-bottom: 85px;
+    }
+    .sectionImg {
+        width: 100%;
+        margin-bottom: 120px;
+        display: flex;
+        justify-content: center;
+    }
+    .sectionImg img {
+        width: 40%;
+    }
+    .sectionInfo div{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .cubes-decoration, .circle-decoration{
+        display: none !important;
+    }
+    .sectionInfo .start {
+        width: 60%;
+    }
+    .dontwwastetime .start {
+        height: 85px;
+        margin-top: 44px;
+        font-size: 30px;
+    }
+    .info {
+        font-size: 22px;
+    }
+    nav a {
+        font-size: 2px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    nav button.start{
+        display: none;
+    }
+    .sectionImg img {
+        width: 50%;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .desc {
+        font-size: 18px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .sectionInfo .start {
+        width: 72%;
+        height: 56px;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+    section.whyus {
+        height: 360px;
+        background-size: 20%;
+    }
+    div.whyus {
+        margin: 10% 0;
+    }
+    .wtime {
+        padding-top: 2px;
+    }
+    .dontwwastetime {
+        width: 100%;
+    }
+    .startlearningtitle {
+        font-size: 14px;
+    }
+    .icon-watch {
+        height: 70px;
+        width: 60px;
+    }
+    .dontwwastetime .start {
+        height: 60px;
+        margin-top: 24px;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+    .info {
+        font-size: 13px;
+    }
+    .ftContent{
+        flex-direction: column;
+    }
+    .ftlinks, .ftrights{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ftlinks a{
+        margin-top: 12px;
+    }
+    footer, .ftContent {
+        height: 365px;
+    }
+    .powerdby {
+        margin: 0px;
+    }
 }
