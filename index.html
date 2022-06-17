@@ -17,23 +17,48 @@
     <link rel="stylesheet" href="assets/style/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<body>
+<body oncontextmenu="return false">
     <header>
         <nav>
             <a href="#"><img src="assets/icons/DEVi logo.svg" alt="Devi logo" class="logo"></a>
-            <a href="lessons">გაკვეთილები</a>
+            <a class="openLessons">გაკვეთილები</a>
             <a href="#">სავარჯიშოები</a>
             <a href="#">კოდედიტორი</a>
             <a href="#">ბლოგი</a>
             <div class="dark-mode" bis_skin_checked="1">
                 <input type="checkbox" class="form-check-input" id="darkSwitch" title="მუქი თემა">
             </div>
-            <button class="start">სწავლის დაწყება</button>
+            <button class="start" onclick="window.location.href='lessons'">სწავლის დაწყება</button>
         </nav>
     </header>
+    <section class="navigation">
+        <div class="menu">
+            <section class="lessons">
+                <div class="menu-header">
+                    <div class="icon lessons-icon"></div>
+                    <h3>გაკვეთილები</h3>
+                </div>
+                <div class="navigation">
+                    <a href="#">HTML</a>
+                    <a href="#">CSS</a>
+                </div>
+            </section>
+            <section class="v-lessons">
+                <div class="menu-header">
+                    <div class="icon vlessons-icon"></div>
+                    <h3>ვიდეო გაკვეთილები</h3>
+                </div>
+                <div class="navigation">
+                    <a href="#">Basics in WebDevelopment</a>
+                    <a href="#">FrontEnd Development</a>
+                    <a href="#">BackEnd Development</a>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="cubes-decoration"></div>
     <main>
-        <section class="content">
+        <section class="content start">
             <section class="sectionInfo">
                 <h2 class="title">რას გთავაზობთ?</h2>
                 <p class="desc">დევი, ეს არის პროექტი, რომელიც ნებისმიერი
@@ -42,7 +67,7 @@
                     დიზაინი და სხვა მიმართულებები, რომელიც 
                     ციფრულ სამყაროს უკავშირდება.</p>
                 <div>
-                    <button class="start">სწავლის დაწყება</button>
+                    <button class="start" onclick="window.location.href='lessons'">სწავლის დაწყება</button>
                     <div class="circle-decoration"></div>
                 </div>
             </section>
@@ -50,8 +75,65 @@
                 <img src="assets/imgs/DEVi decoration.svg" alt="DEVi">
             </section>
         </section>
+        <section class="whyus">
+            <section class="content">
+                <div class="whyus">
+                    <h2 class="title" style="color: white;">რატომ დევი?</h2>
+                    <p class="desc" style="color: white;">საიტზე განთავსებულია თანამედროვე ტექნოლოგიებთან შესაბამისი 
+                        სასწავლო პროგრამა, ამავდროულად ჩვენი გუნდი მუდმივად მუშაობს, რათა 
+                        დახვეწოს და განავითაროს არსებული პლათფორმა, განავითაროს და მოარგოს
+                        თქვენს საჭიროებებსა თუ კომფორტს.</p>
+                </div>
+            </section>
+        </section>
+        <section class="content">
+            <section class="sectionInfo">
+                <h2 class="title">რას ვისწავლი?</h2>
+                <p class="desc">დევის გუნდი ორიენტირებულია, რაც შეიძლება
+                    მეტი ინფორმაცია და ცოდნა მოგაწოდოთ
+                    თანამედროვე ტექნოლოგიებზე, შესაბამისად
+                    ვცდილობთ დავამატოთ რაც შეიძლება მეტი
+                    კურსი სხვადასხვა განხრით.</p>
+            </section>
+            <section class="sectionImg">
+                <img src="assets/imgs/what i will learn.svg" alt="Devi Development">
+            </section>
+        </section>
+        <section class="content">
+            <main class="wtime">
+                <section class="dontwwastetime">
+                    <div class="wastetimeheader">
+                        <div class="icon-watch"></div>
+                        <h2 class="startlearningtitle">ნუ ცდები!<br>
+                        დაიწყე <p>სწავლა</p> ახლავე</h2>
+                    </div>
+                    <button class="start" onclick="window.location.href='lessons'">სწავლის დაწყება</button>
+                    <p class="info"><a href="#">გადმოწერე</a> ტელეფონის ვერსია და დაიწყე სწავლა სადაც არ უნდა იყო</p>
+                </section>
+            </main>
+        </section>
     </main>
-
+    <footer>
+        <section class="content">
+            <section class="ftContent">
+                <section class="ftOne">
+                    <div class="ftlinks">
+                        <a href="#">ჩვენს შესახებ</a>
+                        <a href="#">კონტაქტი</a>
+                        <a href="#">წესდება და პოლიტიკა</a>
+                        <a href="#">პარტნიორული სისტემა</a>
+                    </div>
+                    <div class="ftrights">
+                        <p>© <i id="date" style="font-style: normal;">2021 - 2022</i> - ყველა უფლება დაცულია</p><p class="powerdby">Powerd by <a href="https://www.devi.ml/" target="_blank" class="devilink">DEVi</a></p>
+                    </div>
+                </section>
+                <section class="ftTwo">
+                    <img src="assets/icons/DEVi logo.svg" alt="Devi Logo">
+                    <p>edu-devi.tk</p>
+                </section>
+            </section>
+        </section>
+    </footer>
     <script src="assets/script/darkmode.js"></script>
     <script src="assets/script/basic.js"></script>
 </body>

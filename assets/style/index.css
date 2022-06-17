@@ -10,10 +10,18 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    backdrop-filter: blur(40px);
+    background: #f3f3f373;
+    z-index: 1;
+}
+
+[data-theme="dark"] header{
+    background: #12121221;
+    border-radius: 6px;
 }
 
 nav{
-    width: 1440px;
+    width: 78%;
     height: 60px;
     display: flex;
     align-items: center;
@@ -37,6 +45,7 @@ nav a{
     text-decoration: none;
     color: #232323;
     line-height: 0;
+    cursor: pointer;
 }
 
 [data-theme="dark"] nav a{
@@ -53,6 +62,7 @@ nav button.start{
     font-family: 'MarkGeoCaps';
     font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 div.dark-mode{
@@ -121,7 +131,7 @@ main{
 }
 
 .sectionInfo{
-    width: 830px;
+    width: 60%;
 }
 
 .sectionInfo .start{
@@ -135,14 +145,20 @@ main{
     font-weight: bold;
     cursor: pointer;
     position: absolute;
+    transition: 0.3s;
 }
 
 .content{
-    width: 1440px;
+    width: 78%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: auto;
     z-index: 1;
+}
+
+section.start{
+    align-items: flex-start;
 }
 
 .content:nth-child(odd){
@@ -166,4 +182,257 @@ main{
     padding-top: 80px;
     background-repeat: no-repeat;
     background-position: 0px 44px;
+}
+
+.menu{
+    display: flex;
+    background: white;
+    width: 720px;
+    border-radius: 15px;
+    position: absolute;
+    margin-top: 100px;
+    z-index: 1;
+    box-shadow: 0px 0px 40px #cacaca42;
+}
+
+.menu section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    padding: 25px;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'MarkGeo';
+    margin: 0;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.lessons-icon{
+    background: url(../icons/Lesseons.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.vlessons-icon{
+    background: url(../icons/VLessons.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.navigation a{
+    font-size: 24px;
+    font-family: 'MarkGeo';
+    font-weight: bold;
+    text-decoration: none;
+    color: #232323;
+    margin-top: 15px;
+}
+
+div.navigation{
+    display: flex;
+    flex-direction: column;
+}
+
+section.navigation{
+    width: 1440px;
+    margin: auto;
+    display: none;
+}
+
+.openLessons:hover + section.navigation{
+    display: block;
+    transition: 0.3s;
+}
+
+section.whyus{
+    width: 100%;
+    height: 406px;
+    background: url(../imgs/pattern.svg) #4A081C;
+    background-size: 5%;
+}
+
+div.whyus{
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0;
+}
+
+.icon-watch{
+    height: 150px;
+    width: 135px;
+    background: url(../imgs/watch.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.startlearningtitle{
+    font-size: 5vh;
+    font-weight: bolder;
+    font-family: 'MarkGeoCaps', 'MarkGeo', sans-serif;
+    margin: 0;
+    display: inline-block;
+}
+
+.startlearningtitle p{
+    color: #FFBC03;
+    display: inline-block;
+    margin: 0;
+}
+
+[data-theme="dark"] .startlearningtitle p{
+    color: #FFBC03;
+    border-radius: 6px;
+}
+
+.dontwwastetime{
+    width: 61%;
+}
+
+.wastetimeheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.wtime{
+    display: flex;
+    justify-content: center;
+}
+
+.dontwwastetime .start{
+    width: 100%;
+    height: 126px;
+    border-radius: 12px;
+    background: #FFBC03;
+    border: none;
+    font-size: 50px;
+    font-family: 'MarkGeoCaps';
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 78px;
+    color: #EBEBEB;
+    transition: 0.3s;
+}
+
+.info{
+    font-size: 24px;
+    font-family: 'MarkGeo';
+    font-weight: bold;
+}
+
+.info a{
+    color: #F91A5E;
+}
+
+[data-theme="dark"] .startlearningtitle{
+    color: #A2A2A2;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] .info{
+    color: #A2A2A2;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] .dontwwastetime .start{
+    color: #141414;
+    transition: 0.3s;
+}
+
+nav button.start:hover, .sectionInfo .start:hover, .dontwwastetime .start:hover{
+    transform: scale(1.04);
+    background: rgb(231 11 31);
+    box-shadow: 0px 0px 30px #ff0000;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #ffa502;
+    transition: 0.3s;
+}
+
+footer{
+    width: 100%;
+    height: 210px;
+    background: #E9E9E9;
+}
+
+[data-theme="dark"] footer{
+    background: #0C0C0C;
+    transition: 0.3s;
+}
+
+.ftContent{
+    height: 210px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ftOne{
+    width: 70%;
+}
+
+.ftTwo p{
+    font-size: 13px;
+    font-family: 'MarkGeo';
+    font-weight: bold;
+}
+
+[data-theme="dark"] .ftTwo p{
+    color: #868686;
+    transition: 0.3s;
+}
+
+.ftTwo img{
+    width: 72px;
+    height: auto;
+}
+
+.ftOne :is(a, p, i){
+    font-family: 'MarkGeo', sans-serif;
+    font-size: 24px;
+    color: #868686;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.devilink{
+    color: #555555;
+    font-weight: bold;
+}
+
+.ftlinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.powerdby{
+    margin-left: 48px;
 }
