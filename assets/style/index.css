@@ -510,6 +510,7 @@ footer{
 .gakvetilebi button{
     border: none;
     display: flex;
+    background: transparent;
 }
 
 .lessons-section{
@@ -571,6 +572,39 @@ footer{
 
 #btnLesson, #btnGakvetili{
     display: none;
+}
+
+[data-theme="dark"] .m-nav{
+    background-color: #121212;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] .m-nav{
+    color: #A2A2A2;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] .gakvetilebi i{
+    color: #A2A2A2;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] .gakvetilebi a{
+    color: #A2A2A2;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] .icon-rectangle{
+    filter: invert(1);
+    transition: 0.3s;
+}
+
+[data-theme="dark"] .closebtn {
+    background: url(../icons/cross.svg) #23232308;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(0.8);
+    transition: 0.3s;
 }
 
 @media only screen and (max-width: 1600px) {
