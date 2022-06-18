@@ -472,6 +472,107 @@ footer{
     transition: 0.3s;
 }
 
+.m-nav{
+    width: 100%;
+    height: 100%;
+    background: #F3F3F3;
+    position: fixed;
+    z-index: 1;
+}
+
+.closebtn{
+    width: 55px;
+    height: 55px;
+    background: url(../icons/cross.svg) #23232308;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.m-content{
+    margin-top: 10px !important;
+    flex-direction: column;
+}
+
+.m-nav-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.lessons p{
+    font-size: 26px;
+    margin: 0;
+    font-family: 'MarkGeoCaps';
+    font-weight: bolder;
+}
+
+.gakvetilebi button{
+    border: none;
+    display: flex;
+}
+
+.lessons-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.lessons-section a{
+    margin-left: 32px;
+    font-family: 'MarkGeo';
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+}
+
+.icon-rectangle{
+    width: 24px;
+    height: 24px;
+    background: url(../icons/arrow\ bold.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: 50%;
+}
+
+.gakvetilebi button i{
+    font-size: 21px;
+    margin: 0;
+    font-family: 'MarkGeo';
+    font-weight: bolder;
+    font-style: normal;
+    line-height: 20px;
+}
+
+.m-nav-content{
+    width: 100%;
+}
+
+.lessons{
+    margin-top: 30px;
+}
+
+.gakvetilebi{
+    margin-top: 15px;
+}
+
+.lessons-section{
+    display: none;
+}
+
+.lessons p{
+    margin-top: 30px;
+}
+
+#menu{
+    top: -100%;
+    transition: 0.3s;
+}
+
+#btnLesson, #btnGakvetili{
+    display: none;
+}
+
 @media only screen and (max-width: 1600px) {
     .ftOne {
         width: 85%;
@@ -712,7 +813,7 @@ footer{
         margin-bottom: 16px;
     }
     .sectionInfo .start {
-        width: 78%;
+        width: 84%;
         height: 56px;
         font-size: 18px;
         border-radius: 8px;
@@ -762,5 +863,15 @@ footer{
     }
     .powerdby {
         margin: 0px;
+    }
+    nav, section.content{
+        width: 84%;
+    }
+    .closebtn{
+        width: 48px;
+        height: 48px;
+    }
+    .m-content{
+        flex-direction: column;
     }
 }

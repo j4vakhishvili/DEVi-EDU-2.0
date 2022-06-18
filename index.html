@@ -26,13 +26,46 @@
             <a href="#" class="navobj">სავარჯიშოები</a>
             <a href="#" class="navobj">კოდედიტორი</a>
             <a href="#" class="navobj">ბლოგი</a>
-            <div class="menubtn"></div>
             <div class="dark-mode" bis_skin_checked="1">
                 <input type="checkbox" class="form-check-input" id="darkSwitch" title="მუქი თემა">
             </div>
+            <div class="menubtn" onclick="openMenu()"></div>
             <button class="start" onclick="window.location.href='lessons'">სწავლის დაწყება</button>
         </nav>
     </header>
+    <div class="m-nav" id="menu">
+        <section class="content m-content">
+            <section class="m-nav-header">
+                <img src="assets/icons/DEVi logo.svg" alt="Devi logo" class="logo">
+                <div class="closebtn" onclick="closeMenu()"></div>
+            </section>
+            <section class="m-nav-content">
+                <div class="lessons">
+                    <p>გაკვეთილები</p>
+                    <div class="gakvetilebi">
+                        <button onclick="openlessonsSection()" id="btnLesson"><div class="icon-rectangle"></div><i>გაკვეთილები</i></button>
+                        <button onclick="closelessonsSection()" id="btnLessons"><div class="icon-rectangle"></div><i>გაკვეთილები</i></button>
+                        <div class="lessons-section" id="lessonsSection">
+                            <a href="lessons">HTML</a>
+                            <a href="#">CSS</a>
+                        </div>
+                    </div>
+                    <div class="gakvetilebi">
+                        <button onclick="opengakvetilebisSeqcia()" id="btnGakvetili"><div class="icon-rectangle"></div><i>ვიდეო გაკვეთილები</i></button>
+                        <button onclick="closegakvetilebisSeqcia()" id="btnGakvetilebi"><div class="icon-rectangle"></div><i>ვიდეო გაკვეთილები</i></button>
+                        <div class="lessons-section" id="gakvetilebisSeqcia">
+                            <a href="lessons">Basics in WebDevelopment</a>
+                            <a href="#">Front End Development</a>
+                        </div>
+                    </div>
+                    <p>სავარჯიშოები</p>
+                    <p>კოდედიტორი</p>
+                    <p>ბლოგი</p>
+                </div>
+                
+            </section>
+        </section>
+    </div>
     <section class="navigation">
         <div class="menu">
             <section class="lessons">
@@ -138,5 +171,6 @@
     </footer>
     <script src="assets/script/darkmode.js"></script>
     <script src="assets/script/basic.js"></script>
+    <script src="assets/script/index-menu.js"></script>
 </body>
 </html>
