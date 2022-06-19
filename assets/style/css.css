@@ -1,43 +1,67 @@
 nav{
-    background: #FFBC01;
+    background: #06D0FF;
 }
 
 footer{
-    border-top: 2px solid #FFBC01;
+    border-top: 2px solid #06D0FF;
 }
 
 p.note{
-    background: #FFBC0136;
+    background: #06D0FF36;
 }
 
 button.active{
-    background: linear-gradient(135deg, #FABB0C, #FB9207);
+    background: linear-gradient(135deg, #03EDFF, #06D0FF);
 }
 
 [data-theme="dark"] button.active {
-    background: linear-gradient(135deg, #e0a70b, #e18206);
+    background: linear-gradient(135deg, #03EDFF, #06D0FF);
     transition: 0.3s;
 }
 
 .basicBtn{
-    background: linear-gradient(135deg, #FABB0C, #FB9207);
+    background: linear-gradient(135deg, #03EDFF, #06D0FF, #03EDFF, #06D0FF);
+    background-size: 300% 100%;
 }
 
 [data-theme="dark"] .basicBtn {
     color: #ffffffde;
-    background: linear-gradient(135deg, #e0a70b, #e18206);
+    background: linear-gradient(135deg, #03EDFF, #00add5, #03EDFF, #00add5);
+    background-size: 300% 100%;
     transition: 0.3s;
 }
 
 .headbtn:hover{
-    background: url(../icons/arrow.svg), #ffe293;
+    background: url(../icons/arrow.svg), #c1f4ff;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 [data-theme="dark"] .headbtn:hover{
-    background: url(../icons/arrow.svg), #a6beff;
+    background: url(../icons/arrow.svg), #ffb8a8;
     background-position: center;
     background-repeat: no-repeat;
     transition: 0.3s;
+}
+
+.on{
+    padding-bottom: 15px;
+    border-bottom: 3px solid #06D0FF;
+}
+
+p.note a{
+    color: #06D0FF;
+}
+
+button.active:hover {
+    background: linear-gradient(135deg, #03EDFF, #06D0FF);
+    transition: 0.3s;
+}
+
+td, th {
+    border: 1px solid #06D0FF;
+}
+
+tr:nth-child(even) {
+    background-color: #06D0FF30;
 }

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#FFBC01">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>შესავალი | DEVi EDU • დევი</title>
+    <meta name="language" content="georgian">
+    <meta name="distribution" content="georgian">
+    <meta name="description" content="DEVi EDU • დევი ედუ - პროგრამირების უფასოდ სწავლა">
+    <meta name="author" content="J4vakhishvili, T3MUR1, Merab Kekelidze">
+    <meta name="publisher" content="DEVi, J4vakhisvhili">
+    <meta name="copyright" content="2022 J4vakhishvili">
+    <meta name="keywords" content="პროგრამირების უფასოდ სწავლა, ჰტმლს სწავლა, უფასო გაკვეთილები, როგორ, rogor, ვებდეველოპმენტი, გაკვეთილები, კურსები, web-development, ჰტმლ, ცსს, ჯავასკრიპტი, ufaso gakvetilebi programirebashi, programirebis swavla, ufasod swavla, programirebis ufasod swavla, HTML, CSS, JS, Javascript">
+    <link rel="icon" href="../../assets/icons/devi icon.png">
+    <link rel="stylesheet" href="../../assets/style/default.css">
+    <link rel="stylesheet" href="../../assets/style/header.css">
+    <link rel="stylesheet" href="../../assets/style/gakvetilebi.css">
+    <link rel="stylesheet" href="../../assets/style/footer.css">
+    <link rel="stylesheet" href="../../assets/style/css.css">
+    <link rel="stylesheet" href="../../assets/ads/ads.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="nav" id="nav">
+        <nav>
+            <section class="real-nav">
+                <a href="../../../lessons">HTML</a>
+                <a href="css" class="active">CSS</a>
+                <div class="dark-mode" bis_skin_checked="1">
+                    <input type="checkbox" class="form-check-input" id="darkSwitch" title="მუქი თემა">
+                </div>
+            </section>
+            <section class="buttons-nav">
+                <button class="openNav" id="openNav" onclick="openNav()"></button>
+                <button class="closeNav" id="closeNav" onclick="closeNav()"></button>
+            </section>
+        </nav>
+    </div>
+    <header>
+        <div class="container">
+            <section class="separate-header">
+                <img src="../../assets/icons/DEVi logo.svg" alt="logo" class="logo" onclick="window.location.href='index'">
+                <button class="catalogbtn" onclick="openCatalog()"><div class="head-icon categories-icon"></div>სარჩევი</button>
+            </section>
+    
+            <section class="separate-header">
+                <button class="menubtn active" title="გაკვეთილები"><div class="head-icon lessons-icon"></div></button>
+                <button class="menubtn" title="ვიდეო გაკვეთილები"><div class="head-icon vlessons-icon"></div></button>
+                <button class="menubtn" title="სავარჯიშოები"><div class="head-icon exercises-icon"></div></button>
+                <button class="menubtn" title="კოდედიტორი"><div class="head-icon code-editor-icon"></div></button>
+            </section>
+        </div>
+    </header>
+    <section class="catalog" id="catalog">
+        <section class="separate-catalog">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="მოიძიე კატეგორია..." title="მოიძიე კატეგორია">
+            <button class="closeCatalog" onclick="closeCatalog()"></button>
+        </section>
+        <section class="separate-catalog catalog-scrollable">
+            <ul id="myUL">
+                <li class="on"><a href="css">შესავალი</a></li>
+                <li><a href="css-lessons/introduction.html">გაცნობა</a></li>
+                <li><a href="css-lessons/syntax.html">სინტაქსი</a></li>
+                <li><a href="css-lessons/selectors.html">სელექტორები</a></li>
+                <li><a href="css-lessons/html-to-link.html">HTML-ზე მიბმა</a></li>
+                <li><a href="css-lessons/comments.html">კომენტარები</a></li>
+                <li><a href="css-lessons/colors.html">ფერები</a></li>
+                <li><a href="css-lessons/backgrounds.html">ფონები</a></li>
+                <li><a href="css-lessons/borders.html">საზღვრები</a></li>
+                <li><a href="css-lessons/margins.html">მიჯვნები</a></li>
+                <li><a href="css-lessons/paddings.html">შევსება</a></li>
+                <li><a href="css-lessons/width-and-height.html">სიმაღლე და სიგანე</a></li><!--შეიცავს Max Width სექციას-->
+                <li><a href="css-lessons/box-model.html">ბლოკის მოდელი</a></li>
+                <li><a href="css-lessons/outline.html">მონახაზი</a></li>
+                <li><a href="css-lessons/texts.html">ტექსტები</a></li>
+                <li><a href="css-lessons/fonts.html">ფონტები</a></li>
+                <li><a href="css-lessons/css-links.html">CSS ლინკები</a></li>
+                <li><a href="css-lessons/lists.html">სიები</a></li>
+                <li><a href="css-lessons/tables.html">ცხრილები</a></li>
+                <li><a href="css-lessons/display.html">ჩვენება</a></li>
+                <li><a href="css-lessons/position.html">პოზიცია</a></li>
+                <li><a href="css-lessons/overflow.html">გადავსება</a></li>
+                <li><a href="css-lessons/float.html">წყობა</a></li>
+                <li><a href="css-lessons/layout .html">მწკრივები</a></li>
+                <li><a href="css-lessons/combinators.html">კომბინატორები</a></li>
+                <li><a href="css-lessons/pseudo-class.html">ფსევდო-კლასები</a></li>
+                <li><a href="css-lessons/pseudo-elements.html">ფსევდო-ელემენტები</a></li>
+                <li><a href="css-lessons/opacity.html">გამჭირვალობა</a></li>
+                <li><a href="css-lessons/nav-bar.html">ნავიგაციის ზოლი</a></li>
+                <li><a href="css-lessons/dropdowns.html">Dropdowns</a></li>
+                <li><a href="css-lessons/img-gallery.html">ფოტო გალერეა</a></li>
+                <li><a href="css-lessons/img-sprites.html">ფოტო სპრიტები</a></li>
+                <li><a href="css-lessons/attr-selectors.html">ატრიბუტების არჩევა</a></li>
+                <li><a href="css-lessons/forms.html">ფორმები</a></li>
+                <li><a href="css-lessons/web-layout.html">საიტის სტრუქტურა</a></li>
+                <li><a href="css-lessons/units.html">ერთეულები</a></li>
+                <li><a href="css-lessons/hierarchy.html">იერარქია</a></li>
+                <li><a href="css-lessons/!important.html">!important</a></li>
+                <li><a href="css-lessons/corners.html">კუთხეები</a></li>
+                <li><a href="css-lessons/border-images.html">ფოტოები საზღვრებზე</a></li>
+                <li><a href="css-lessons/multy-bgs.html">რამდენიმე ფონი</a></li>
+                <li><a href="css-lessons/gradient.html">გრადაცია</a></li>
+                <li><a href="css-lessons/shadows.html">ჩრდილები</a></li>
+                <li><a href="css-lessons/txt-effects.html">ტექსტ ეფექტები</a></li>
+                <li><a href="css-lessons/transforms.html">გარდაქმნები</a></li>
+                <li><a href="css-lessons/transitions.html">გადასვლები</a></li>
+                <li><a href="css-lessons/animations.html">ანიმაციები</a></li>
+                <li><a href="css-lessons/tooltips.html">მითითებები</a></li>
+                <li><a href="css-lessons/image-styles.html">ფოტოების სტილიზაცია</a></li>
+                <li><a href="css-lessons/object-fit.html">ობიექტის მორგება</a></li>
+                <li><a href="css-lessons/buttons.html">ღილაკები</a></li>
+                <li><a href="css-lessons/columns.html">სვეტები</a></li>
+                <li><a href="css-lessons/variables.html">ცვლადები</a></li>
+                <li><a href="css-lessons/media-commands.html">media ბრძანებები</a></li>
+                <li><a href="css-lessons/media-examples.html">media მაგალითები</a></li>
+                <li><a href="css-lessons/flexbox.html">Flexbox</a></li>
+                <li><a href="css-lessons/responsive.html">რესფონსივი</a></li>
+                <div class="space" bis_skin_checked="1"></div>
+                <br>
+            </ul><br><br>
+        </section>
+    </section>
+    <main>
+        <section class="content">
+            <div class="header">
+                <button class="headbtn"></button>
+                <h1>შესავალი</h1>
+                <button class="headbtn hbtn-r"></button>
+            </div>
+            <!-- <p class="note">
+                HTML არის სტანდარტული მერქაფ ენა ვებსაიტებისათვის.<br>
+                HTML-ს მეშვეობით შეგიძლია შექმნა საკუთარი ვებსაიტი.<br>
+                HTML საკმაოდ მარტივი ენაა შესასწავლად და დამიჯერე, პროცესში საკმაოდ გაერთობი.<br>
+                <button class="basicBtn">დაიწყე სწავლა ახლა</button>
+            </p>
+            <article>
+                <h2 class="miniTitle">სწავლის დასრულების შემდეგ, შენ შეძლებ გაიარო ტესტირება და მიიღო სერთიფიკატი</h2>
+                <p>ტესტის გავლა შესაძლებელია საიტის თავში მოცემული ღილაკი “სავარჯიშოები”ზე დაკლიკების მეშვეობით, თუ თვლი, რომ შენ გაქვს უკვე საკმარისი ცოდნა იმისათვის, რომ მიიღო სერთიფიკატი შეგიძლია ტესტირება დაიწყო ახლავე.</p>
+                <button class="basicBtn">ტესტირების დაწყება</button>
+            </article> -->
+            
+            <footer>
+                <section class="split-footer">
+                    <a href="#">ჩვენს შესახებ</a>
+                    <a href="#">წესდება და პოლიტიკა</a>
+                    <a href="#">რეკლამის განთავსება</a>
+                    <a href="#">კონტაქტი</a>
+                </section>
+                <section class="split-footer spl-ft-right"><i id="date" style="font-style: normal;"></i>ㅤ© ყველა უფლება დაცულია</section>
+            </footer>
+        </section>
+        <section class="ads">
+            <div class="ad discordFrame"><iframe src="https://discord.com/widget?id=869528540234805248&amp;theme=dark" width="100%" height="100%" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" class="discord" bis_size="{&quot;x&quot;:1561,&quot;y&quot;:240,&quot;w&quot;:260,&quot;h&quot;:480,&quot;abs_x&quot;:1561,&quot;abs_y&quot;:240}"></iframe></div>
+        </section>
+    </main>
+
+    <script src="../../assets/script/darkmode.js"></script>
+    <script src="../../assets/script/basic.js"></script>
+    <script src="../../assets/script/catalog.js"></script>
+    <script src="../../assets/script/app-codeEditor.js"></script>
+</body>
+</html>

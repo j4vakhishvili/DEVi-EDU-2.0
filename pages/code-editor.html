@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#FFBC01">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>შესავალი | DEVi EDU • დევი</title>
+    <meta name="language" content="georgian">
+    <meta name="distribution" content="georgian">
+    <meta name="description" content="DEVi EDU • დევი ედუ - პროგრამირების უფასოდ სწავლა">
+    <meta name="author" content="J4vakhishvili, T3MUR1, Merab Kekelidze">
+    <meta name="publisher" content="DEVi, J4vakhisvhili">
+    <meta name="copyright" content="2022 J4vakhishvili">
+    <meta name="keywords" content="პროგრამირების უფასოდ სწავლა, ჰტმლს სწავლა, უფასო გაკვეთილები, როგორ, rogor, ვებდეველოპმენტი, გაკვეთილები, კურსები, web-development, ჰტმლ, ცსს, ჯავასკრიპტი, ufaso gakvetilebi programirebashi, programirebis swavla, ufasod swavla, programirebis ufasod swavla, HTML, CSS, JS, Javascript">
+    <link rel="icon" href="../assets/icons/devi icon.png">
+    <link rel="stylesheet" href="../assets/style/default.css">
+    <link rel="stylesheet" href="../assets/style/header.css">
+    <link rel="stylesheet" href="../assets/style/gakvetilebi.css">
+    <link rel="stylesheet" href="../assets/style/footer.css">
+    <link rel="stylesheet" href="../assets/ads/ads.css">
+    <link rel="stylesheet" href="../assets/style/codeEditor.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="nav" id="nav">
+        <nav>
+            <section class="real-nav">
+                <a>კოდედიტორი</a>
+                <div class="dark-mode" bis_skin_checked="1">
+                    <input type="checkbox" class="form-check-input" id="darkSwitch" title="მუქი თემა">
+                </div>
+            </section>
+            <section class="buttons-nav">
+                <button class="openNav" id="openNav" onclick="openNav()"></button>
+                <button class="closeNav" id="closeNav" onclick="closeNav()"></button>
+            </section>
+        </nav>
+    </div>
+    <header>
+        <div class="container">
+            <section class="separate-header">
+                <img src="../assets/icons/DEVi logo.svg" alt="logo" class="logo" onclick="window.location.href='index'">
+            </section>
+    
+            <section class="separate-header">
+                <button class="menubtn" title="გაკვეთილები"><div class="head-icon lessons-icon"></div></button>
+                <button class="menubtn" title="ვიდეო გაკვეთილები"><div class="head-icon vlessons-icon"></div></button>
+                <button class="menubtn" title="სავარჯიშოები"><div class="head-icon exercises-icon"></div></button>
+                <button class="menubtn active" title="კოდედიტორი"><div class="head-icon code-editor-icon"></div></button>
+            </section>
+        </div>
+    </header>
+    <section class="catalog" id="catalog">
+        <section class="separate-catalog">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="მოიძიე კატეგორია..." title="მოიძიე კატეგორია">
+            <button class="closeCatalog" onclick="closeCatalog()"></button>
+        </section>
+    </section>
+    <main>
+        <section class="content">
+            <div class="codeEditor" bis_skin_checked="1">
+                <section class="separate-codeEditor">
+                    <div class="switchEditor" bis_skin_checked="1">
+                        <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        <button onclick="openCSS()" id="cssBtn">CSS</button>
+                        <button onclick="openJS()" id="jsBtn">JavaScript</button>
+                        <button id="previewBtn" onclick="window.location.href='#preview'">Preview</button>
+                    </div>
+                    <div class="editor" bis_skin_checked="1">
+                        <textarea id="html" placeholder="HTML"></textarea>
+                        <textarea id="css" placeholder="CSS"></textarea>
+                        <textarea id="js" placeholder="JavaScript"></textarea>
+                    </div>
+                </section>
+                <section class="separate-codeEditor" id="preview">
+                    <iframe id="code" data-ruffle-polyfilled="" bis_size="{&quot;x&quot;:878,&quot;y&quot;:939,&quot;w&quot;:589,&quot;h&quot;:400,&quot;abs_x&quot;:878,&quot;abs_y&quot;:939}" bis_id="fr_r380s7qho4l3k3ev0lpu9h" bis_depth="0" bis_chainid="1"></iframe>
+                </section>
+            </div>
+            
+            <footer>
+                <section class="split-footer">
+                    <a href="#">ჩვენს შესახებ</a>
+                    <a href="#">წესდება და პოლიტიკა</a>
+                    <a href="#">რეკლამის განთავსება</a>
+                    <a href="#">კონტაქტი</a>
+                </section>
+                <section class="split-footer spl-ft-right"><i id="date" style="font-style: normal;"></i>ㅤ© ყველა უფლება დაცულია</section>
+            </footer>
+        </section>
+        <section class="ads">
+            <div class="ad discordFrame"><iframe src="https://discord.com/widget?id=869528540234805248&amp;theme=dark" width="100%" height="100%" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" class="discord" bis_size="{&quot;x&quot;:1561,&quot;y&quot;:240,&quot;w&quot;:260,&quot;h&quot;:480,&quot;abs_x&quot;:1561,&quot;abs_y&quot;:240}"></iframe></div>
+        </section>
+    </main>
+
+    <script src="../assets/script/darkmode.js"></script>
+    <script src="../assets/script/basic.js"></script>
+    <script src="../assets/script/app-codeEditor.js"></script>
+</body>
+</html>
