@@ -1,0 +1,267 @@
+.chatbox{
+    width: 100%;
+    background: white;
+    height: 800px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    border: 2px solid #e40046;
+}
+
+.cht-box-bottom{
+    width: 100%;
+    height: 80px;
+    background: #e40046;
+    border-radius: 0px 0px 12px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cht-box-bottom input{
+    height: 50px;
+    width: 82%;
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+    padding-left: 25px;
+    font-family: 'MarkGeo', sans-serif;
+}
+
+.cht-box-bottom button{
+    width: 52px;
+    height: 52px;
+    border: none;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+}
+
+.cht-content{
+    width: 94%;
+}
+
+.you{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.you h2{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.you p{
+    background: #e40046;
+    color: white;
+    padding: 12px;
+    margin: 0;
+    border-radius: 12px;
+}
+
+.devi{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.devi h2{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.devi p{
+    background: #d8d8d8;
+    color: black;
+    padding: 12px;
+    margin: 0;
+    border-radius: 12px;
+}
+
+.chatbox button{
+    background: url(../icons/send-icon.svg) #d8d8d8;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+[data-theme="dark"] .chatbox{
+    background: #1f1f1f;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] h2{
+    color: #767676;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] .devi p {
+    background: #121212;
+    color: #b9b9b9;
+}
+
+[data-theme="dark"] .cht-box-bottom input{
+    background: #121212;
+    color: #b9b9b9;
+}
+
+[data-theme="dark"] .cht-box-bottom button{
+    filter: invert();
+    color: #b9b9b9;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.space{
+    display: flex;
+}
+
+.icon{
+    width: 48px;
+    height: 48px;
+    padding: 20px;
+    background-size: 60% !important;
+    background-color: #e0e0e0 !important;
+    border-radius: 34px 42px 31px 55px / 52px 27px 56px 31px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.icon:hover{
+    border-radius: 52px 27px 56px 31px / 34px 42px 31px 55px;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] .icon{
+    opacity: 0.9;
+    background-color: #1f1f1f !important;
+    color: #b9b9b9;
+}
+
+.yt{
+    background: url(../icons/youtube.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fb{
+    background: url(../icons/facebook.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ig{
+    background: url(../icons/instagram.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dr{
+    background: url(../icons/dribble.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.be{
+    background: url(../icons/behance.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.li{
+    background: url(../icons/linkedin.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tk{
+    background: url(../icons/tiktok.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dc{
+    background: url(../icons/discord.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tw{
+    background: url(../icons/twitter.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pls{
+    background: url(../icons/googlePlay.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.aps{
+    background: url(../icons/appstore.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.git{
+    background: url(../icons/github.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media only screen and (max-width: 1350px) {
+    .space {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        margin-bottom: 15px;
+    }
+    .chatbox{
+        height: 730px;
+    }
+    .cht-box-bottom input {
+        width: 70%;
+    }
+    .icon{
+        padding: 10px;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .chatbox {
+        height: 615px;
+        margin-top: 25px;
+    }
+    .cht-box-bottom input {
+        width: 74%;
+    }
+}
