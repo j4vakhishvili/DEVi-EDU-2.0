@@ -259,10 +259,15 @@
 @media only screen and (max-width: 850px) {
     .chatbox {
         height: 615px;
-        margin-top: 15px;
     }
     .cht-box-bottom input {
         width: 74%;
         padding-left: 15px;
+    }
+}
+
+@media only screen and (width: 320px) {
+    .chatbox {
+        height: 360px;
     }
 }
