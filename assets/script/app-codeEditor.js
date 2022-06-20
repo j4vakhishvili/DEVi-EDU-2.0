@@ -37,7 +37,7 @@ function openCSS() {
     document.getElementById("js").style.display = "none";
     document.getElementById("htmlBtn").style.background = "#ff004b";
     document.getElementById("cssBtn").style.background = "#D40124";
-    document.getElementById("htmlBtn").style.background = "#ff004b";
+    document.getElementById("jsBtn").style.background = "#ff004b";
 }
 
 function openJS() {

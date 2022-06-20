@@ -194,6 +194,7 @@ section.start{
     margin-top: 100px;
     z-index: 1;
     box-shadow: 0px 0px 40px #cacaca42;
+    opacity: 0;
 }
 
 .menu section{
@@ -257,7 +258,6 @@ div.navigation{
 section.navigation{
     width: 1440px;
     margin: auto;
-    display: none;
 }
 
 .openLessons:hover + section.navigation{
@@ -549,10 +549,6 @@ footer{
     width: 100%;
 }
 
-.lessons{
-    margin-top: 30px;
-}
-
 .gakvetilebi{
     margin-top: 15px;
 }
@@ -605,6 +601,10 @@ footer{
     background-repeat: no-repeat;
     filter: invert(0.8);
     transition: 0.3s;
+}
+
+.openLessons:hover + .menu{
+    opacity: 1;
 }
 
 @media only screen and (max-width: 1600px) {
