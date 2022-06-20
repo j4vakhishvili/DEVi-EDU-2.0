@@ -13,6 +13,11 @@
     src: url(../fonts/Bog.ttf);
 }
 
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/GilroyGEO.ttf);
+}
+
 [data-theme="dark"] {
   background-color: #121212;
   transition: 0.3s;
