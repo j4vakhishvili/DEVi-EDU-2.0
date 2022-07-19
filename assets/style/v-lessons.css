@@ -1,0 +1,14 @@
+.cover{
+    width: 404px;
+    height: 550px;
+    background: url(../imgs/cover.svg);
+    margin-bottom: 24px;
+    margin-right: 34px;
+}
+
+.place{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}

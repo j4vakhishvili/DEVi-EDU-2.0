@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="theme-color" content="#e40046">
+    <meta name="theme-color" content="#FFBC01">
     <meta name="robots" content="index, follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>კოდედიტორი | DEVi EDU • დევი</title>
+    <title>ვიდეო გაკვეთილები | DEVi EDU • დევი</title>
     <meta name="language" content="georgian">
     <meta name="distribution" content="georgian">
     <meta name="description" content="DEVi EDU • დევი ედუ - პროგრამირების კურსები უფასოდ">
@@ -20,14 +20,14 @@
     <link rel="stylesheet" href="../assets/style/gakvetilebi.css">
     <link rel="stylesheet" href="../assets/style/footer.css">
     <link rel="stylesheet" href="../assets/moneylol/moneylol.css">
-    <link rel="stylesheet" href="../assets/style/codeEditor.css">
+    <link rel="stylesheet" href="../assets/style/v-lessons.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <div class="nav" id="nav">
         <nav>
             <section class="real-nav">
-                <a>კოდედიტორი</a>
+                <a>ვიდეო გაკვეთილები</a>
                 <div class="dark-mode" bis_skin_checked="1">
                     <input type="checkbox" class="form-check-input" id="darkSwitch" title="მუქი თემა">
                 </div>
@@ -46,38 +46,34 @@
     
             <section class="separate-header">
                 <button onclick="window.location.href='../lessons'" class="menubtn" title="გაკვეთილები"><div class="head-icon lessons-icon"></div></button>
-                <button onclick="window.location.href='../pages/video-lessons'" class="menubtn" title="ვიდეო გაკვეთილები"><div class="head-icon vlessons-icon"></div></button>
+                <button onclick="window.location.href='../v-lessons/video-lessons'" class="menubtn active" title="ვიდეო გაკვეთილები"><div class="head-icon vlessons-icon"></div></button>
                 <button onclick="window.location.href='../exercises/exercises'" class="menubtn" title="სავარჯიშოები"><div class="head-icon exercises-icon"></div></button>
-                <button onclick="window.location.href='../pages/code-editor'" class="menubtn active" title="კოდედიტორი"><div class="head-icon code-editor-icon"></div></button>
+                <button onclick="window.location.href='../pages/code-editor'" class="menubtn" title="კოდედიტორი"><div class="head-icon code-editor-icon"></div></button>
             </section>
         </div>
     </header>
-    <section class="catalog" id="catalog">
-        <section class="separate-catalog">
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="მოიძიე კატეგორია..." title="მოიძიე კატეგორია">
-            <button class="closeCatalog" onclick="closeCatalog()"></button>
-        </section>
-    </section>
     <main>
         <section class="content">
-            <div class="codeEditor" bis_skin_checked="1">
-                <section class="separate-codeEditor">
-                    <div class="switchEditor" bis_skin_checked="1">
-                        <button onclick="openHTML()" id="htmlBtn">HTML</button>
-                        <button onclick="openCSS()" id="cssBtn">CSS</button>
-                        <button onclick="openJS()" id="jsBtn">JavaScript</button>
-                        <button id="previewBtn" onclick="window.location.href='#preview'">Preview</button>
-                    </div>
-                    <div class="editor" bis_skin_checked="1">
-                        <textarea id="html" placeholder="HTML"></textarea>
-                        <textarea id="css" placeholder="CSS"></textarea>
-                        <textarea id="js" placeholder="JavaScript"></textarea>
-                    </div>
+            <section class="place">
+                <section class="cover">
+
                 </section>
-                <section class="separate-codeEditor" id="preview">
-                    <iframe id="code" data-ruffle-polyfilled="" bis_size="{&quot;x&quot;:878,&quot;y&quot;:939,&quot;w&quot;:589,&quot;h&quot;:400,&quot;abs_x&quot;:878,&quot;abs_y&quot;:939}" bis_id="fr_r380s7qho4l3k3ev0lpu9h" bis_depth="0" bis_chainid="1"></iframe>
+                <section class="cover">
+                    
                 </section>
-            </div>
+                <section class="cover">
+                    
+                </section>
+                <section class="cover">
+                    
+                </section>
+                <section class="cover">
+                    
+                </section>
+                <section class="cover">
+                    
+                </section>
+            </section>
             
             <footer>
                 <section class="split-footer">
@@ -96,6 +92,7 @@
 
     <script src="../assets/script/darkmode.js"></script>
     <script src="../assets/script/basic.js"></script>
+    <script src="../assets/script/catalog.js"></script>
     <script src="../assets/script/app-codeEditor.js"></script>
 </body>
 </html>
