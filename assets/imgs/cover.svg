@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="404" height="550" viewBox="0 0 404 550">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_239" data-name="Rectangle 239" width="404" height="550" rx="28" transform="translate(237 77)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_2" data-name="Mask Group 2" transform="translate(-237 -77)" clip-path="url(#clip-path)">
+    <rect id="Rectangle_185" data-name="Rectangle 185" width="404" height="550" rx="28" transform="translate(237 77)" fill="#fff"/>
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="111" cy="111" r="111" transform="translate(177)" fill="#ed0049"/>
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="154.5" cy="154.5" r="154.5" transform="translate(461 446)" fill="#ed0049"/>
+    <text id="COVER" transform="translate(346 372)" fill="#191818" font-size="52" font-family="MarkGEOCAPS-Bold, Mark GEO CAPS" font-weight="700"><tspan x="0" y="0">COVER</tspan></text>
+  </g>
+</svg>

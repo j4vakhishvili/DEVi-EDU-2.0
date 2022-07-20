@@ -141,17 +141,17 @@ div.dark-mode{
 }
 
 button.active{
-    background: linear-gradient(135deg, #ff0048, #ff002d);
+    background: linear-gradient(135deg, #ff004e, #d40124);
     transition: 0.3s;
 }
 
 button.active:hover{
-    background: linear-gradient(135deg, #ff0048, #ff002d);
+    background: linear-gradient(135deg, #ff004e, #d40124);
     transition: 0.3s;
 }
 
 [data-theme="dark"] button.active{
-    background: linear-gradient(135deg, #C00338, #BE0324);
+    background: linear-gradient(135deg, #ef0049, #970019);
     transition: 0.3s;
 }
 
