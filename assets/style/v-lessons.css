@@ -29,14 +29,132 @@
 
 h2.title{
     color: white;
+    font-size: 24px;
+    margin: 0;
 }
 
 p.desc{
     width: 80%;
     color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 28px;
 }
 
 .LessonCover:hover .onHoverCover{
     opacity: 1;
-    transition: 0.2s;
+    transition: 0.2s cubic-bezier(0.4, 0, 1, 1);
+}
+
+h1.title{
+    color: #ED0049;
+    font-size: 56px;
+    font-family: 'MarkGeoCapsBold';
+    margin: 0;
+    display: inline-block;
+}
+
+.bck{
+    width: 160px;
+    height: 50px;
+    background: transparent;
+    border: 1.5px solid #ED0049;
+    border-radius: 8px;
+    font-family: 'MarkGeoCaps';
+    font-weight: 900;
+    color: #ED0049;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2.desc{
+    font-family: 'MarkGeo', sans-serif;
+    font-size: 26px;
+    color: rgba(65, 65, 65, 0.75);
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+.list{
+    margin-top: 30px;
+}
+
+.ep{
+    width: 100%;
+    height: 190px;
+    background: white;
+    border-radius: 28px;
+    display: flex;
+    flex-wrap: nowrap;
+    cursor: pointer;
+    margin-bottom: 35px;
+}
+
+.ep img{
+    width: 330px;
+    height: 100%;
+    border-radius: 28px;
+}
+
+.epandtitle{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3.title{
+    font-family: 'MarkGeoCapsBold';
+    font-size: 45px;
+    margin: 0;
+    color: #ED0049;
+}
+
+p.epCount{
+    margin: 0;
+    font-family: 'MarkGeoCaps';
+    color: #414141;
+    font-size: 22px;
+}
+
+.lenght{
+    font-size: 22px;
+    color: #414141;
+}
+
+.epinfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    padding: 0 30px;
+}
+
+.onHoverImg{
+    width: 330px;
+    height: 190px;
+    opacity: 0;
+    background: url(../icons/playIcon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+
+.ep:hover .onHoverImg{
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.epCover{
+    object-fit: cover;
+}
+
+.bck:hover{
+    background: #ED0049;
+    color: white;
+    transition: 0.3s;
 }

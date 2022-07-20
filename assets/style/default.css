@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: 'MarkGeoCapsBold';
+  src: url(../fonts/BogCaps-Bold.ttf);
+}
+
+@font-face {
     font-family: 'MarkGeoCaps';
     src: url(../fonts/Bog-Caps.ttf);
 }
