@@ -29,3 +29,7 @@ function closegakvetilebisSeqcia() {
     document.getElementById("btnGakvetili").style.display = "flex";
     document.getElementById("btnGakvetilebi").style.display = "none";
 }
+
+function opMenu(){
+    document.getElementById("navigation").style.opacity = "1";
+}

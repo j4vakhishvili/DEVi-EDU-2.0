@@ -603,8 +603,9 @@ footer{
     transition: 0.3s;
 }
 
-.openLessons:hover + .menu{
+.openLessons:hover .menu{
     opacity: 1;
+    transition: 0.3s;
 }
 
 @media only screen and (max-width: 1600px) {
