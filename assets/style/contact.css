@@ -53,8 +53,8 @@
 }
 
 .you p{
-    background: #e40046;
-    color: white;
+    background: #d8d8d8;
+    color: black;
     padding: 12px;
     margin: 0;
     border-radius: 12px;
@@ -72,8 +72,8 @@
 }
 
 .devi p{
-    background: #d8d8d8;
-    color: black;
+    background: #e40046;
+    color: white;
     padding: 12px;
     margin: 0;
     border-radius: 12px;
@@ -95,7 +95,7 @@
     transition: 0.3s;
 }
 
-[data-theme="dark"] .devi p {
+[data-theme="dark"] .you p {
     background: #121212;
     color: #b9b9b9;
 }
