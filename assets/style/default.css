@@ -1,26 +1,31 @@
 @font-face {
     font-family: 'Main';
     src: url(../fonts/Olney-Main.ttf);
+    font-display: fallback;
 }
 
 @font-face {
-  font-family: 'MarkGeoCapsBold';
-  src: url(../fonts/BogCaps-Bold.ttf);
+    font-family: 'MarkGeoCapsBold';
+    src: url(../fonts/BogCaps-Bold.ttf);
+    font-display: fallback;
 }
 
 @font-face {
     font-family: 'MarkGeoCaps';
     src: url(../fonts/Bog-Caps.ttf);
+    font-display: fallback;
 }
 
 @font-face {
     font-family: 'MarkGeo';
     src: url(../fonts/Bog.ttf);
+    font-display: fallback;
 }
 
 @font-face {
-  font-family: 'Gilroy';
-  src: url(../fonts/GilroyGEO.ttf);
+    font-family: 'Gilroy';
+    src: url(../fonts/GilroyGEO.ttf);
+    font-display: fallback;
 }
 
 [data-theme="dark"] {

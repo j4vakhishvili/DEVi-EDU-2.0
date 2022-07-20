@@ -185,6 +185,90 @@ p.epCount{
     transition: 0.3s;
 }
 
+.thumbnail{
+    height: 270px;
+    background: white;
+    border-radius: 28px;
+    margin-bottom: 390px;
+}
+
+.vid-container a{
+    font-family: 'MarkGeoCapsBold';
+    text-decoration: none;
+    font-size: 22px;
+    color: #D90043;
+}
+
+.vid-container{
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.video{
+    width: 942px;
+    height: 530px;
+    background: #D90043;
+    border-radius: 36px;
+    margin: auto;
+    margin-top: 65px;
+}
+
+h1.vtitle{
+    font-size: 45px;
+    width: 72%;
+    padding: 0 185px;
+    margin: 20px 0;
+}
+
+.vid-container button{
+    height: 100px;
+    cursor: pointer;
+    background: white;
+    border: 1px solid #707070;
+    border-radius: 15px;
+}
+
+.vid-container button .icon{
+    width: 10px;
+    height: 18px;
+    background: url(../../assets/icons/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 15px;
+    opacity: 0.5;
+}
+
+.l{
+    transform: rotate(180deg);
+}
+
+.placeinbtn{
+    display: flex;
+    font-family: 'MarkGeoCapsBold';
+    font-size: 26px;
+    align-items: center;
+    padding: 0 28px;
+    color: #707070;
+}
+
+[data-theme="dark"] .thumbnail{
+    background: #191919;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] .vid-container button{
+    background: #191919;
+    border-color: #383838;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] .vid-container button .icon{
+    filter: invert(1);
+    transition: 0.3s;
+}
+
 @media only screen and (max-width: 1550px) {
     h1.title{
         font-size: 52px;
