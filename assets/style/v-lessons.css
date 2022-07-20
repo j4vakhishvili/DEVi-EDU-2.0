@@ -184,3 +184,22 @@ p.epCount{
     background: #222222;
     transition: 0.3s;
 }
+
+@media only screen and (max-width: 1550px) {
+    h1.title{
+        font-size: 52px;
+    }
+    h2.desc{
+        font-size: 18px;
+    }
+    .ep img{
+        width: 290px;
+    }
+    .ep{
+        height: 174px;
+    } 
+    .onHoverImg{
+        width: 290px;
+        height: 174px;
+    }   
+}
