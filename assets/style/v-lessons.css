@@ -93,6 +93,7 @@ h2.desc{
     flex-wrap: nowrap;
     cursor: pointer;
     margin-bottom: 35px;
+    transition: 0.3s;
 }
 
 .ep img{
@@ -156,5 +157,30 @@ p.epCount{
 .bck:hover{
     background: #ED0049;
     color: white;
+    transition: 0.3s;
+}
+
+.ep:hover{
+    background: #e5e5e5;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] h2.desc{
+    color: #747474;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] .ep{
+    background: #1a1a1a;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] p.epCount{
+    color: #747474;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] .ep:hover{
+    background: #222222;
     transition: 0.3s;
 }
