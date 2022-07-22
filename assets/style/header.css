@@ -226,11 +226,24 @@ button.active > .head-icon{
         margin-bottom: 20px;
     }
     header{
-        width: 170px;
+        width: 140px;
     }
     nav{
-        padding-left: 200px;
+        padding-left: 170px;
     }
+    .logo, .menubtn {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+    }
+    .head-icon {
+        width: 28px;
+        height: 28px;
+        background-size: cover;
+    }
+    .catalogbtn {
+        width: 95px;
+    }    
 }
 
 @media only screen and (max-width: 980px) {
