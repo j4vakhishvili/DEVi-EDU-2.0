@@ -88,3 +88,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media only screen and (max-width: 1290px) {
+    .wxkejt6l0 {
+        width: 240px;
+        height: 510px;
+    }
+}

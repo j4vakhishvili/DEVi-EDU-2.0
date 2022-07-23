@@ -387,6 +387,12 @@ tr:nth-child(even) {
     }
 }
 
+@media only screen and (max-width: 1290px) {
+    .xtkpiq45ulaey {
+        width: 250px;
+    }
+}
+
 @media only screen and (max-width: 980px) {
     main{
         padding-left: 150px;
@@ -402,12 +408,17 @@ tr:nth-child(even) {
     }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 920px) {
     .xtkpiq45ulaey{
         display: none;
     }
-    .content{
+    .content {
         width: 90%;
+    }    
+}
+
+@media only screen and (max-width: 720px) {
+    .content{
         padding: 0;
     }
     main {
