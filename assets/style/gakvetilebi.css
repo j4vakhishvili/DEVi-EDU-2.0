@@ -378,9 +378,6 @@ tr:nth-child(even) {
 }
 
 @media only screen and (max-width: 1290px) {
-    main{
-        padding-left: 170px;
-    }
     .codeEditor{
         flex-direction: column;
     }
