@@ -28,9 +28,14 @@
     font-display: fallback;
 }
 
+body{
+  cursor: url(../cursors/cursor-light.png), default;
+}
+
 [data-theme="dark"] {
   background-color: #121212;
   transition: 0.3s;
+  cursor: url(../cursors/cursor-dark.png), default;
 }
 
 ::-webkit-scrollbar {

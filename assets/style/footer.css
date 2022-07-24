@@ -15,6 +15,11 @@ footer a{
     text-decoration: none;
     color: #4F4F4F;
     margin-right: 12px;
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"] footer a{
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 footer a:hover{

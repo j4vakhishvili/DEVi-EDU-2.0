@@ -7,7 +7,6 @@
     background-size: cover;
     border-radius: 24px;
     margin-right: 34px;
-    cursor: pointer;
     transition: 0.2s;
 }
 
@@ -31,18 +30,25 @@
     align-items: center;
     transition: 0.2s;
     opacity: 0;
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"] .onHoverCover{
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 h2.title{
     color: white;
     font-size: 22px;
     width: 80%;
+    cursor: auto;
 }
 
 p.desc{
     width: 80%;
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 15px;
+    cursor: auto;
 }
 
 .LessonCover:hover .onHoverCover{
@@ -67,8 +73,12 @@ h1.title{
     font-family: 'MarkGeoCaps';
     font-weight: 900;
     color: #ED0049;
-    cursor: pointer;
     transition: 0.3s;
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"] .bck{
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 .top{
@@ -97,15 +107,24 @@ h2.desc{
     border-radius: 28px;
     display: flex;
     flex-wrap: nowrap;
-    cursor: pointer;
     margin-bottom: 35px;
     transition: 0.3s;
+    cursor: url(../cursors/pointer-light.png), pointer;
 }
 
 .ep img{
     width: 330px;
     height: 100%;
     border-radius: 28px;
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"] .ep{
+    cursor: url(../cursors/pointer-dark.png), pointer;
+}
+
+[data-theme="dark"] .ep img{
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 .epandtitle{
@@ -113,6 +132,11 @@ h2.desc{
     flex-direction: column;
     justify-content: center;
     padding: 0 10px 0 0;
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"] h3.title{
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 h3.title{
@@ -120,6 +144,11 @@ h3.title{
     font-size: 34px;
     margin: 0;
     color: #ED0049;
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"] p.epCount{
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 p.epCount{
@@ -127,11 +156,21 @@ p.epCount{
     font-family: 'MarkGeoCaps';
     color: #414141;
     font-size: 22px;
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"] .lenght{
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 .lenght{
     font-size: 22px;
     color: #414141;
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"] .epinfo{
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 .epinfo{
@@ -140,6 +179,7 @@ p.epCount{
     align-items: center;
     width: 70%;
     padding: 0 30px;
+    cursor: url(../cursors/pointer-light.png), pointer;
 }
 
 .onHoverImg{
@@ -150,6 +190,11 @@ p.epCount{
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"] .onHoverImg{
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 .ep:hover .onHoverImg{
@@ -180,6 +225,7 @@ p.epCount{
 [data-theme="dark"] .ep{
     background: #1a1a1a;
     transition: 0.3s;
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 [data-theme="dark"] p.epCount{
@@ -293,6 +339,7 @@ h1.vtitle{
     background: #191919;
     border-color: #383838;
     transition: 0.3s;
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 [data-theme="dark"] .vid-container button .icon{

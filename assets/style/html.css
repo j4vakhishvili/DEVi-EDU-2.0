@@ -65,3 +65,7 @@ td, th {
 tr:nth-child(even) {
     background-color: #FABB0C30;
 }
+
+input:focus{
+    border: 1px solid #fabb0c !important;
+}

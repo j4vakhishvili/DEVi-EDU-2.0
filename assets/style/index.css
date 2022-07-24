@@ -45,11 +45,12 @@ nav a{
     text-decoration: none;
     color: #232323;
     line-height: 0;
-    cursor: pointer;
+    cursor: url(../cursors/pointer-light.png), pointer;
 }
 
 [data-theme="dark"] nav a{
     color: #A2A2A2;
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 nav button.start{
@@ -63,6 +64,11 @@ nav button.start{
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"]nav button.start{
+    cursor: url(../cursors/pointer-dark.png), pointer !important;
 }
 
 div.dark-mode{
@@ -90,7 +96,11 @@ div.dark-mode{
     width: 60px;
     height: 60px;
     opacity: 0;
-    cursor: pointer;
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"].dark-mode input{
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 main{
@@ -146,6 +156,11 @@ main{
     cursor: pointer;
     position: absolute;
     transition: 0.3s;
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"].start{
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 .content{
@@ -335,6 +350,7 @@ div.whyus{
     margin-top: 78px;
     color: #EBEBEB;
     transition: 0.3s;
+    cursor: url(../cursors/pointer-light.png), pointer;
 }
 
 .info{
@@ -345,6 +361,11 @@ div.whyus{
 
 .info a{
     color: #F91A5E;
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"].info a{
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 [data-theme="dark"] .startlearningtitle{
@@ -361,6 +382,7 @@ div.whyus{
 [data-theme="dark"] .dontwwastetime .start{
     color: #141414;
     transition: 0.3s;
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 nav button.start:hover, .sectionInfo .start:hover, .dontwwastetime .start:hover{
@@ -606,6 +628,26 @@ footer{
 .openLessons:hover .menu{
     opacity: 1;
     transition: 0.3s;
+}
+
+.ftTwo{
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+.ftlinks a, .powerdby a{
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"].ftTwo{
+    cursor: url(../cursors/pointer-dark.png), pointer !important;
+}
+
+[data-theme="dark"].ftlinks a{
+    cursor: url(../cursors/pointer-dark.png), pointer;
+}
+
+[data-theme="dark"].powerdby a{
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 @media only screen and (max-width: 1600px) {

@@ -46,7 +46,19 @@ header{
     height: 100px;
     border: 1px solid white;
     border-radius: 14px;
-    cursor: pointer;
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"] .logo{
+    cursor: url(../cursors/pointer-dark.png), pointer;
+}
+
+.real-nav a{
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"] .real-nav a{
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 div.dark-mode{
@@ -73,7 +85,11 @@ div.dark-mode{
     width: 24px;
     height: 24px;
     opacity: 0;
-    cursor: pointer;
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"] .dark-mode input{
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 .catalogbtn{
@@ -85,7 +101,7 @@ div.dark-mode{
     color: #252525;
     font-family: 'MarkGeoCaps';
     font-weight: bold;
-    cursor: pointer;
+    cursor: url(../cursors/pointer-light.png), pointer;
     transition: 0.3s;
 }
 
@@ -98,6 +114,7 @@ div.dark-mode{
     background-color: #191919;
     color: #C5C5C5;
     transition: 0.3s;
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 [data-theme="dark"] .catalogbtn:hover{
@@ -117,6 +134,7 @@ div.dark-mode{
     justify-content: center;
     align-items: center;
     transition: 0.3s;
+    cursor: url(../cursors/pointer-light.png), pointer;
 }
 
 .menubtn:hover{
@@ -127,6 +145,7 @@ div.dark-mode{
 [data-theme="dark"] .menubtn{
     background-color: #191919;
     transition: 0.3s;
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 [data-theme="dark"] .menubtn:hover{
@@ -180,6 +199,7 @@ button.active > .head-icon{
 .head-icon{
     opacity: 0.9;
     transition: 0.3s;
+    cursor: url(../cursors/pointer-light.png), pointer;
 }
 
 .vlessons-icon{
@@ -203,6 +223,7 @@ button.active > .head-icon{
 [data-theme="dark"] .head-icon{
     filter: invert(0.8);
     transition: 0.3s;
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 .buttons-nav{
