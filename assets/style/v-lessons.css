@@ -202,6 +202,14 @@ p.epCount{
     text-decoration: none;
     font-size: 22px;
     color: #D90043;
+    line-height: 1;
+    transition: 0.3s;
+}
+
+.vid-container a:not(:last-child):hover{
+    border-left: 3px solid #D90043;
+    padding-left: 10px;
+    transition: 0.3s;
 }
 
 .vid-container{
@@ -220,11 +228,15 @@ p.epCount{
     margin-top: 65px;
 }
 
+.titlePlace{
+    width: 100%;
+    display: flex;
+}
+
 h1.vtitle{
-    font-size: 45px;
-    width: 72%;
-    padding: 0 185px;
-    margin: 20px 0;
+    font-size: 36px;
+    width: 942px;
+    margin: 20px auto;
 }
 
 .vid-container button{
@@ -233,6 +245,17 @@ h1.vtitle{
     background: white;
     border: 1px solid #707070;
     border-radius: 15px;
+    transition: 0.3s;
+}
+
+.vid-container button:hover{
+    background: #e0e0e0;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] .vid-container button:hover{
+    background: #222222;
+    transition: 0.3s;
 }
 
 .vid-container button .icon{
@@ -241,7 +264,8 @@ h1.vtitle{
     background: url(../../assets/icons/arrow.svg);
     background-repeat: no-repeat;
     background-position: center;
-    padding: 0 15px;
+    background-size: cover;
+    margin: 0 15px;
     opacity: 0.5;
 }
 
@@ -274,6 +298,37 @@ h1.vtitle{
     transition: 0.3s;
 }
 
+.placeinbtn i{
+    font-style: normal;
+}
+
+@media only screen and (max-width: 1680px) {
+    .video {
+        width: 706px;
+        height: 397px;
+    }
+    h1.vtitle{
+        width: 706px;
+    }
+    .thumbnail{
+        margin-bottom: 245px;
+    }
+    h1.vtitle {
+        font-size: 32px;
+    }    
+    .vid-container button {
+        height: 80px;
+        border-radius: 12px;
+    }
+    .placeinbtn{
+        padding: 0 14px;
+        font-size: 22px;
+    }
+    .vid-container button .icon {
+        height: 14px;
+    }
+}
+
 @media only screen and (max-width: 1550px) {
     h1.title{
         font-size: 52px;
@@ -291,6 +346,9 @@ h1.vtitle{
         width: 290px;
         height: 174px;
     }   
+    h1.vtitle {
+        font-size: 32px;
+    }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -308,6 +366,37 @@ h1.vtitle{
     h2.title {
         font-size: 20px;
         padding: 0 26px;
+    }
+    .video {
+        width: 471px;
+        height: 265px;
+        border-radius: 18px;
+    }
+    h1.vtitle{
+        width: 471px;
+        font-size: 26px;
+    }
+    .thumbnail{
+        height: 205px;
+        margin-bottom: 180px;
+    }
+    .vid-container {
+        padding: 0 50px;
+        padding-top: 30px;
+    }
+    .vid-container a{
+        font-size: 20px;
+    }
+    .placeinbtn {
+        padding: 0 14px;
+        font-size: 18px;
+    }
+    .vid-container button {
+        height: 65px;
+        border-radius: 10px;
+    }
+    .vid-container button .icon{
+        margin: 0 5px;
     }
 }
 
@@ -342,6 +431,9 @@ h1.vtitle{
         height: 45px;
         font-size: 14px;
     }
+    h1.vtitle{
+        font-size: 26px;
+    }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -351,6 +443,36 @@ h1.vtitle{
     }
     .onHoverCover{
         display: none !important;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .video {
+        width: 352px;
+        height: 198px;
+        border-radius: 18px;
+    }
+    h1.vtitle{
+        width: 352px;
+        font-size: 22px;
+    }
+    .thumbnail{
+        height: 195px;
+        margin-bottom: 120px;
+    }
+    .vid-container a{
+        font-size: 18px;
+    }
+    .vid-container button:not(:last-child){
+        margin-right: 10px;
+    }
+    .placeinbtn {
+        padding: 0 14px;
+        font-size: 14px;
+    }
+    .vid-container button .icon {
+        height: 10px;
+        width: 5px;
     }
 }
 
@@ -374,6 +496,18 @@ h1.vtitle{
     .place {
         justify-content: space-between;
     }
+    .video {
+        width: 410px;
+        height: 231px;
+        border-radius: 18px;
+    }
+    h1.vtitle{
+        width: 410px;
+        font-size: 22px;
+    }
+    .thumbnail{
+        margin-bottom: 145px;
+    }
 }
 
 @media only screen and (max-width: 720px) {
@@ -391,6 +525,9 @@ h1.vtitle{
         width: 100%;
         height: 60vh;
         border-radius: 18px;
+    }
+    h1.vtitle{
+        font-size: 22px;
     }
 }
 
@@ -413,6 +550,22 @@ h1.vtitle{
         width: 90%;
         height: 250px;
     }
+    .thumbnail{
+        margin-top: 12px;
+        margin-bottom: 120px;
+        border-radius: 15px;
+        height: 130px;
+    }
+    .video {
+        width: 293px;
+        height: 165px;
+        border-radius: 16px;
+        margin-top: 30px;
+    }
+    h1.vtitle{
+        width: 293px;
+        font-size: 22px;
+    }
 }
 
 @media only screen and (max-width: 440px) {
@@ -421,6 +574,22 @@ h1.vtitle{
     }
     h2.desc {
         font-size: 14px;
+    }
+    .vid-container {
+        padding: 0 25px;
+        padding-top: 30px;
+    }
+    .placeinbtn i{
+        display: none;
+    }
+    .vid-container button {
+        height: 58px;
+    }
+    h1.vtitle{
+        font-size: 22px;
+    }
+    .vid-container a {
+        font-size: 16px;
     }
 }
 
@@ -431,6 +600,21 @@ h1.vtitle{
     .epinfo {
         width: 87%;
         padding: 0 20px;
+    }
+    .video {
+        width: 235px;
+        height: 132px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    h1.vtitle{
+        width: 235px;
+        font-size: 22px;
+    }
+    .thumbnail {
+        margin-top: 12px;
+        margin-bottom: 92px;
+        border-radius: 13px;
     }
 }
 

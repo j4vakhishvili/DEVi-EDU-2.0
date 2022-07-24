@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="../../assets/style/v-lessons.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<body oncontextmenu="return false">
+<body> <!-- oncontextmenu="return false" -->
     <div class="nav" id="nav">
         <nav>
             <section class="real-nav">
@@ -61,10 +61,12 @@
                 </section>
                 <section class="video"></section>
             </div>
-            <h1 class="title vtitle">სათაური</h1> 
+            <section class="titlePlace">
+                <h1 class="title vtitle">სათაური</h1>
+            </section>
             <section class="vid-container">
-                <button><div class="placeinbtn"><div class="icon"></div>წინა ეპიზოდი</div></button>
-                <button><div class="placeinbtn">მომდევნო ეპიზოდი<div class="icon l"></div></div></button>
+                <button><div class="placeinbtn"><div class="icon"></div><i>წინა ეპიზოდი</i></div></button>
+                <button><div class="placeinbtn"><i>მომდევნო ეპიზოდი</i><div class="icon l"></div></div></button>
             </section>
             <footer>
                 <section class="split-footer">
