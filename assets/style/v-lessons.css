@@ -242,14 +242,14 @@ h1.vtitle{
 .vid-container button{
     height: 100px;
     cursor: pointer;
-    background: white;
+    background: #e0e0e0;
     border: 1px solid #707070;
     border-radius: 15px;
     transition: 0.3s;
 }
 
 .vid-container button:hover{
-    background: #e0e0e0;
+    background: white;
     transition: 0.3s;
 }
 
