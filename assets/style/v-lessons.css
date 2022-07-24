@@ -23,7 +23,7 @@
     background: url(../imgs/cover-hover.svg);
     background-position: center;
     background-size: cover;
-    border-radius: 28px;
+    border-radius: 24px;
     border: 1px solid #ed0049;
     display: flex;
     flex-direction: column;
@@ -338,6 +338,10 @@ h1.vtitle{
     h2.title{
         font-size: 20px;
     }
+    .LessonCover {
+        width: 29.8%;
+        height: 435px;
+    }
 }
 
 @media only screen and (max-width: 1550px) {
@@ -359,6 +363,17 @@ h1.vtitle{
     }   
     h1.vtitle {
         font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 1470px) {
+    p.desc{
+        display: none;
+    }
+    h2.title{
+        width: 80%;
+        margin-bottom: 20%;
+        text-align: center;
     }
 }
 
