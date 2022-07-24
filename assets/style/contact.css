@@ -83,6 +83,7 @@
     background: url(../icons/send-icon.svg) #d8d8d8;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: url(../cursors/pointer-light.png), default;
 }
 
 [data-theme="dark"] .chatbox{
@@ -102,12 +103,13 @@
 
 [data-theme="dark"] .cht-box-bottom input{
     background: #121212;
-    color: #b9b9b9;
+    color: #1c1c1c;
 }
 
 [data-theme="dark"] .cht-box-bottom button{
     filter: invert();
     color: #b9b9b9;
+    cursor: url(../cursors/pointer-dark.png), default;
 }
 
 .contact{
@@ -131,8 +133,12 @@
     background-color: #e0e0e0 !important;
     border-radius: 34px 42px 31px 55px / 52px 27px 56px 31px;
     transition: 0.3s;
-    cursor: pointer;
     margin: 20px;
+    cursor: url(../cursors/pointer-light.png), default;
+}
+
+input:focus{
+    border: 1px solid #007dc7;
 }
 
 .icon:hover{
@@ -144,6 +150,7 @@
     opacity: 0.9;
     background-color: #1f1f1f !important;
     color: #b9b9b9;
+    cursor: url(../cursors/pointer-dark.png), default;
 }
 
 .yt{

@@ -332,6 +332,11 @@ iframe#code{
     background: #ff004b;
     color: white;
     font-family: 'MarkGeo';
+    cursor: url(../cursors/pointer-light.png), default;
+}
+
+[data-theme="dark"].switchEditor{
+    cursor: url(../cursors/pointer-dark.png), default;
 }
 
 #htmlBtn{

@@ -1,5 +1,6 @@
 .logo{
     width: 15%;
+    cursor: url(../cursors/cursor-light.png), default;
 }
 
 main{
@@ -47,6 +48,7 @@ button{
     border-radius: 8px;
     transition: 0.3s;
     margin-bottom: 30px;
+    cursor: url(../cursors/pointer-light.png), pointer;
 }
 
 button:hover{
