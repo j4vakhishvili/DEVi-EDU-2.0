@@ -1,5 +1,5 @@
 .LessonCover{
-    width: 404px;
+    width: 30%;
     height: 550px;
     background: url(../imgs/cover.svg);
     margin-bottom: 24px;
@@ -23,6 +23,8 @@
     background: url(../imgs/cover-hover.svg);
     background-position: center;
     background-size: cover;
+    border-radius: 28px;
+    border: 1px solid #ed0049;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -33,14 +35,14 @@
 
 h2.title{
     color: white;
-    font-size: 24px;
-    margin: 0;
+    font-size: 22px;
+    width: 80%;
 }
 
 p.desc{
     width: 80%;
     color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 28px;
+    margin-bottom: 15px;
 }
 
 .LessonCover:hover .onHoverCover{
@@ -302,6 +304,12 @@ h1.vtitle{
     font-style: normal;
 }
 
+@media only screen and (max-width: 1800px) {
+    h2.title, p.desc{
+        width: 90%;
+    }
+}
+
 @media only screen and (max-width: 1680px) {
     .video {
         width: 706px;
@@ -326,6 +334,9 @@ h1.vtitle{
     }
     .vid-container button .icon {
         height: 14px;
+    }
+    h2.title{
+        font-size: 20px;
     }
 }
 
