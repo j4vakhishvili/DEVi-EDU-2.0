@@ -200,26 +200,6 @@ section.start{
     background-size: 212px;
 }
 
-.menu{
-    display: flex;
-    background: white;
-    width: 720px;
-    border-radius: 15px;
-    position: absolute;
-    margin-top: 100px;
-    z-index: 1;
-    box-shadow: 0px 0px 40px #cacaca42;
-    opacity: 0;
-}
-
-.menu section{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    padding: 25px;
-}
-
 h3{
     font-size: 30px;
     font-weight: bold;
@@ -249,35 +229,14 @@ h3{
     background-size: contain;
 }
 
-.menu-header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
 .navigation a{
     font-size: 24px;
     font-family: 'MarkGeo';
     font-weight: bold;
     text-decoration: none;
     color: #232323;
-    margin-top: 15px;
-}
-
-div.navigation{
-    display: flex;
-    flex-direction: column;
-}
-
-section.navigation{
-    width: 1440px;
-    margin: auto;
-}
-
-.openLessons:hover + section.navigation{
-    display: block;
-    transition: 0.3s;
+    margin-bottom: 15px;
+    line-height: 26px;
 }
 
 section.whyus{
@@ -625,11 +584,6 @@ footer{
     transition: 0.3s;
 }
 
-.openLessons:hover .menu{
-    opacity: 1;
-    transition: 0.3s;
-}
-
 .ftTwo{
     cursor: url(../cursors/pointer-light.png), pointer;
 }
@@ -648,6 +602,53 @@ footer{
 
 [data-theme="dark"].powerdby a{
     cursor: url(../cursors/pointer-dark.png), pointer;
+}
+
+.menu{
+    background: white;
+    position: absolute;
+    margin-top: 270px;
+    padding: 28px;
+    border-radius: 14px;
+    opacity: 0;
+    transition: 0.3s;
+    display: flex;
+}
+
+.openLessons:hover + .menu{
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.menuHeader{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.sepMenu:not(:last-child){
+    margin-right: 20px;
+}
+
+.menuList{
+    display: flex;
+    flex-direction: column;
+}
+
+.list{
+    line-height: 38px;
+}
+
+[data-theme="dark"].menuTitle{
+    color: rgb(188, 188, 188) !important;
+}
+
+[data-theme="dark"].list{
+    color: rgb(188, 188, 188) !important;
+}
+
+[data-theme="dark"].menu{
+    background: #121212 !important;
 }
 
 @media only screen and (max-width: 1600px) {
