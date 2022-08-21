@@ -34,9 +34,11 @@
             cursor: pointer;
             border-radius: 1.3vh;
             transition: 0.3s;
-            cursor: url(assets/cursors/pointer-light.png), pointer;
+            cursor: url(../assets/cursors/pointer-light.png), pointer;
         }
-
+        [data-theme="dark"] button{
+            cursor: url(../assets/cursors/pointer-dark.png), pointer;
+        }
         button:hover{
             box-shadow: 0px 0px 0px 3px #e400463d, 0px 0px 0px 6px #e4004617;
             transition: 0.3s;
