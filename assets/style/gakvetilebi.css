@@ -87,6 +87,11 @@ p{
     transition: 0.3s;
 }
 
+[data-theme="dark"] li{
+    color: #9F9F9F;
+    transition: 0.3s;
+}
+
 h2{
     font-size: 22px;
     font-family: 'MarkGeoCaps';
