@@ -22,6 +22,26 @@
     <link rel="stylesheet" href="../assets/moneylol/moneylol.css">
     <link rel="stylesheet" href="../assets/style/contact.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        button{
+            width: 100%;
+            height: 10vh;
+            border: 0px;
+            background: #e40046;
+            color: white;
+            font-family: 'MarkGeoCaps';
+            font-size: 3vh;
+            cursor: pointer;
+            border-radius: 1.3vh;
+            transition: 0.3s;
+            cursor: url(assets/cursors/pointer-light.png), pointer;
+        }
+
+        button:hover{
+            box-shadow: 0px 0px 0px 3px #e400463d, 0px 0px 0px 6px #e4004617;
+            transition: 0.3s;
+        }
+    </style>
 </head>
 <body>
     <div class="nav" id="nav">
@@ -55,48 +75,10 @@
     <main>
         <section class="content">
             <div class="space">
-                <section class="contact">
-                    <form action="https://formsubmit.co/ge.devi.info@gmail.com" method="POST">
-                        <input type="name" name="name" placeholder="მიუთითე სახელი">
-                        <input type="email" name="email" placeholder="შეიყვანე ელფოსტა">
-                        <textarea type="subject" name="message" placeholder="გაგვიზიარე რისი თქმა გსურს"></textarea>
-                        <input type="hidden" name="_next" value="https://www.edu-devi.tk/pages/mail-recived">
-                        <input type="hidden" name="_subject" value="შეტყობინება! DEVi EDU">
-                        <input type="hidden" name="_cc" value="j4vakhishvili@gmail.com,n1kc0nnyt@gmail.com,temurtsutskiridze04@gmail.com,merabikekel@gmail.com,nikalomsadze49@gmail.com">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
-                        <button type="submit">გაგზავნა</button>
-                    </form>
-                    <!-- <div class="chatbox">
-                        <div class="cht-box-bottom">
-                            <input type="text" placeholder="შეიყვანე მესიჯი...">
-                            <button></button>
-                        </div>
-                        <div class="cht-content">
-                            <div class="devi">
-                                <h2>DEVi</h2>
-                                <p>ჰეი!</p>
-                            </div>
-                            <div class="you">
-                                <h2>You</h2>
-                                <p>გამარჯობა</p>
-                            </div>
-                        </div>
-                    </div> -->
-                </section>
-                <section class="contact">
-                    <div class="icon yt"></div>
-                    <div class="icon fb"></div>
-                    <div class="icon ig"></div>
-                    <!-- <div class="icon dr"></div>
-                    <div class="icon be"></div> -->
-                    <!-- <div class="icon li"></div> -->
-                    <!-- <div class="icon tk"></div> -->
-                    <a href="https://discord.gg/wKS6axAK23" target="_blank"><div class="icon dc"></div></a>
-                    <!-- <div class="icon tw"></div> -->
-                    <div class="icon pls"></div>
-                    <div class="icon aps"></div>
-                    <div class="icon git"></div>
+                <section class="mail-recived">
+                    <object type="image/svg+xml" data="../assets/icons/mail.svg" class="mail"></object>
+                    <h2>თქვენი შეტყობინება მიღებულია<br>მალე დაგიკავშირდებით ツ</h2>
+                    <button onclick="window.location.href='../index'">მთავარზე დაბრუნება</button>
                 </section>
             </div>
 
