@@ -304,6 +304,11 @@ section.catalog button:hover{
 
 p.note a{
     color: #ff004b;
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"] p.note a{
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 .codeEditor{
@@ -415,6 +420,10 @@ tr:nth-child(even) {
 @media only screen and (max-width: 1290px) {
     .xtkpiq45ulaey {
         width: 250px;
+    }
+    .editor textarea{
+        min-height: 225px;
+        max-height: 225px;
     }
 }
 

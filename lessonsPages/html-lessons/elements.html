@@ -63,9 +63,9 @@
             <ul id="myUL">
                 <li><a href="gakvetilebi">შესავალი</a></li>
                 <li><a href="intro">გაცნობა</a></li>
-                <li class="on"><a href="code-editors">კოდედიტორები</a></li>
+                <li><a href="code-editors">კოდედიტორები</a></li>
                 <li><a href="basics">საწყისები</a></li>
-                <li><a href="elements">ელემენტები</a></li>
+                <li class="on"><a href="elements">ელემენტები</a></li>
                 <li><a href="attributes">ატრიბუტები</a></li>
                 <li><a href="headings">Headings</a></li>
                 <li><a href="paragraphs">პარაგრაფები</a></li>
@@ -108,58 +108,145 @@
                 <button class="headbtn hbtn-r" onclick="next()"></button>
             </div>
             <p class="note">
-                მარტივი კოდედიტორი - სულ ესაა რაც გჭირდება.
+                HTML ელემენტი იწარმოება საწყისი თეგით, კონტენტით და დახურვის თაგით.
             </p>
-            <p class="note">ვებ საიტის დაწერა შენ ძალიან მარტივად, ტექსტ ედიტორშიც კი შეგიძლია<br>HTML-ს საწყის დონეზე შესასწავლად შენ შეგიძლია გამოიყენო Notepad (Windows) ან TextEdit (Mac).</p>
             <article>
-                <h2>ნაბიჯი I<br>(Windows)</h2>
-                <p>გახსენით "სტარტი" <i>(დააკლიკეთ ვინდოუსის ლოგოს)</i>, მოიძიეთ Notepad სტარტის საძიებო სისტემაში.</p>
-                <h2>(MAC)</h2>
-                <p>გახსენით "Finder" შემდგომ > Applications > TextEdit <br>
-                    ასევე შეცვალეთ რამდენიმე ოფცია, სწორად შესანახად. Preferences > Format > აირჩიეთ "Plain Text" <br>
-                    შემდეგ კი მონიშნეთ ღილაკი რომელსაც აწერია "Display HTML files as HTML code instead of formatted text". <br>
-                    საბოლოოდ გახსენით ახალი დოკუმენტი კოდის დასაწერად.</p>
-                <h2>ნაბიჯი II<br>დაიწყე კოდის წერა</h2>
-                <p>დაწერე ან დააკოპირე შემდეგი ტიპის კოდი:</p>
+                <h2>HTML ელემენტები</h2>
+                <p>HTML თეგი ყველაფერია დასაწყისიდან დასასრულამდე.<br><i class="tag">&lt;თეგის-სახელი></i>ㅤკონტენტიㅤ<i class="tag">&lt;/თეგის-სახელი></i><br>რამდენიმე HTML ელემენტის მაგალითი:<br><i class="tag">&lt;h1></i>ჩემი პირველი სათაური<i class="tag">&lt;/h1></i><br><i class="tag">&lt;p></i>ჩემი პირველი პარაგრაფი<i class="tag">&lt;/p></i></p>
+                <table>
+                    <tbody><tr>
+                      <th><b class="tabletitle">საწყისი თეგი</b></th>
+                      <th><b class="tabletitle">კონტენტი</b></th>
+                      <th><b class="tabletitle">საბოლოო თეგი</b></th>
+                    </tr>
+                    <tr>
+                      <td>&lt;h1&gt;</td>
+                      <td>ჩემი პირველი სათაური</td>
+                      <td>&lt;/h1&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>ჩემი პირველი პარაგრაფი</td>
+                        <td>&lt;/p&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td><i>არ აქვს</i></td>
+                        <td><i>არ აქვს</i></td>
+                    </tr>
+                </tbody></table>
+            </article>
+            <p class="note">მინიშნება:ㅤზოგიერთ HTML ელემენტს კონტენტი არ აქვსㅤ(მაგ.&lt;br>)ㅤასეთ ელემენტებს არ აქვს დახურვის ტეგი!</p>
+            <article>
+                <h2>მშობელი HTML ელემენტები</h2>
+                <p>HTML ელემენტი შესაძლოა მშობელი იყოს.(ეს ნიშნავს, რომ ელემენტი შესაძლოა შეიცავდეს სხვა ელემენტებს).
+                <br>ყველა HTML დოკუმენტი შეიცავს მშობელ HTML ელემენტს.
+                <br>მოცემული მაგალითი გულისხმობს, რომ შეიცავს ოთხ HTML ელემენტს (&lt;html> &lt;body> &lt;h1> და &lt;p>).
+                </p>
                 <div class="codeEditor">
                     <section class="separate-codeEditor">
                         <div class="switchEditor">
                             <button onclick="openHTML()" id="htmlBtn">HTML</button>
                         </div>
                         <div class="editor">
-                            <textarea id="html" placeholder="HTML">&lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;გვერდის სათაური&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;ჩემი პირველი სათაური&lt;/h1&gt;
-        &lt;p&gt;ჩემი პირველი პარაგრაფი&lt;/p&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</textarea>
+                            <textarea id="html" placeholder="HTML"><!DOCTYPE html>
+<html>
+<head>
+<title>გვერდის სათაური</title>
+</head>
+<body>
+                                                
+<h1>ჩემი პირველი სათაური</h1>
+<p>ჩემი პირველი პარაგრაფი</p>
+                                                
+</body>
+</html></textarea>
                             <textarea id="css" placeholder="CSS"></textarea>
                             <textarea id="js" placeholder="JavaScript"></textarea>
                         </div>
                     </section>
                 </div><br>
-                <h2>ნაბიჯი III</h2>
-                <p>შეინახე სურათზე მითითებული პარამეტრების მიხედვით.</p>
-                <img src="../../assets/imgs/saveas-notepad-tabscr.png" alt="html document" style="width: 100%;">
-                <img src="../../assets/imgs/saveonmac.png" alt="html document" style="width: 100%;">
-                <p>ფაილის შენახვა შესაძლებელია როგორც .html დაბოლოებით ასევე .htm<br><br>ხილული სხვაობა ამ ორს შორის არ არის, უბრალოდ .htm ძირითადად ოდნავ ძველი ვერსიის html-ს მოიცავს<br><br>საბოლოო ჯამში არჩევანი შენზეა, მაგრამ ხშირად გამოყენებადი მაინც .html ტიპის დაბოლოებაა.</p>
+                <h2>მაგალითის ახსნა</h2>
+                <p>&lt;html> ელემენტი საწყისი ელემენტია და მთელ HTML დოკუმენტს აწარმოებს.
+                    <br>მას აქვს გამხსნელი თეგი &lt;html> და დამხურავი თეგი &lt;/html>.
+                    <br>მაშასადამე &lt;html> თეგის შიგნით მდებარეობს &lt;body> ელემენტი.
+                </p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML"><body>
+                                                
+<h1>ჩემი პირველი სათაური</h1>
+<p>ჩემი პირველი პარაგრაფი</p>
+                                                
+</body></textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                </div><br>
+                <p>&lt;body> ელემენტი აწარმოებს დოკუმენტის ტანს.
+                    <br>მას აქვს გამხსნელი თეგი &lt;body> და დამხურავი თეგი &lt;/body>.
+                    <br>მაშასადამე &lt;html> თეგის შიგნით მდებარეობს ორი განსხვავებული ელემენტი &lt;h1> და &lt;p>.
+                </p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML"><h1>ჩემი პირველი სათაური</h1>
+<p>ჩემი პირველი პარაგრაფი</p></textarea>
+                        </div>
+                    </section>
+                </div><br>
+                <p>&lt;h1> ელემენტი წარმოადგენს სათაურს.
+                    <br>მას აქვს გამხსნელი თეგი &lt;h1> და დამხურავი თეგი &lt;/h1>.
+                    <br>&lt;p> წარმოადგენს პარაგრაფს.
+                    <br>მას აქვს გამხსნელი თეგი &lt;p> და დამხურავი თეგი &lt;/p>.
+                </p>
+                <h2>არასდროს გამოტოვო დამხურავი თეგი!</h2>
+                <p>ზოგიერთ ელემენტს შესაძლოა მაინც გამოჰქონდეს სწორი გამოსახულება, მიუხედავად იმისა თუ არ დახურავთ ელემენტს:                </p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML"><body>
+
+<p>ჩემი პირველი პარაგრაფი
+<p>ჩემი პირველი პარაგრაფი
+
+</body></textarea>
+                        </div>
+                    </section>
+                </div><br>
+                <p>მაგრამ ეს არ ნიშნავს იმას, რომ მათი ასე დატოვება ოდესმე არ გამოიწვევს ერორებს ან გაფრთხილებებს!</p>
+                <h2>ცარიელი HTML ელემენტები</h2>
+                <p>ობიექტებს რომლებსაც კონტენტი არ აქვს ცარიელ ელემენტევს უწოდებენ.
+                    <br> ელემენტი ხაზის გაწყვეტას გულისხმობს და მას დახურვის თეგი არ აქვს.
+                </p>
+                div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML"><p>ეს არის <br> პარაგრაფი გაწყვეტილი ხაზით</p></textarea>
+                        </div>
+                    </section>
+                </div><br>
+                <h2>HTML არაპრეტენზიულია</h2>
+                <p>ეს გამოიხატება იმაში, რომ &lt;P> ნიშნავს იმავეს რაც &lt;p> მიუხედავად იმისა, რომ არ არის სავალდებულო პატარა ასოებით წერა, DEVi-ს რეკომენდაცია იქნება, რომ კოდის წერისას გამოიყენოთ პატარა ასოები.</p>
             </article>
-            <p class="note">
-                ..თუ კი შენ ეძებ მეტად კომფორტულ კოდედიტორებს, ვიდრე სისტემის ჩაშენებული ტექსტედიტორებია, მაშინ გირჩევდი <a href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a>-ს ან მის <a href="https://vscode.dev" target="_blank">ონლაინ</a> ვერსიას.
-            </p>
-            <p class="note">
-                აქვე დავამატებდი, რომ ჩვენ გვაქვს საკუთარი <a href="../../pages/code-editor.html">კოდედიტორი</a>, რომელიც შეგიძლიათ გამოიყენოთ უეცარი საჭიროებისას.
-            </p>
             <div class="header">
                 <button class="headbtn" onclick="last()"></button>
                 <button class="headbtn hbtn-r" onclick="next()"></button>
             </div>
-            
             <footer>
                 <section class="split-footer">
                     <a href="pages/about-us">ჩვენს შესახებ</a>
@@ -179,15 +266,15 @@
     </main>
 
     <script>
-        const title = "კოდედიტორები";
+        const title = "ელემენტები";
         document.getElementById("headTitle").innerHTML = title + " | DEVi EDU • დევი";
         document.getElementById("title").innerHTML = title;
 
         function next(){
-            window.location.href='basic';
+            window.location.href='elements';
         }
         function last(){
-            window.location.href='intro';
+            window.location.href='code-editors';
         }
     </script>
     <script src="../../assets/script/darkmode.js"></script>

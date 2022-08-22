@@ -63,8 +63,8 @@
             <ul id="myUL">
                 <li><a href="gakvetilebi">შესავალი</a></li>
                 <li><a href="intro">გაცნობა</a></li>
-                <li class="on"><a href="code-editors">კოდედიტორები</a></li>
-                <li><a href="basics">საწყისები</a></li>
+                <li><a href="code-editors">კოდედიტორები</a></li>
+                <li class="on"><a href="basics">საწყისები</a></li>
                 <li><a href="elements">ელემენტები</a></li>
                 <li><a href="attributes">ატრიბუტები</a></li>
                 <li><a href="headings">Headings</a></li>
@@ -108,19 +108,11 @@
                 <button class="headbtn hbtn-r" onclick="next()"></button>
             </div>
             <p class="note">
-                მარტივი კოდედიტორი - სულ ესაა რაც გჭირდება.
+                ამ თავში შესაძლოა შეხვდე თაგებს, რომლებსაც მომავალ ლექციებში გაეცნობი!
             </p>
-            <p class="note">ვებ საიტის დაწერა შენ ძალიან მარტივად, ტექსტ ედიტორშიც კი შეგიძლია<br>HTML-ს საწყის დონეზე შესასწავლად შენ შეგიძლია გამოიყენო Notepad (Windows) ან TextEdit (Mac).</p>
             <article>
-                <h2>ნაბიჯი I<br>(Windows)</h2>
-                <p>გახსენით "სტარტი" <i>(დააკლიკეთ ვინდოუსის ლოგოს)</i>, მოიძიეთ Notepad სტარტის საძიებო სისტემაში.</p>
-                <h2>(MAC)</h2>
-                <p>გახსენით "Finder" შემდგომ > Applications > TextEdit <br>
-                    ასევე შეცვალეთ რამდენიმე ოფცია, სწორად შესანახად. Preferences > Format > აირჩიეთ "Plain Text" <br>
-                    შემდეგ კი მონიშნეთ ღილაკი რომელსაც აწერია "Display HTML files as HTML code instead of formatted text". <br>
-                    საბოლოოდ გახსენით ახალი დოკუმენტი კოდის დასაწერად.</p>
-                <h2>ნაბიჯი II<br>დაიწყე კოდის წერა</h2>
-                <p>დაწერე ან დააკოპირე შემდეგი ტიპის კოდი:</p>
+                <h2>HTML დოკუმენტები</h2>
+                <p>ყველა HTML დოკუმენტი აუცილებლად უნდა იწყებოდეს &lt;!DOCTYPE HTML>-ით.<br>თვითონ HTML დოკუმენტი იწყება &lt;html> თაგით და სრულდება &lt;/html>-ით.<br>საიტის ხილული ნაწილი უკვე იწყება &lt;body>-დან და სრულდება&lt;/body>-ით.</p>
                 <div class="codeEditor">
                     <section class="separate-codeEditor">
                         <div class="switchEditor">
@@ -143,23 +135,91 @@
                         </div>
                     </section>
                 </div><br>
-                <h2>ნაბიჯი III</h2>
-                <p>შეინახე სურათზე მითითებული პარამეტრების მიხედვით.</p>
-                <img src="../../assets/imgs/saveas-notepad-tabscr.png" alt="html document" style="width: 100%;">
-                <img src="../../assets/imgs/saveonmac.png" alt="html document" style="width: 100%;">
-                <p>ფაილის შენახვა შესაძლებელია როგორც .html დაბოლოებით ასევე .htm<br><br>ხილული სხვაობა ამ ორს შორის არ არის, უბრალოდ .htm ძირითადად ოდნავ ძველი ვერსიის html-ს მოიცავს<br><br>საბოლოო ჯამში არჩევანი შენზეა, მაგრამ ხშირად გამოყენებადი მაინც .html ტიპის დაბოლოებაა.</p>
+                <h2>რა არის &lt;!DOCTYPE> ?</h2>
+                <p>&lt;!DOCTYPE> თეგი, ბრაუზერს აწვდის ინფორმაციას დოკუმენტზე და ეხმარება ვებ გვერდის სწორად წარმოჩენაში.<br>&lt;!DOCTYPE> თეგი, HTML5-ის ვერსიაში არის:</p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML">&lt;!DOCTYPE html&gt;</textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                </div><br>
+                <h2>სათაურები</h2>
+                <p>HTML-ში სათაურები ძირითადად აღინიშნება &lt;h1>-დან &lt;h6>-მდე თეგებით.<br>&lt;h1> აღნიშნავს ყველაზე მთავარ სათაურს, ხოლო &lt;h6> ყველაზე უმნიშვნელოს.</p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML">&lt;h1> ეს არის სათაური 1 &lt;/h1>
+&lt;h2> ეს არის სათაური 2 &lt;/h2>
+&lt;h3> ეს არის სათაური 3 &lt;/h3></textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                </div><br>
+                <h2>პარაგრაფები</h2>
+                <p>პარაგრაფები იწარმოება &lt;p> თეგით.</p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML">&lt;p> ეს არის პარაგრაფი. &lt;/p></textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                </div><br>
+                <h2>ლინკები</h2>
+                <p>ლინკები იწარმოება &lt;a> თეგით.</p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML">&lt;a href="https://www.edu-devi.tk/">ეს არის ლინკი&lt;/a></textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                </div><br>
+                <p>ლინკების მისამართი იწერება href ატრიბუტში.
+                <br>ატრიბუტები HTML ელემენტების დამატებითი შესაძლებლობების გამოსაყენებლად იწარმოება.
+                <br>ატრიბუტების შესახებ უფრო ვრცლად შემდეგ პარაგრაფებში გაიგებ.</p>
+                <h2>სურათები</h2>
+                <p>სურათები HTML-ში იწარმოება &lt;img> თეგით.<br>ლოკაცია(src), შემცვლელი ტექსტი(alt) და ზომები სურათების ატრიბუტებია.</p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML"><img src="devi.png" alt="ლოგო" width="90" height="32"></textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                </div><br>
+                <h2>როგორ ვნახოთ, აგებული საიტის სტრუქტურა?</h2>
+                <p>ალბათ ყოფილა მომენტი, როცა შესულხარ საიტზე და გაგჩენია კითხვა თუ როგორ ააგეს ის?!
+                <br>შენ შეგიძლია გახსნა და წაიკითხო ნებისმიერი საიტის სტრუქტურა, შენი ბრაუზერიდანვე.
+                <br>ამისთვის უბრალოდ მაუსის მარჯვენა ღილაკზე ქლიქი და Inspect-ის არჩევაც საკმარისია.</p>
+                <img src="../../assets/imgs/inspect-win.png" alt="inspect" width="50%" style="border-radius: 2vh;">
             </article>
-            <p class="note">
-                ..თუ კი შენ ეძებ მეტად კომფორტულ კოდედიტორებს, ვიდრე სისტემის ჩაშენებული ტექსტედიტორებია, მაშინ გირჩევდი <a href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a>-ს ან მის <a href="https://vscode.dev" target="_blank">ონლაინ</a> ვერსიას.
-            </p>
-            <p class="note">
-                აქვე დავამატებდი, რომ ჩვენ გვაქვს საკუთარი <a href="../../pages/code-editor.html">კოდედიტორი</a>, რომელიც შეგიძლიათ გამოიყენოთ უეცარი საჭიროებისას.
-            </p>
             <div class="header">
                 <button class="headbtn" onclick="last()"></button>
                 <button class="headbtn hbtn-r" onclick="next()"></button>
             </div>
-            
             <footer>
                 <section class="split-footer">
                     <a href="pages/about-us">ჩვენს შესახებ</a>
@@ -179,15 +239,15 @@
     </main>
 
     <script>
-        const title = "კოდედიტორები";
+        const title = "საწყისები";
         document.getElementById("headTitle").innerHTML = title + " | DEVi EDU • დევი";
         document.getElementById("title").innerHTML = title;
 
         function next(){
-            window.location.href='basic';
+            window.location.href='elements';
         }
         function last(){
-            window.location.href='intro';
+            window.location.href='code-editors';
         }
     </script>
     <script src="../../assets/script/darkmode.js"></script>

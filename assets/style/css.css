@@ -69,3 +69,8 @@ tr:nth-child(even) {
 input:focus{
     border: 1px solid #06D0FF !important;
 }
+
+i.tag{
+    color: #06D0FF;
+    font-style: normal;
+}
