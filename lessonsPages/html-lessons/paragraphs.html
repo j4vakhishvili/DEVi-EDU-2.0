@@ -22,6 +22,23 @@
     <link rel="stylesheet" href="../../assets/style/html.css">
     <link rel="stylesheet" href="../../assets/moneylol/moneylol.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        div#preview {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: #f7f7f7;
+        }
+        div#preview p, div#preview h1, div#preview h2, div#preview pre{
+            padding: 5px;
+            font-family: sans-serif;
+            color: black;
+            margin: 0;
+        }
+        div#preview pre{
+            font-family: monospace;
+        }
+    </style>
 </head>
 <body>
     <div class="nav" id="nav">
@@ -67,8 +84,8 @@
                 <li><a href="basics">საწყისები</a></li>
                 <li><a href="elements">ელემენტები</a></li>
                 <li><a href="attributes">ატრიბუტები</a></li>
-                <li class="on"><a href="headings">Headings</a></li>
-                <li><a href="paragraphs">პარაგრაფები</a></li>
+                <li><a href="headings">Headings</a></li>
+                <li class="on"><a href="paragraphs">პარაგრაფები</a></li>
                 <li><a href="styles-html">სტილები</a></li>
                 <li><a href="formatting">ფორმატირება</a></li>
                 <li><a href="citation">ციტატები</a></li>
@@ -108,22 +125,30 @@
                 <button class="headbtn hbtn-r" onclick="next()"></button>
             </div>
             <p class="note">
-                HTML headings არის თავები რომლის გამოსახვაც გინდა ვებგვერდზე.
+                პარაგრაფები ყოველთვის იწყება ახალ ხაზზე და ის როგორც წესი ბლოკური ტიპის ტექსტია.
             </p>
             <article>
-                <p>HTML headings გამოიხატება &lt;h1>-დან &lt;h6>-მდე.<br>&lt;h1> გამოხატავს ყველაზე მნიშვნელოვან თავს, ხოლო &lt;h6> ყველაზე ბოლოს მყოფს.</p>
+                <p>HTML &lt;p> ელემენტი წარმოადგენს პარაგრაფს.<br>
+                    პარაგრაფს ყველა ბრაუზერი 'ქარხნულად' უთითებს სივრცეებს ზედა და ქვედა მხარეებში. (margin-ებს)</p>
+                <h2>HTML გამოსახულება</h2>
+                <p>ვერასდროს იქნები დარწმუნებული თუ HTML როგორ იქნება წარმოჩენილი. <br>
+                    სხვა და სხვა ზომის ეკრეანებზე HTML შექმნის განსხვავებულ გამოსახულებებს. <br>
+                    HTML-ს მეშვეობით შენ არ შეგიძლია გამოსახულების შეცვლა, თუნდაც გამოტოვებების მეშვეობით. <br>
+                    ბრაუზერი ყველაფერს ავტომატურად წაშლის.
+                </p>
                 <div class="codeEditor">
                     <section class="separate-codeEditor">
                         <div class="switchEditor">
                             <button onclick="openHTML()" id="htmlBtn">HTML</button>
                         </div>
                         <div class="editor">
-                            <textarea id="html" placeholder="HTML"><h1>თავი პირველი</h1>
-<h2>თავი მეორე</h2>
-<h3>თავი მესამე</h3>
-<h4>თავი მეოთხე</h4>
-<h5>თავი მეხუთე</h5>
-<h6>თავი მეექვსე</h6></textarea>
+                            <textarea id="html" placeholder="HTML"><p>
+ეს პარაგრაფი
+შეიცავს უამრავ
+ხაზს კოდში,
+მაგრამ ბრაუზერი
+ამას დააიგნორებს.
+</p></textarea>
                             <textarea id="css" placeholder="CSS"></textarea>
                             <textarea id="js" placeholder="JavaScript"></textarea>
                         </div>
@@ -131,32 +156,95 @@
                     <section class="separate-codeEditor">
                         <iframe id="code"></iframe>
                     </section>
-                </div>
-            </article>
-            <p class="note">
-                <i class="caps">შენიშვნა</i>: ბრაუზერები ავტომატურად ამატებენ ცოტაოდენ სივრცეს სათაურის ზემოთ და ქვემოთ (ამას margin ეწოდება).
-            </p>
-            <article>
-                <h2>Heading-ები მნიშვნელოვანია</h2>
-                <p>საძიებო სისტემები მუდმივად ამოწმებენ საიტის სტრუქტურას და კითხულობენ თქვენს გვერდზე განთავსებულ კონტენტს.
-                    ხშირ შემთხვევაში მომხმარებელი გვერდს მისი სათაურის გამო ათვალიერებს. საძიებო სისტემებიც ყოველთვის ანიჭებს უპირატესობას Heading-ებს მომხმარებლისთვის ვებგვერდის შესათავაზებლად.</p>
-            </article>
-            <p class="note"><i class="caps">შენიშვნა</i>: გამოიყენეთ Heading-ები მხოლოდ თავის დასათაურებისთვის, მისი გამოყენება მხოლოდ იმიტომ, რომ ტექსტი გამუქდეს ან გადიდეს არარეკომენდირებულია.            </p>
-            <article>
-                <h2>უფრო დიდი Heading-ები</h2>
-                <p>თითოეულ HTML heading-ს აქვს თავის 'ქარხნული' ზომა, თუმცა შენ შეგიძლია ამ ზომების style ატრიბუტის მეშვეობით რეგულაცია</p>
+                </div><br>
+                <h2>ჰორიზონტალური წესები HTML-ში</h2>
+                <p>&lt;hr> თეგი განსაზღვრავს შესვენებას HTML-გვერდზე და იგი ჩნდება როგორც ჰორიზონტალური ხაზი.<br>
+                    &lt;hr> თეგი ძირითადად გამოიყენება HTML-გვერდზე შინაარის გამოსაყოფად.</p>
                 <div class="codeEditor">
                     <section class="separate-codeEditor">
                         <div class="switchEditor">
                             <button onclick="openHTML()" id="htmlBtn">HTML</button>
                         </div>
                         <div class="editor">
-                            <textarea id="html" placeholder="HTML"><h1 style="font-size:60px;">თავი პირველი</h1></textarea>
+                            <textarea id="html" placeholder="HTML"><h1>ეს თავი პირველია</h1>
+<p>ეს პარაგრაფია.</p>
+<hr>
+<h2>ეს თავი მეორეა</h2>
+<p>ეს სხვა პარაგრაფია.</p>
+<hr></textarea>
                             <textarea id="css" placeholder="CSS"></textarea>
                             <textarea id="js" placeholder="JavaScript"></textarea>
                         </div>
                     </section>
-                </div>
+                    <section class="separate-codeEditor">
+                        <div id="preview">
+                            <h1>ეს თავი პირველია</h1>
+                            <p>ეს პარაგრაფია.</p>
+                            <hr>
+                            <h2>ეს თავი მეორეა</h2>
+                            <p>ეს სხვა პარაგრაფია.</p>
+                            <hr>
+                        </div>
+                    </section>
+                </div><br>
+                <p>&lt;hr> თეგი ცარიელი თეგია, რაც ნიშნავს რომ მას არ აქვს დახურვის თეგი.</p>
+                <h2>HTML ხაზის წყვეტა</h2>
+                <p>&lt;br> ელემენტი გამოიყენება ხაზის გასაწყვეტად.<br>
+                    გამოიყენე &lt;br> ელემენტი, თუ გსურს ახალი ხაზიდან დაწყება</p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML"><p>ეს არის<br>პარაგრაფი რომელიც<br>წერია სხვა და სხვა ხაზებზე.</p></textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                    <section class="separate-codeEditor">
+                        <div id="preview">
+                            <p>ეს არის<br>პარაგრაფი რომელიც<br>წერია სხვა და სხვა ხაზებზე.</p>
+                        </div>
+                    </section>
+                </div><br>
+                <p>&lt;br> თეგი ცარიელი თეგია, რაც ნიშნავს რომ მას არ აქვს დახურვის თეგი.</p>
+                <h2>&lt;PRE> ელემენტი</h2>
+                <p>&lt;pre> ელემენტი გულისხმობს წინასწარ ფორმატირებულ ტექსტს.<br>
+                    ტექსტი &lt;pre> ელემენტის შიგნით გამოისახება ისე როგორც შეტანილია კოდშივე.</p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML"><pre>
+აქეთ გორასა წიხლსა ვკრავ
+და იქით გორას ძვრას ვუზამ;
+ადიდებულსა მდინარეს
+დავაყენებ და ყლაპს ვუზამ;
+ას ლიტრა რკინას დავღეჭავ
+კევივითა და ყლაპს ვუზამ.
+                                            დევი
+</pre></textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                    <section class="separate-codeEditor">
+                        <div id="preview">
+                            <pre>
+აქეთ გორასა წიხლსა ვკრავ
+და იქით გორას ძვრას ვუზამ;
+ადიდებულსა მდინარეს
+დავაყენებ და ყლაპს ვუზამ;
+ას ლიტრა რკინას დავღეჭავ
+კევივითა და ყლაპს ვუზამ.
+                    დევი
+</pre>
+                        </div>
+                    </section>
+                </div><br>
             </article>
 
             <div class="header">
@@ -182,15 +270,15 @@
     </main>
 
     <script>
-        const title = "Headings";
+        const title = "პარაგრაფები";
         document.getElementById("headTitle").innerHTML = title + " | DEVi EDU • დევი";
         document.getElementById("title").innerHTML = title;
 
         function next(){
-            window.location.href='paragraphs';
+            window.location.href='styles-html';
         }
         function last(){
-            window.location.href='attributes';
+            window.location.href='headings';
         }
     </script>
     <script src="../../assets/script/darkmode.js"></script>
