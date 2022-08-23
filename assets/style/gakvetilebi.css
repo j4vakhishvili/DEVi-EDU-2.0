@@ -82,9 +82,17 @@ p{
     transition: 0.3s;
 }
 
+p a{
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
 [data-theme="dark"] p{
     color: #9F9F9F;
     transition: 0.3s;
+}
+
+[data-theme="dark"] p a{
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 [data-theme="dark"] li{
@@ -372,6 +380,11 @@ iframe#code{
     border: none;
     overflow-y: scroll;
     padding: 2px 0;
+}
+
+i.caps{
+    font-family: 'MarkGeoCaps', sans-serif;
+    font-style: normal;
 }
 
 .editor textarea:focus-visible{

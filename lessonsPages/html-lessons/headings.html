@@ -22,6 +22,18 @@
     <link rel="stylesheet" href="../../assets/style/html.css">
     <link rel="stylesheet" href="../../assets/moneylol/moneylol.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        div#preview {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: #f7f7f7;
+        }
+        div#preview p{
+            color: black;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <div class="nav" id="nav">
@@ -63,11 +75,11 @@
             <ul id="myUL">
                 <li><a href="gakvetilebi">შესავალი</a></li>
                 <li><a href="intro">გაცნობა</a></li>
-                <li class="on"><a href="code-editors">კოდედიტორები</a></li>
+                <li><a href="code-editors">კოდედიტორები</a></li>
                 <li><a href="basics">საწყისები</a></li>
                 <li><a href="elements">ელემენტები</a></li>
                 <li><a href="attributes">ატრიბუტები</a></li>
-                <li><a href="headings">Headings</a></li>
+                <li class="on"><a href="headings">Headings</a></li>
                 <li><a href="paragraphs">პარაგრაფები</a></li>
                 <li><a href="styles-html">სტილები</a></li>
                 <li><a href="formatting">ფორმატირება</a></li>
@@ -108,58 +120,61 @@
                 <button class="headbtn hbtn-r" onclick="next()"></button>
             </div>
             <p class="note">
-                მარტივი კოდედიტორი - სულ ესაა რაც გჭირდება.
+                HTML headings არის თავები რომლის გამოსახვაც გინდა ვებგვერდზე.
             </p>
-            <p class="note">ვებ საიტის დაწერა შენ ძალიან მარტივად, ტექსტ ედიტორშიც კი შეგიძლია<br>HTML-ს საწყის დონეზე შესასწავლად შენ შეგიძლია გამოიყენო Notepad (Windows) ან TextEdit (Mac).</p>
             <article>
-                <h2>ნაბიჯი I<br>(Windows)</h2>
-                <p>გახსენით "სტარტი" <i>(დააკლიკეთ ვინდოუსის ლოგოს)</i>, მოიძიეთ Notepad სტარტის საძიებო სისტემაში.</p>
-                <h2>(MAC)</h2>
-                <p>გახსენით "Finder" შემდგომ > Applications > TextEdit <br>
-                    ასევე შეცვალეთ რამდენიმე ოფცია, სწორად შესანახად. Preferences > Format > აირჩიეთ "Plain Text" <br>
-                    შემდეგ კი მონიშნეთ ღილაკი რომელსაც აწერია "Display HTML files as HTML code instead of formatted text". <br>
-                    საბოლოოდ გახსენით ახალი დოკუმენტი კოდის დასაწერად.</p>
-                <h2>ნაბიჯი II<br>დაიწყე კოდის წერა</h2>
-                <p>დაწერე ან დააკოპირე შემდეგი ტიპის კოდი:</p>
+                <p>HTML headings გამოიხატება &lt;h1>-დან &lt;h6>-მდე.<br>&lt;h1> გამოხატავს ყველაზე მნიშვნელოვან თავს, ხოლო &lt;h6> ყველაზე ბოლოს მყოფს.</p>
                 <div class="codeEditor">
                     <section class="separate-codeEditor">
                         <div class="switchEditor">
                             <button onclick="openHTML()" id="htmlBtn">HTML</button>
                         </div>
                         <div class="editor">
-                            <textarea id="html" placeholder="HTML">&lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;გვერდის სათაური&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;ჩემი პირველი სათაური&lt;/h1&gt;
-        &lt;p&gt;ჩემი პირველი პარაგრაფი&lt;/p&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</textarea>
+                            <textarea id="html" placeholder="HTML"><h1>თავი პირველი</h1>
+<h2>თავი მეორე</h2>
+<h3>თავი მესამე</h3>
+<h4>თავი მეოთხე</h4>
+<h5>თავი მეხუთე</h5>
+<h6>თავი მეექვსე</h6></textarea>
                             <textarea id="css" placeholder="CSS"></textarea>
                             <textarea id="js" placeholder="JavaScript"></textarea>
                         </div>
                     </section>
-                </div><br>
-                <h2>ნაბიჯი III</h2>
-                <p>შეინახე სურათზე მითითებული პარამეტრების მიხედვით.</p>
-                <img src="../../assets/imgs/saveas-notepad-tabscr.png" alt="html document" style="width: 100%;">
-                <img src="../../assets/imgs/saveonmac.png" alt="html document" style="width: 100%;">
-                <p>ფაილის შენახვა შესაძლებელია როგორც .html დაბოლოებით ასევე .htm<br><br>ხილული სხვაობა ამ ორს შორის არ არის, უბრალოდ .htm ძირითადად ოდნავ ძველი ვერსიის html-ს მოიცავს<br><br>საბოლოო ჯამში არჩევანი შენზეა, მაგრამ ხშირად გამოყენებადი მაინც .html ტიპის დაბოლოებაა.</p>
+                    <section class="separate-codeEditor">
+                        <iframe id="code"></iframe>
+                    </section>
+                </div>
             </article>
             <p class="note">
-                ..თუ კი შენ ეძებ მეტად კომფორტულ კოდედიტორებს, ვიდრე სისტემის ჩაშენებული ტექსტედიტორებია, მაშინ გირჩევდი <a href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a>-ს ან მის <a href="https://vscode.dev" target="_blank">ონლაინ</a> ვერსიას.
+                <i class="caps">შენიშვნა</i>: ბრაუზერები ავტომატურად ამატებენ ცოტაოდენ სივრცეს სათაურის ზემოთ და ქვემოთ (ამას margin ეწოდება).
             </p>
-            <p class="note">
-                აქვე დავამატებდი, რომ ჩვენ გვაქვს საკუთარი <a href="../../pages/code-editor.html">კოდედიტორი</a>, რომელიც შეგიძლიათ გამოიყენოთ უეცარი საჭიროებისას.
-            </p>
+            <article>
+                <h2>Heading-ები მნიშვნელოვანია</h2>
+                <p>საძიებო სისტემები მუდმივად ამოწმებენ საიტის სტრუქტურას და კითხულობენ თქვენს გვერდზე განთავსებულ კონტენტს.
+                    ხშირ შემთხვევაში მომხმარებელი გვერდს მისი სათაურის გამო ათვალიერებს. საძიებო სისტემებიც ყოველთვის ანიჭებს უპირატესობას Heading-ებს მომხმარებლისთვის ვებგვერდის შესათავაზებლად.</p>
+            </article>
+            <p class="note"><i class="caps">შენიშვნა</i>: გამოიყენეთ Heading-ები მხოლოდ თავის დასათაურებისთვის, მისი გამოყენება მხოლოდ იმიტომ, რომ ტექსტი გამუქდეს ან გადიდეს არარეკომენდირებულია.            </p>
+            <article>
+                <h2>უფრო დიდი Heading-ები</h2>
+                <p>თითოეულ HTML heading-ს აქვს თავის 'ქარხნული' ზომა, თუმცა შენ შეგიძლია ამ ზომების style ატრიბუტის მეშვეობით რეგულაცია</p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML"><h1 style="font-size:60px;">თავი პირველი</h1></textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                </div>
+            </article>
+
             <div class="header">
                 <button class="headbtn" onclick="last()"></button>
                 <button class="headbtn hbtn-r" onclick="next()"></button>
             </div>
-            
             <footer>
                 <section class="split-footer">
                     <a href="pages/about-us">ჩვენს შესახებ</a>
@@ -175,19 +190,23 @@
             <div class="wxkejt6l0" id="displayOne"></div>
             <div class="wxkejt6l0" id="displayTwo"></div>
             <div class="wxkejt6l0" id="displayThree"></div>
+            <div class="wxkejt6l0" id="displayFour"></div>
+            <div class="wxkejt6l0" id="displayFive"></div>
+            <div class="wxkejt6l0" id="displaySix"></div>
+            <div class="wxkejt6l0" id="displaySeven"></div>
         </section>
     </main>
 
     <script>
-        const title = "კოდედიტორები";
+        const title = "Headings";
         document.getElementById("headTitle").innerHTML = title + " | DEVi EDU • დევი";
         document.getElementById("title").innerHTML = title;
 
         function next(){
-            window.location.href='basics';
+            window.location.href='paragraphs';
         }
         function last(){
-            window.location.href='intro';
+            window.location.href='attributes';
         }
     </script>
     <script src="../../assets/script/darkmode.js"></script>
