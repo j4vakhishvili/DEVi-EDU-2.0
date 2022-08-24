@@ -163,7 +163,7 @@ article{
 }
 
 ul{
-    padding: 15px;
+    padding: 0 15px;
     list-style: circle;
     font-family: 'MarkGeo';
     color: #0F0700;
