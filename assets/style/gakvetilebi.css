@@ -61,6 +61,12 @@ main{
     transition: 0.3s;
 }
 
+[data-theme="dark"] .editor textarea{
+    background: black;
+    color: rgb(240, 240, 240);
+    transition: 0.3s;
+}
+
 h1{
     font-family: 'MarkGeoCaps', sans-serif;
     font-weight: bold;
@@ -397,6 +403,7 @@ iframe#code{
     border: none;
     overflow-y: scroll;
     padding: 2px 0;
+    transition: 0.3s;
 }
 
 i.caps{

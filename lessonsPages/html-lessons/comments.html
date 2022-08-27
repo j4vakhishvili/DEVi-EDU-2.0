@@ -71,8 +71,8 @@
                 <li><a href="paragraphs">პარაგრაფები</a></li>
                 <li><a href="styles-html">სტილები</a></li>
                 <li><a href="formatting">ფორმატირება</a></li>
-                <li class="on"><a href="citation">ციტატები</a></li>
-                <li><a href="comments">კომენტარები</a></li>
+                <li><a href="citation">ციტატები</a></li>
+                <li class="on"><a href="comments">კომენტარები</a></li>
                 <li><a href="colors">ფერები</a></li>
                 <li><a href="css-in-html">CSS HTML-ში</a></li>
                 <li><a href="links">ლინკები</a></li>
@@ -108,13 +108,12 @@
                 <button class="headbtn hbtn-r" onclick="next()"></button>
             </div>
             <p class="note">
-                ამ თავში ჩვენ გავივლით &lt;blockquote> &lt;q> &lt;abbr> &lt;address> &lt;cite> და &lt;bdo> ელემენტებს
+                კომენტარებს არ აქვს გავლენა ბრაუზერში გამოტანილი გამოსახულების მიმართ, მაგრამ მას შეუძლია დაგეხმაროს HTML კოდის დოკუმენტში.
             </p>
             <article>
-                <h2>&lt;blockquote> ციტატები</h2>
+                <h2>კომენტარების თეგი</h2>
                 <p>
-                    &lt;blockquote> ელემენტი განსაზღვრავს მონაკვეთს, რომელიც ციტირებულია სხვა წყაროდან.
-                    ტექსტი &lt;blockquote> ელემენტის შიგნით გამოისახება ისე როგორც შეტანილია კოდშივე.
+                    კომენტარების შემოტანა შენ შეგიძლია შემდეგნაირად:
                 </p>
                 <div class="codeEditor">
                     <section class="separate-codeEditor">
@@ -122,99 +121,15 @@
                             <button onclick="openHTML()" id="htmlBtn">HTML</button>
                         </div>
                         <div class="editor">
-                            <textarea id="html" placeholder="HTML"><p>ეს ციტატა მოყვანილია *საიტიდან:</p>
-<blockquote cite="https://ka.lipsum.com">
-    Lorem Ipsum საბეჭდი და ტიპოგრაფიული 
-    ინდუსტრიის უშინაარსო ტექსტია. 
-    იგი სტანდარტად 1500-იანი წლებიდან იქცა, 
-    როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე 
-    წიგნის საცდელი ეგზემპლარი დაბეჭდა.
-</blockquote></textarea>
-                            <textarea id="css" placeholder="CSS"></textarea>
-                            <textarea id="js" placeholder="JavaScript"></textarea>
-                        </div>
-                    </section>
-                    <section class="separate-codeEditor">
-                        <iframe id="code"></iframe>
-                    </section>
-                </div> <br>
-                <h2>&lt;q> მოკლე ციტატები</h2>
-                <p>
-                    &lt;q> გამოხატავს მოკლე ციტატების ფორმას.<br>
-                    ბრაუზერი როგორც წესი ავტომატურად სვავს ბრჭყალებში ტექსტს.
-                </p>
-                <h2>&lt;abbr> აბრევიატურებისთვის</h2>
-                <p>
-                    &lt;abbr> თეგი გამოხატავს აბრევიატურებს. <br>
-                    აბრევიატურის მარკირებამ შეიძლება სასარგებლო ინფორმაცია მისცეს ბრაუზერებს, მთარგმნელ სისტემებს და საძიებო სისტემებს. <br>
-                    აბრევიატურის გამოყენებისას დაურთეთ title ატრიბუტი, რათა კურსორის მიტანისას ნაჩვენები იყოს მისი აღწერა.
-                </p>
-                <div class="codeEditor">
-                    <section class="separate-codeEditor">
-                        <div class="switchEditor">
-                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
-                        </div>
-                        <div class="editor">
-                            <textarea id="html" placeholder="HTML"><p><abbr title="საგანმანათლებლო პლატფორმა">DEVi EDU</abbr> დაფუძვნდა 2021 წელს.</p></textarea>
-                            <textarea id="css" placeholder="CSS"></textarea>
-                            <textarea id="js" placeholder="JavaScript"></textarea>
-                        </div>
-                    </section>
-                    <section class="separate-codeEditor">
-                        <div id="preview"><p><abbr title="საგანმანათლებლო პლატფორმა">DEVi EDU</abbr> დაფუძვნდა 2021 წელს.</p></div>
-                    </section>
-                </div> <br>
-                <h2>&lt;address> საკონტაქტო ინფორმაციისთვის</h2>
-                <p>
-                    &lt;address> თეგი გამოხატავს საკონტაქტო ინფორმაციას ავტორის/მფლობელის შესახებ. <br>
-                    საკონტაქტო ინფორმაცა შესაძლოა იყოს ფოსტის მისამართი, ვებ-საიტის ბმული, ტელეფონის ნომერი, სოციალური ქსელების მისამართები და ა.შ.
-                </p>
-                <div class="codeEditor">
-                    <section class="separate-codeEditor">
-                        <div class="switchEditor">
-                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
-                        </div>
-                        <div class="editor">
-                            <textarea id="html" placeholder="HTML"><p><abbr title="საგანმანათლებლო პლატფორმა">DEVi EDU</abbr> დაფუძვნდა 2021 წელს.</p></textarea>
-                            <textarea id="css" placeholder="CSS"></textarea>
-                            <textarea id="js" placeholder="JavaScript"></textarea>
-                        </div>
-                    </section>
-                    <section class="separate-codeEditor">
-                        <div id="preview"><p><abbr title="საგანმანათლებლო პლატფორმა">DEVi EDU</abbr> დაფუძვნდა 2021 წელს.</p></div>
-                    </section>
-                </div> <br>
-                <h2>&lt;address> საკონტაქტო ინფორმაციისთვის</h2>
-                <p>
-                    &lt;address> თეგი გამოხატავს საკონტაქტო ინფორმაციას ავტორის/მფლობელის შესახებ.<br>
-                    საკონტაქტო ინფორმაცა შესაძლოა იყოს ფოსტის მისამართი, ვებ-საიტის ბმული, ტელეფონის ნომერი, სოციალური ქსელების მისამართები და ა.შ.
-                </p>
-                <div class="codeEditor">
-                    <section class="separate-codeEditor">
-                        <div class="switchEditor">
-                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
-                        </div>
-                        <div class="editor">
-                            <textarea id="html" placeholder="HTML"><address>
-ავტორი ნიკოლოზ ჯავახიშვილი.<br>
-მისამართი:<br>
-edu-devi.tk<br>
-თბილისი, ორთაჭალა<br>
-საქართველო
-</address></textarea>
+                            <textarea id="html" placeholder="HTML"><!-- ჩაინიშნე კომენტარი აქ --></textarea>
                             <textarea id="css" placeholder="CSS"></textarea>
                             <textarea id="js" placeholder="JavaScript"></textarea>
                         </div>
                     </section>
                 </div> <br>
-                <h2>&lt;cite> ნამუშევრის სახელისთვის</h2>
                 <p>
-                    &lt;cite> გამოხატავს ისეთი ნამუშევრების სახელებს როგორებიცაა წიგნი, ნახატი, პოემა, მუსიკა, ფილმი და მრავალი სხვა.<br>
-                    ტექსტი რომელიც მოქცეულია &lt;cite> ელემენტს შორის მეტწილად იწარმოება დახრილი სტილით.
-                </p>
-                <h2>&lt;bdo> ტექსტის შესაბრუნებლად</h2>
-                <p>
-                    &lt;bdo> ტეგი გამოიყენება ტექსტის მიმდინარე მიმართულების შესაცვლელად.
+                    გაითვალისწინე, რომ თეგის დასაწყისში იწერება ძახილის ნიშანი, მაგრამ არა ბოლოში.<br>
+                    კომენტარებით შეგიძლიათ განათავსოთ შეტყობინებები და შეხსენებები თქვენს HTML კოდში:
                 </p>
                 <div class="codeEditor">
                     <section class="separate-codeEditor">
@@ -222,14 +137,39 @@ edu-devi.tk<br>
                             <button onclick="openHTML()" id="htmlBtn">HTML</button>
                         </div>
                         <div class="editor">
-                            <textarea id="html" placeholder="HTML"><bdo dir="rtl">ეს ტექსტი შეტრიალდება მარჯვნიდან მარცხნივ</bdo></textarea>
+                            <textarea id="html" placeholder="HTML"><!-- ეს კომენტარია -->
+
+<p>ეს პარაგრაფია.</p>
+
+<!-- ეს კომენტარი პარაგრაფის შესახებაა --></textarea>
                             <textarea id="css" placeholder="CSS"></textarea>
                             <textarea id="js" placeholder="JavaScript"></textarea>
                         </div>
                     </section>
                     <section class="separate-codeEditor">
-                        <div id="preview"><bdo dir="rtl">ეს ტექსტი შეტრიალდება მარჯვნიდან მარცხნივ</bdo></div>
+                        <div id="preview"><!-- ეს კომენტარია -->
+
+<p>ეს პარაგრაფია.</p>
+
+<!-- ეს კომენტარი პარაგრაფის შესახებაა -->
+                        </div>
                     </section>
+                </div> <br>
+                <p>
+                    კომენტარები ასევე გამოსადეგია დაფიქსირებული შეცდომის აღმოსაჩენად, მაგალითად შენ შეგიძლია დააკომენტარო არსებული ელემენტი და გაიგო პრობლემის გამომწვევი მიზეზი.
+                </p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML"><!-- <img src="devi.png" alt="ლოგო"> --></textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                </div>
             </article>
 
             <div class="header">
@@ -255,15 +195,15 @@ edu-devi.tk<br>
     </main>
 
     <script>
-        const title = "ციტატები";
+        const title = "კომენტარები";
         document.getElementById("headTitle").innerHTML = title + " | DEVi EDU • დევი";
         document.getElementById("title").innerHTML = title;
 
         function next(){
-            window.location.href='comments';
+            window.location.href='colors';
         }
         function last(){
-            window.location.href='formatting';
+            window.location.href='citation';
         }
     </script>
     <script src="../../assets/script/darkmode.js"></script>
