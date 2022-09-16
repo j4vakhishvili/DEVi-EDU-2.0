@@ -61,6 +61,12 @@ main{
     transition: 0.3s;
 }
 
+[data-theme="dark"] .editor textarea{
+    background: black;
+    color: rgb(228, 228, 228);
+    transition: 0.3s;
+}
+
 h1{
     font-family: 'MarkGeoCaps', sans-serif;
     font-weight: bold;
@@ -82,7 +88,20 @@ p{
     transition: 0.3s;
 }
 
+p a{
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
 [data-theme="dark"] p{
+    color: #9F9F9F;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] p a{
+    cursor: url(../cursors/pointer-dark.png), pointer;
+}
+
+[data-theme="dark"] li{
     color: #9F9F9F;
     transition: 0.3s;
 }
@@ -150,7 +169,7 @@ article{
 }
 
 ul{
-    padding: 15px;
+    padding: 0 15px;
     list-style: circle;
     font-family: 'MarkGeo';
     color: #0F0700;
@@ -281,6 +300,23 @@ section.catalog button:hover{
     cursor: url(../cursors/pointer-light.png), pointer;
 }
 
+div#preview {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: #f7f7f7;
+    cursor: default;
+}
+div#preview p, div#preview h1, div#preview h2, div#preview pre{
+    padding: 5px;
+    font-family: sans-serif;
+    color: black;
+    margin: 0;
+}
+div#preview pre{
+    font-family: monospace;
+}
+
 [data-theme="dark"] #myUL li a{
     color: #BEBEBE;
     transition: 0.3s;
@@ -299,6 +335,11 @@ section.catalog button:hover{
 
 p.note a{
     color: #ff004b;
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"] p.note a{
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 .codeEditor{
@@ -362,6 +403,12 @@ iframe#code{
     border: none;
     overflow-y: scroll;
     padding: 2px 0;
+    transition: 0.3s;
+}
+
+i.caps{
+    font-family: 'MarkGeoCaps', sans-serif;
+    font-style: normal;
 }
 
 .editor textarea:focus-visible{
@@ -410,6 +457,10 @@ tr:nth-child(even) {
 @media only screen and (max-width: 1290px) {
     .xtkpiq45ulaey {
         width: 250px;
+    }
+    .editor textarea{
+        min-height: 225px;
+        max-height: 225px;
     }
 }
 

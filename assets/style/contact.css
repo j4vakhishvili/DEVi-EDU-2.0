@@ -237,6 +237,84 @@ input:focus{
     background-position: center;
 }
 
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea, form button{
+    width: 80%;
+    padding: 2vh 3vh;
+    font-family: 'MarkGeo', sans-serif;
+    margin-bottom: 2vh;
+    border-radius: 1.2vh;
+    border: 1px solid gray;
+}
+
+form input:focus, form textarea:focus-visible{
+    border: 1.4px solid #e40046 !important;
+    outline: none;
+}
+
+form button{
+    width: 89%;
+    background: #e40046;
+    color: white;
+    cursor: url(../cursors/pointer-light.png), pointer;
+    transition: 0.3s ease-in;
+}
+
+form button:hover{
+    background: #c0003a;
+    transition: 0.3s ease-in;
+}
+
+[data-theme="dark"] form button{
+    cursor: url(../cursors/pointer-dark.png), pointer;
+    transition: 0.3s ease-in;
+}
+
+[data-theme="dark"] form button:hover{
+    background: #e40046;
+    transition: 0.3s ease-in;
+}
+
+[data-theme="dark"] form input{
+    background: #1f1f1f;
+    transition: 0.3s;
+}
+
+form textarea{
+    max-width: 80%;
+    min-width: 80%;
+    max-height: 40vh;
+    min-height: 12vh;
+}
+
+[data-theme="dark"] form textarea{
+    background: #1f1f1f;
+    transition: 0.3s;
+}
+
+.mail{
+    width: 40%;
+}
+
+.mail-recived{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.mail-recived h2{
+    text-align: center;
+    margin: 5vh 0;
+}
+
 @media only screen and (max-width: 1350px) {
     .space {
         display: flex;
@@ -260,6 +338,16 @@ input:focus{
     .icon{
         padding: 10px;
         margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 1240px){
+    form textarea{
+        max-width: 83.5%;
+        min-width: 83.5%;
+    }
+    form input{
+        width: 83.5%;
     }
 }
 

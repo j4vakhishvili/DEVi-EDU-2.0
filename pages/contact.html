@@ -6,7 +6,7 @@
     <meta name="robots" content="index, follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>კონტაქტი| DEVi EDU • დევი</title>
+    <title>კონტაქტი | DEVi EDU • დევი</title>
     <meta name="language" content="georgian">
     <meta name="distribution" content="georgian">
     <meta name="description" content="DEVi EDU • დევი ედუ - პროგრამირების კურსები უფასოდ">
@@ -56,7 +56,18 @@
         <section class="content">
             <div class="space">
                 <section class="contact">
-                    <div class="chatbox">
+                    <form action="https://formsubmit.co/ge.devi.info@gmail.com" method="POST">
+                        <input type="name" name="name" placeholder="მიუთითე სახელი" required>
+                        <input type="email" name="email" placeholder="შეიყვანე ელფოსტა" required>
+                        <textarea type="subject" name="message" placeholder="გაგვიზიარე რისი თქმა გსურს" required></textarea>
+                        <input type="hidden" name="_next" value="https://www.edu-devi.tk/pages/mail-recived">
+                        <input type="hidden" name="_subject" value="შეტყობინება! DEVi EDU">
+                        <input type="hidden" name="_cc" value="j4vakhishvili@gmail.com,n1kc0nnyt@gmail.com,temurtsutskiridze04@gmail.com,merabikekel@gmail.com,nikalomsadze49@gmail.com">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <button type="submit">გაგზავნა</button>
+                    </form>
+                    <!-- <div class="chatbox">
                         <div class="cht-box-bottom">
                             <input type="text" placeholder="შეიყვანე მესიჯი...">
                             <button></button>
@@ -71,7 +82,7 @@
                                 <p>გამარჯობა</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </section>
                 <section class="contact">
                     <div class="icon yt"></div>
@@ -108,5 +119,6 @@
     <script src="../assets/script/basic.js"></script>
     <script src="../assets/script/catalog.js"></script>
     <script src="../assets/script/app-chatbot.js"></script>
+    <script src="../assets/script/display.js"></script>
 </body>
 </html>

@@ -11,6 +11,7 @@ header{
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
     background: #f3f3f373;
     z-index: 1;
 }
@@ -430,6 +431,7 @@ footer{
     border-radius: 8px;
     transition: 0.3s;
     display: none;
+    cursor: url(../cursors/pointer-light.png), pointer;
 }
 
 [data-theme="dark"] .menubtn {
@@ -439,6 +441,7 @@ footer{
     background-size: 48%;
     filter: invert(0.8);
     transition: 0.3s;
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 .sectionImg img {
@@ -468,6 +471,11 @@ footer{
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 8px;
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"] .closebtn{
+    cursor: url(../cursors/pointer-light.png), pointer;
 }
 
 .m-content{
@@ -486,12 +494,23 @@ footer{
     margin: 0;
     font-family: 'MarkGeoCaps';
     font-weight: bolder;
+    margin-top: 30px;
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"] .lessons p{
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 .gakvetilebi button{
     border: none;
     display: flex;
     background: transparent;
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"] .gakvetilebi button{
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 .lessons-section{
@@ -532,14 +551,15 @@ footer{
 
 .gakvetilebi{
     margin-top: 15px;
+    cursor: url(../cursors/pointer-light.png), pointer;
+}
+
+[data-theme="dark"] .gakvetilebi{
+    cursor: url(../cursors/pointer-dark.png), pointer;
 }
 
 .lessons-section{
     display: none;
-}
-
-.lessons p{
-    margin-top: 30px;
 }
 
 #menu{
@@ -547,7 +567,7 @@ footer{
     transition: 0.3s;
 }
 
-#btnLesson, #btnGakvetili{
+#btnLessons, #btnGakvetilebi{
     display: none;
 }
 

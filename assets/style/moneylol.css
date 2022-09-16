@@ -1,0 +1,50 @@
+nav{
+    background: #4711ef;
+}
+
+footer{
+    border-top: 2px solid #4711ef;
+}
+
+p.note{
+    background: #4711ef36;
+}
+
+button.active{
+    background: linear-gradient(135deg, #4711ef, #350bb3);
+}
+
+[data-theme="dark"] button.active {
+    background: linear-gradient(135deg, #360bb5, #210771);
+    transition: 0.3s;
+}
+
+.basicBtn{
+    background: linear-gradient(135deg, #4711ef, #350bb3, #4711ef, #350bb3);
+    background-size: 300% 100%;
+}
+
+[data-theme="dark"] .basicBtn {
+    color: #ffffffde;
+    background: linear-gradient(135deg, #360bb5, #210771, #360bb5, #210771);
+    background-size: 300% 100%;
+    transition: 0.3s;
+}
+
+.on{
+    padding-bottom: 15px;
+    border-bottom: 3px solid #4711ef;
+}
+
+p.note a{
+    color: #4711ef;
+}
+
+button.active:hover {
+    background: linear-gradient(135deg, #4711ef, #3208ae);
+    transition: 0.3s;
+}
+
+input:focus{
+    border: 1px solid #4711ef !important;
+}

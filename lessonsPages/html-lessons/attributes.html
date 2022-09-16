@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#FFBC01">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="headTitle">სათაური | DEVi EDU • დევი</title>
+    <meta name="language" content="georgian">
+    <meta name="distribution" content="georgian">
+    <meta name="description" content="DEVi EDU • დევი ედუ - პროგრამირების კურსები უფასოდ">
+    <meta name="author" content="J4vakhishvili, T3MUR1, Merab Kekelidze">
+    <meta name="publisher" content="DEVi, J4vakhisvhili">
+    <meta name="copyright" content="2022 J4vakhishvili">
+    <meta name="keywords" content="პროგრამირების კურსები უფასოდ,პროგრამირების ენები,პროგრამირების კურსი,პროგრამირების ონლაინ კურსები,პროგრამირება დამწყებთათვის,c პროგრამირება,php პროგრამირება,ვებ პროგრამირება,პითონი პროგრამირება,პროგრამირება შესწავლა,programirebis kursebi,programirebis swavla,programirebis kursi,programirebis ena,programirebis gakvetilebi,პროგრამირების უფასოდ სწავლა, ჰტმლს სწავლა, უფასო გაკვეთილები, როგორ, rogor, ვებდეველოპმენტი, გაკვეთილები, კურსები, web-development, ჰტმლ, ცსს, ჯავასკრიპტი, ufaso gakvetilebi programirebashi, programirebis swavla, ufasod swavla, programirebis ufasod swavla, HTML, CSS, JS, Javascript">
+    <link rel="icon" href="../../assets/icons/devi icon.png">
+    <link rel="stylesheet" href="../../assets/style/default.css">
+    <link rel="stylesheet" href="../../assets/style/header.css">
+    <link rel="stylesheet" href="../../assets/style/gakvetilebi.css">
+    <link rel="stylesheet" href="../../assets/style/footer.css">
+    <link rel="stylesheet" href="../../assets/style/html.css">
+    <link rel="stylesheet" href="../../assets/moneylol/moneylol.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="nav" id="nav">
+        <nav>
+            <section class="real-nav">
+                <a href="../../lessons" class="active">HTML</a>
+                <a href="../../lessonsPages/css-lessons/css">CSS</a>
+                <div class="dark-mode" bis_skin_checked="1">
+                    <input type="checkbox" class="form-check-input" id="darkSwitch" title="მუქი თემა">
+                </div>
+            </section>
+            <section class="buttons-nav">
+                <button class="openNav" id="openNav" onclick="openNav()"></button>
+                <button class="closeNav" id="closeNav" onclick="closeNav()"></button>
+            </section>
+        </nav>
+    </div>
+    <header>
+        <div class="container">
+            <section class="separate-header">
+                <img src="../../assets/icons/DEVi logo.svg" alt="logo" class="logo" onclick="window.location.href='../../index'">
+                <button class="catalogbtn" onclick="openCatalog()"><div class="head-icon categories-icon"></div>სარჩევი</button>
+            </section>
+    
+            <section class="separate-header">
+                <button onclick="window.location.href='../../lessons'" class="menubtn active" title="გაკვეთილები"><div class="head-icon lessons-icon"></div></button>
+                <button onclick="window.location.href='../../video-lessons/video-lessons'" class="menubtn" title="ვიდეო გაკვეთილები"><div class="head-icon vlessons-icon"></div></button>
+                <button onclick="window.location.href='../../exercises/exercises'" class="menubtn" title="სავარჯიშოები"><div class="head-icon exercises-icon"></div></button>
+                <button onclick="window.location.href='../../pages/code-editor'" class="menubtn" title="კოდედიტორი"><div class="head-icon code-editor-icon"></div></button>
+            </section>
+        </div>
+    </header>
+    <section class="catalog" id="catalog">
+        <section class="separate-catalog">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="მოიძიე კატეგორია..." title="მოიძიე კატეგორია">
+            <button class="closeCatalog" onclick="closeCatalog()"></button>
+        </section>
+        <section class="separate-catalog catalog-scrollable">
+            <ul id="myUL">
+                <li><a href="../../lessons">შესავალი</a></li>
+                <li><a href="intro">გაცნობა</a></li>
+                <li><a href="code-editors">კოდედიტორები</a></li>
+                <li><a href="basics">საწყისები</a></li>
+                <li><a href="elements">ელემენტები</a></li>
+                <li class="on"><a href="attributes">ატრიბუტები</a></li>
+                <li><a href="headings">Headings</a></li>
+                <li><a href="paragraphs">პარაგრაფები</a></li>
+                <li><a href="styles-html">სტილები</a></li>
+                <li><a href="formatting">ფორმატირება</a></li>
+                <li><a href="citation">ციტატები</a></li>
+                <li><a href="comments">კომენტარები</a></li>
+                <li><a href="colors">ფერები</a></li>
+                <li><a href="css-in-html">CSS HTML-ში</a></li>
+                <li><a href="links">ლინკები</a></li>
+                <li><a href="photos">ფოტოები</a></li>
+                <li><a href="tables">ცხრილები</a></li>
+                <li><a href="lists">სიები</a></li>
+                <li><a href="clases-and-ids">კლასები და ID</a></li>
+                <li><a href="iframes">ჩაშენებები</a></li>
+                <li><a href="javascript-in-html">JavaScript</a></li>
+                <li><a href="file-paths">ფაილების ლოკაციები</a></li>
+                <li><a href="head">თავი</a></li>
+                <li><a href="layout">წყობა</a></li>
+                <li><a href="responsive-html">რესფონსივი</a></li>
+                <li><a href="computercode">Computercode</a></li>
+                <li><a href="semantics">Semantics</a></li>
+                <li><a href="code-style-guide">კოდის ხელოვნება</a></li>
+                <li><a href="symbols">სიმბოლოები</a></li>
+                <li><a href="http">ბმულები</a></li>
+                <li><a href="charset">Charset</a></li>
+                <li><a href="forms">ფორმები</a></li>
+                <li><a href="graphic-in-html">გრაფიკა</a></li>
+                <li><a href="media">მედია</a></li>
+                <li><a href="apis">APIs</a></li>
+                <br>
+            </ul>
+        </section>
+    </section>
+    <main>
+        <section class="separate-codeEditor" hidden>
+            <div class="switchEditor">
+                <button onclick="openHTML()" id="htmlBtn">HTML</button>
+            </div>
+            <div class="editor">
+                <textarea id="html" placeholder="HTML" readonly><p>ასე გამოიყურება სურათი სწორი მისამართით</p>
+                    <img src="../../assets/imgs/DEVi decoration.svg" alt="სატესტო ფოტოსურათი" style="width:80px">
+                    <p>ასე გამოიყურება სურათი არასწორი მისამართით</p>
+                    <img src="../assets/media/photo/imagee.png" alt="სატესტო ფოტოსურათი"></textarea>
+                    <textarea id="css" placeholder="CSS"></textarea>
+                    <textarea id="js" placeholder="JavaScript"></textarea>
+            </div>
+        </section>
+        <section class="content">
+            <div class="header">
+                <button class="headbtn" onclick="last()"></button>
+                <h1 id="title">სათაური</h1>
+                <button class="headbtn hbtn-r" onclick="next()"></button>
+            </div>
+            <p class="note">
+                HTML ატრიბუტები იძლევა დამატებით ინფორმაციას HTML ელემენტების შესახებ.
+            </p>
+            <article>
+                <h2>HTML ატრიბუტები</h2>
+                <ul>
+                    <li>ყველა HTML შესაძლოა ჰქონდეს ატრიბუტები</li>
+                    <li>ატრიბუტები იძლევა დამატებით ინფორმაციას ელემენტების შესახებ</li>
+                    <li>ატრიბუტები ყოველთვის მითითებულია საწყის ტეგში</li>
+                    <li>ატრიბუტები როგორც წესი იწარმოება მსგავსად: სახელი="მნიშვნნელობა"</li>
+                </ul>
+                <h2>ატრიბუტი - href</h2>
+                <p>&lt;a> თეგი აწარმოებს ლინკებს. href ატრიბუტი წარმოადგენს URL-ს რომელიც გადადის მითითებულ ლინკზე.</p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML" readonly>&lt;a href="https://www.edu-devi.tk/"&gt;ეს არის ლინკი&lt;/a&gt;</textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                </div>
+                <p>ლინკებზე მეტის გასაგებად ეწვიეთ <a href="links">ამ გვერდს</a></p>
+                <h2>ატრიბუტი - src</h2>
+                <p>&lt;img> თეგი გამოიყენება ფოტოების HTML გვერდზე გამოსატანად. src ატრიბუტი აწვდის ადგილის რომელიც მითითებულია სურათის გამოსატანად.</p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML" readonly>&lt;img src="image.png"></textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                </div>
+                <p>მხოლოდ ორი გზაა, რათა ლინკების მიწოდება მოხდეს src ატრიბუტის მეშვეობით:
+                    <br>1. ბმულის სახით - ლინკების მეშვეობით, რომლებიც მოწოდებულია რომელიმე სხვა ვებსაიტიდან. (მაგ.: src="https://www.edu-devi.tk/image.png/")
+                    <br>შენიშვნა: საიტის გარედან შემოტანილი ფოტოები შესაძლოა შეიცავდეს საავტორო უფლებებს, თუ თქვენ არ ფლობს საავტორო უფლებებს შესაძლოა შეგექმნათ კანონთან არსებული პრობლემები.
+                    ამავდროულად გაითვალისწინეთ, რომ თქვენ არ შეგიძლიათ მათი კონტროლი, არსებული ფოტოები შესაძლოა მათი სერვერებიდან წაიშალოს ან შეიცვალოს.
+                    <br>2. შიდა ფაილის სახით - მსგავის ტიპის სურათები საიტთან ერთად გაეშვება ონლაინში, შესაბამისად სურათს არ სჭირდება საიტის მისამართი, იგი პირდაპირ თქვენი ფაილებიდან ინლინკება. მაგალითად: src="image.png", თუ კი ფოტო სხვა ფაილში გაქვთ ამისთვის დაგჭირდებათ ფაილის არჩევა. მაგალითად: src="assets/image.png"
+                    <br>შენიშვნა: საუკეთესო ვარიანტია როდესაც ფოტოების საიტზე განთავსება შიდა ფაილის სახით ხდება, ვინაიდან მსგავს სიტუაციაში, ფოტო არასდროს წაიშლება, მაშინაც კი, თუ საიტი შეიცვლის მისამართს.
+                </p>
+                <h2>სიგრძის და სიმაღლის ატრიბუტები</h2>
+                <p>&lt;img> თეგი ასევე შესაძლოა შეიცავდეს width და height ატრიბუტებს, რომლებიც სურათს ანიჭებენ სიგრძეს და სიმაღლეს (პიქსელებში).</p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML" readonly>&lt;img src="image.png" width="600" height="400"></textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                </div><br>
+                <h2>ატრიბუტი - alt</h2>
+                <p>&lt;img> თეგისთვის alt ატრიბუტი გამოიყენება მაშინ როდესაც ფოტო რაღაც მიზეზების გამო არ გამოისახება, ეს შესაძლოა გამოწვეული იყოს დაბალი ინტერნეტის კავშირის გამო ან არასწორად მითითებული ფაილის ლოკაციიდან გამომდინარე.</p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML" readonly><img src="image.png" alt="სატესტო ფოტოსურათი"></textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                    <section class="separate-codeEditor">
+                        <iframe id="code"></iframe>
+                    </section>
+                </div>
+                <p>სურათებზე მეტის გასაგებად ეწვიეთ <a href="photos">ამ გვერდს</a></p>
+                <h2>ატრიბუტი - style</h2>
+                <p>style ატრიბუტი გამოიყენება ელემენტისთვის სტილის მისანიჭებლად, როგორიცაა ფერი, ზომა, ფონტი ან სხვა.</p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                            <!-- <button onclick="window.open.location=''">გამოსცადე</button> -->
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML" readonly><p style="color:red;">ეს წითელი პარაგრაფია.</p></textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                </div>
+                <p>სტილებზე მეტის გასაგებად ეწვიეთ <a href="styles-html">ამ გვერდს</a></p>
+                <h2>ატრიბუტი - lang</h2>
+                <p>უმჯობესია ყოველთვის გამოიყენო lang ატრიბუტი &lt;html> თეგში, ეს ეხმარება საძიებო სისტემას რეგიონის სწორად შერჩევაში.</p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML" readonly><!DOCTYPE html>
+<html lang="en">
+<body>
+...
+</body>
+</html></textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                </div><br>
+                <h2>ატრიბუტი - title</h2>
+                <p>title ელემენტი ინახავს დამხმარე ინფორმაციას ელემენტზე, მისი ნახვა შესაძლებელია მასთან მაუსის მიტანით.</p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="htmlCode" placeholder="HTML">&lt;p title="მე დამხმარე ტექსტი ვარ">ეს პარაგრაფია.</p></textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                    <section class="separate-codeEditor">
+                        <div id="preview">
+                            <p title="მე დამხმარე ტექსტი ვარ">ეს პარაგრაფია.</p>
+                        </div>
+                    </section>
+                </div><br>
+                <h2>შეჯამება</h2>
+                <ul>
+                    <li>ყველა HTML შესაძლოა ჰქონდეს ატრიბუტები</li>
+                    <li>href ატრიბუტები &lt;a> ტეგში წარმოადგენს ბმულებს</li>
+                    <li>src ატრიბუტები &lt;img> ტეგში წარმოადგენს ფოტოს ადგილმდებარეობის მითითებას</li>
+                    <li>width და height ატრიბუტები &lt;img> ტეგში წარმოადგენს ფოტოს ზომის მითითებებს</li>
+                    <li>alt ატრიბუტი &lt;img> ტეგში გამოიყენება მაშინ როდესაც ფოტო რაღაც მიზეზების გამო არ გამოისახება</li>
+                    <li>style ატრიბუტები გამოიყენება ელემენტისთვის ფერის, ფონტის და მსგავსი ტიპის საკითხების შესაცვლელად</li>
+                    <li>lang ატრიბუტები &lt;html> ტეგში წარმოადგენს ინფორმაციას ვებ გვერდის ენის შესახებ</li>
+                    <li>title ატრიბუტები წარმოადგენს დამატებითი ინფორმაციას მიმთითებელს ატრიბუტისთვის</li>
+                </ul>
+            </article>
+
+            <div class="header">
+                <button class="headbtn" onclick="last()"></button>
+                <button class="headbtn hbtn-r" onclick="next()"></button>
+            </div>
+            <footer>
+                <section class="split-footer">
+                    <a href="../../pages/about-us">ჩვენს შესახებ</a>
+                    <a href="../../pages/privacy-policy">წესდება და პოლიტიკა</a>
+                    <a href="../../pages/partnership">რეკლამის განთავსება</a>
+                    <a href="../../pages/contact">კონტაქტი</a>
+                </section>
+                <section class="split-footer spl-ft-right"><i id="date" style="font-style: normal;"></i>ㅤ© ყველა უფლება დაცულია</section>
+            </footer>
+        </section>
+        <section class="xtkpiq45ulaey">
+            <div class="wxkejt6l0 discordFrame"><iframe src="https://discord.com/widget?id=869528540234805248&amp;theme=dark" width="100%" height="100%" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" class="discord" bis_size="{&quot;x&quot;:1561,&quot;y&quot;:240,&quot;w&quot;:260,&quot;h&quot;:480,&quot;abs_x&quot;:1561,&quot;abs_y&quot;:240}"></iframe></div>
+            <div class="wxkejt6l0" id="displayOne"></div>
+            <div class="wxkejt6l0" id="displayTwo"></div>
+            <div class="wxkejt6l0" id="displayThree"></div>
+            <div class="wxkejt6l0" id="displayFour"></div>
+            <div class="wxkejt6l0" id="displayFive"></div>
+            <div class="wxkejt6l0" id="displaySix"></div>
+            <div class="wxkejt6l0" id="displaySeven"></div>
+        </section>
+    </main>
+
+    <script>
+        const title = "ატრიბუტები";
+        document.getElementById("headTitle").innerHTML = title + " | DEVi EDU • დევი";
+        document.getElementById("title").innerHTML = title;
+
+        function next(){
+            window.location.href='headings';
+        }
+        function last(){
+            window.location.href='elements';
+        }
+    </script>
+    <script src="../../assets/script/darkmode.js"></script>
+    <script src="../../assets/script/basic.js"></script>
+    <script src="../../assets/script/catalog.js"></script>
+    <script src="../../assets/script/app-codeEditor.js"></script>
+    <script src="../../assets/script/display.js"></script>
+</body>
+</html>

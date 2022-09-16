@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#FFBC01">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="headTitle">სათაური | DEVi EDU • დევი</title>
+    <meta name="language" content="georgian">
+    <meta name="distribution" content="georgian">
+    <meta name="description" content="DEVi EDU • დევი ედუ - პროგრამირების კურსები უფასოდ">
+    <meta name="author" content="J4vakhishvili, T3MUR1, Merab Kekelidze">
+    <meta name="publisher" content="DEVi, J4vakhisvhili">
+    <meta name="copyright" content="2022 J4vakhishvili">
+    <meta name="keywords" content="პროგრამირების კურსები უფასოდ,პროგრამირების ენები,პროგრამირების კურსი,პროგრამირების ონლაინ კურსები,პროგრამირება დამწყებთათვის,c პროგრამირება,php პროგრამირება,ვებ პროგრამირება,პითონი პროგრამირება,პროგრამირება შესწავლა,programirebis kursebi,programirebis swavla,programirebis kursi,programirebis ena,programirebis gakvetilebi,პროგრამირების უფასოდ სწავლა, ჰტმლს სწავლა, უფასო გაკვეთილები, როგორ, rogor, ვებდეველოპმენტი, გაკვეთილები, კურსები, web-development, ჰტმლ, ცსს, ჯავასკრიპტი, ufaso gakvetilebi programirebashi, programirebis swavla, ufasod swavla, programirebis ufasod swavla, HTML, CSS, JS, Javascript">
+    <link rel="icon" href="../../assets/icons/devi icon.png">
+    <link rel="stylesheet" href="../../assets/style/default.css">
+    <link rel="stylesheet" href="../../assets/style/header.css">
+    <link rel="stylesheet" href="../../assets/style/gakvetilebi.css">
+    <link rel="stylesheet" href="../../assets/style/footer.css">
+    <link rel="stylesheet" href="../../assets/style/html.css">
+    <link rel="stylesheet" href="../../assets/moneylol/moneylol.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .clr-color{
+            padding: 8px 12px;
+            font-family: 'MarkGeo';
+            line-height: 2.5;
+        }
+        p.clr-bg{
+            background: #C0033D;
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav" id="nav">
+        <nav>
+            <section class="real-nav">
+                <a href="../../lessons" class="active">HTML</a>
+                <a href="../../lessonsPages/css-lessons/css">CSS</a>
+                <div class="dark-mode" bis_skin_checked="1">
+                    <input type="checkbox" class="form-check-input" id="darkSwitch" title="მუქი თემა">
+                </div>
+            </section>
+            <section class="buttons-nav">
+                <button class="openNav" id="openNav" onclick="openNav()"></button>
+                <button class="closeNav" id="closeNav" onclick="closeNav()"></button>
+            </section>
+        </nav>
+    </div>
+    <header>
+        <div class="container">
+            <section class="separate-header">
+                <img src="../../assets/icons/DEVi logo.svg" alt="logo" class="logo" onclick="window.location.href='../../index'">
+                <button class="catalogbtn" onclick="openCatalog()"><div class="head-icon categories-icon"></div>სარჩევი</button>
+            </section>
+    
+            <section class="separate-header">
+                <button onclick="window.location.href='../../lessons'" class="menubtn active" title="გაკვეთილები"><div class="head-icon lessons-icon"></div></button>
+                <button onclick="window.location.href='../../video-lessons/video-lessons'" class="menubtn" title="ვიდეო გაკვეთილები"><div class="head-icon vlessons-icon"></div></button>
+                <button onclick="window.location.href='../../exercises/exercises'" class="menubtn" title="სავარჯიშოები"><div class="head-icon exercises-icon"></div></button>
+                <button onclick="window.location.href='../../pages/code-editor'" class="menubtn" title="კოდედიტორი"><div class="head-icon code-editor-icon"></div></button>
+            </section>
+        </div>
+    </header>
+    <section class="catalog" id="catalog">
+        <section class="separate-catalog">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="მოიძიე კატეგორია..." title="მოიძიე კატეგორია">
+            <button class="closeCatalog" onclick="closeCatalog()"></button>
+        </section>
+        <section class="separate-catalog catalog-scrollable">
+            <ul id="myUL">
+                <li><a href="../../lessons">შესავალი</a></li>
+                <li><a href="intro">გაცნობა</a></li>
+                <li><a href="code-editors">კოდედიტორები</a></li>
+                <li><a href="basics">საწყისები</a></li>
+                <li><a href="elements">ელემენტები</a></li>
+                <li><a href="attributes">ატრიბუტები</a></li>
+                <li><a href="headings">Headings</a></li>
+                <li><a href="paragraphs">პარაგრაფები</a></li>
+                <li><a href="styles-html">სტილები</a></li>
+                <li><a href="formatting">ფორმატირება</a></li>
+                <li><a href="citation">ციტატები</a></li>
+                <li><a href="comments">კომენტარები</a></li>
+                <li class="on"><a href="colors">ფერები</a></li>
+                <li><a href="css-in-html">CSS HTML-ში</a></li>
+                <li><a href="links">ლინკები</a></li>
+                <li><a href="photos">ფოტოები</a></li>
+                <li><a href="tables">ცხრილები</a></li>
+                <li><a href="lists">სიები</a></li>
+                <li><a href="clases-and-ids">კლასები და ID</a></li>
+                <li><a href="iframes">ჩაშენებები</a></li>
+                <li><a href="javascript-in-html">JavaScript</a></li>
+                <li><a href="file-paths">ფაილების ლოკაციები</a></li>
+                <li><a href="head">თავი</a></li>
+                <li><a href="layout">წყობა</a></li>
+                <li><a href="responsive-html">რესფონსივი</a></li>
+                <li><a href="computercode">Computercode</a></li>
+                <li><a href="semantics">Semantics</a></li>
+                <li><a href="code-style-guide">კოდის ხელოვნება</a></li>
+                <li><a href="symbols">სიმბოლოები</a></li>
+                <li><a href="http">ბმულები</a></li>
+                <li><a href="charset">Charset</a></li>
+                <li><a href="forms">ფორმები</a></li>
+                <li><a href="graphic-in-html">გრაფიკა</a></li>
+                <li><a href="media">მედია</a></li>
+                <li><a href="apis">APIs</a></li>
+                <br>
+            </ul>
+        </section>
+    </section>
+    <main>
+        <section class="content">
+            <div class="header">
+                <button class="headbtn" onclick="last()"></button>
+                <h1 id="title">სათაური</h1>
+                <button class="headbtn hbtn-r" onclick="next()"></button>
+            </div>
+            <p class="note">
+                HTML-ში ფერები გამოიხატება წინასწარ შედგენილი სახელებით, ან RGB, HEX, HSL და სხვა მრავალი კოდის მეშვეობით.
+            </p>
+            <article>
+                <h2>ფერთა სახელები</h2>
+                <p>
+                    HTML-ში ფერების გამოყენება შესაძლებელია მათი სახელების მეშვეობით:
+                </p>
+                <a style="background: Tomato;" class="clr-color">Tomato</a>
+                <a style="background: Orange;" class="clr-color">Orange</a>
+                <a style="background: Plum;" class="clr-color">Plum</a>
+                <a style="background: RebeccaPurple;" class="clr-color">RebeccaPurple</a>
+                <a style="background: OliveDrab;" class="clr-color">OliveDrab</a>
+                <p>HTML მხარს უჭერს <a href="#" class="link">140 სახეობის ფერის სახელს</a>.</p>
+                <h2>ფერები ყველგან</h2>
+                <p>შენ შეგიძლია მიანიჭო ფერი ფონს, ტექსტს, ობიექტის საზღვრებს:</p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML"><h2 style="color: crimson">გამარჯობა სამყაროვ</h2>
+<p style="background-color: orange; border: 2px solid crimson">Lorem Ipsum საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა.</p></textarea>
+                        </div>
+                    </section>
+                    <section class="separate-codeEditor">
+                        <iframe id="code"></iframe>
+                    </section>
+                </div> <br>
+                <h2>ფერის კოდები</h2>
+                <p>HTML-ში, ფერები ასევე გამოიხატება კოდის სახით, როგორებიცაა RGB, RGBA, HEX, HSL, HSLA.
+                   <br>ქვემოთ ნაჩვენებ Div ელემენტებს ფონის ფერი აქვთ RGB, HEX და HSL კოდებში:</p>
+                <p class="clr-bg">rgb(192, 3, 61)</p>
+                <p class="clr-bg">#C0033D</p>
+                <p class="clr-bg">hsl(342deg, 97%, 38%)</p>
+                <p>ქვემოთ ნაჩვენებ ელემენტებს ფონის ფერი აქვთ RGBA და HSLA კოდებში, რომლებსაც გამჭირვალობა აქვს დაწეული:</p>
+                <p class="clr-bg" style="opacity: 0.5;">rgb(192, 3, 61, 0.5)</p>
+                <p class="clr-bg" style="opacity: 0.5;">hsl(342deg, 97%, 38%, 0.5)</p>
+                <p>ფერები იწარმოება background-color, color, border-color მნიშვნელობებით.</p>
+                <h2>RGB ფერები</h2>
+            </article>
+            <p class="note">RGB ფერები იწარმოება წითელი, მწვანე და ლურჯი ნათების მეშვეობით.</p>
+            <article>
+                <p>RGB ფერების შესაქმნელად გამოიყენება შემდეგი ფორმულა rgb(წითელი, ლურჯი, მწვანე) თითოეული პარამეტრი განსაზღვრავს ფერის ინტენსივობას 0 -დან 255 -მდე მნიშვნელობით.
+
+                    ეს კი იმას ნიშნავს, რომ 256 x 256 x 256 = 16777216 შესაძლო ფერს.
+                    
+                    მაგალითისთვის rgb(255, 0, 0) ფერი იქნება წითელი, ვინაიდან წითელი ფერის 255-ე მნიშვნელობაა აღწერილი ხოლო ლურჯი და მწვანე განულებულია.
+                    
+                    შავის მისაღებად მოგიწევთ ყველა პარამეტრის განულება, ხოლო თეთრისთვის თითოეული პარამეტრის მაქსიმალურ ღირებულებამდე გაზრდა.
+                    
+                    ნაცრისფერი ფერის მისაღებად კი მნიშვნელოვანია ყველა პარამეტრის გათანაბრება, მაგალითად rgb(120, 120, 120) ან rgb(180, 180, 180).
+                    
+                    ხოლო ფერისთვის გამჭირვალობის მისაცემად საჭიროა ალფა გამოსხივების დაწევა შესაბამისად rgba(255, 187, 0, 0.5).</p>
+                    <h2>HEX ფერები</h2>
+            </article>
+            <p class="note">HEX ფერები იწარმოება როგორც #RRGGBB, RR(წითელი) GG(მწვანე) BB(ლურჯი).</p>
+            <article>
+                <h2>HSL ფერები</h2>
+            </article>
+            <p class="note">HSL ფერები იწარმოება როგორც ელფერი(hue), გაჯერება(saturation), და სინათლე(lightness).</p>
+
+            <div class="header">
+                <button class="headbtn" onclick="last()"></button>
+                <button class="headbtn hbtn-r" onclick="next()"></button>
+            </div>
+            <footer>
+                <section class="split-footer">
+                    <a href="../../pages/about-us">ჩვენს შესახებ</a>
+                    <a href="../../pages/privacy-policy">წესდება და პოლიტიკა</a>
+                    <a href="../../pages/partnership">რეკლამის განთავსება</a>
+                    <a href="../../pages/contact">კონტაქტი</a>
+                </section>
+                <section class="split-footer spl-ft-right"><i id="date" style="font-style: normal;"></i>ㅤ© ყველა უფლება დაცულია</section>
+            </footer>
+        </section>
+        <section class="xtkpiq45ulaey">
+            <div class="wxkejt6l0 discordFrame"><iframe src="https://discord.com/widget?id=869528540234805248&amp;theme=dark" width="100%" height="100%" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" class="discord" bis_size="{&quot;x&quot;:1561,&quot;y&quot;:240,&quot;w&quot;:260,&quot;h&quot;:480,&quot;abs_x&quot;:1561,&quot;abs_y&quot;:240}"></iframe></div>
+            <div class="wxkejt6l0" id="displayOne"></div>
+            <div class="wxkejt6l0" id="displayTwo"></div>
+            <div class="wxkejt6l0" id="displayThree"></div>
+        </section>
+    </main>
+
+    <script>
+        const title = "ფერები";
+        document.getElementById("headTitle").innerHTML = title + " | DEVi EDU • დევი";
+        document.getElementById("title").innerHTML = title;
+
+        function next(){
+            window.location.href='css-in-html';
+        }
+        function last(){
+            window.location.href='comments';
+        }
+    </script>
+    <script src="../../assets/script/darkmode.js"></script>
+    <script src="../../assets/script/basic.js"></script>
+    <script src="../../assets/script/catalog.js"></script>
+    <script src="../../assets/script/app-codeEditor.js"></script>
+    <script src="../../assets/script/display.js"></script>
+</body>
+</html>

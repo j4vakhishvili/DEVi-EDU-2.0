@@ -1,2 +1,1 @@
-# DEVi EDU Beta
- frontend yet
+# DEVi EDU 2.0

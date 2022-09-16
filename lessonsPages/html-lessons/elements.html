@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#FFBC01">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="headTitle">სათაური | DEVi EDU • დევი</title>
+    <meta name="language" content="georgian">
+    <meta name="distribution" content="georgian">
+    <meta name="description" content="DEVi EDU • დევი ედუ - პროგრამირების კურსები უფასოდ">
+    <meta name="author" content="J4vakhishvili, T3MUR1, Merab Kekelidze">
+    <meta name="publisher" content="DEVi, J4vakhisvhili">
+    <meta name="copyright" content="2022 J4vakhishvili">
+    <meta name="keywords" content="პროგრამირების კურსები უფასოდ,პროგრამირების ენები,პროგრამირების კურსი,პროგრამირების ონლაინ კურსები,პროგრამირება დამწყებთათვის,c პროგრამირება,php პროგრამირება,ვებ პროგრამირება,პითონი პროგრამირება,პროგრამირება შესწავლა,programirebis kursebi,programirebis swavla,programirebis kursi,programirebis ena,programirebis gakvetilebi,პროგრამირების უფასოდ სწავლა, ჰტმლს სწავლა, უფასო გაკვეთილები, როგორ, rogor, ვებდეველოპმენტი, გაკვეთილები, კურსები, web-development, ჰტმლ, ცსს, ჯავასკრიპტი, ufaso gakvetilebi programirebashi, programirebis swavla, ufasod swavla, programirebis ufasod swavla, HTML, CSS, JS, Javascript">
+    <link rel="icon" href="../../assets/icons/devi icon.png">
+    <link rel="stylesheet" href="../../assets/style/default.css">
+    <link rel="stylesheet" href="../../assets/style/header.css">
+    <link rel="stylesheet" href="../../assets/style/gakvetilebi.css">
+    <link rel="stylesheet" href="../../assets/style/footer.css">
+    <link rel="stylesheet" href="../../assets/style/html.css">
+    <link rel="stylesheet" href="../../assets/moneylol/moneylol.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="nav" id="nav">
+        <nav>
+            <section class="real-nav">
+                <a href="../../lessons" class="active">HTML</a>
+                <a href="../../lessonsPages/css-lessons/css">CSS</a>
+                <div class="dark-mode" bis_skin_checked="1">
+                    <input type="checkbox" class="form-check-input" id="darkSwitch" title="მუქი თემა">
+                </div>
+            </section>
+            <section class="buttons-nav">
+                <button class="openNav" id="openNav" onclick="openNav()"></button>
+                <button class="closeNav" id="closeNav" onclick="closeNav()"></button>
+            </section>
+        </nav>
+    </div>
+    <header>
+        <div class="container">
+            <section class="separate-header">
+                <img src="../../assets/icons/DEVi logo.svg" alt="logo" class="logo" onclick="window.location.href='../../index'">
+                <button class="catalogbtn" onclick="openCatalog()"><div class="head-icon categories-icon"></div>სარჩევი</button>
+            </section>
+    
+            <section class="separate-header">
+                <button onclick="window.location.href='../../lessons'" class="menubtn active" title="გაკვეთილები"><div class="head-icon lessons-icon"></div></button>
+                <button onclick="window.location.href='../../video-lessons/video-lessons'" class="menubtn" title="ვიდეო გაკვეთილები"><div class="head-icon vlessons-icon"></div></button>
+                <button onclick="window.location.href='../../exercises/exercises'" class="menubtn" title="სავარჯიშოები"><div class="head-icon exercises-icon"></div></button>
+                <button onclick="window.location.href='../../pages/code-editor'" class="menubtn" title="კოდედიტორი"><div class="head-icon code-editor-icon"></div></button>
+            </section>
+        </div>
+    </header>
+    <section class="catalog" id="catalog">
+        <section class="separate-catalog">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="მოიძიე კატეგორია..." title="მოიძიე კატეგორია">
+            <button class="closeCatalog" onclick="closeCatalog()"></button>
+        </section>
+        <section class="separate-catalog catalog-scrollable">
+            <ul id="myUL">
+                <li><a href="../../lessons">შესავალი</a></li>
+                <li><a href="intro">გაცნობა</a></li>
+                <li><a href="code-editors">კოდედიტორები</a></li>
+                <li><a href="basics">საწყისები</a></li>
+                <li class="on"><a href="elements">ელემენტები</a></li>
+                <li><a href="attributes">ატრიბუტები</a></li>
+                <li><a href="headings">Headings</a></li>
+                <li><a href="paragraphs">პარაგრაფები</a></li>
+                <li><a href="styles-html">სტილები</a></li>
+                <li><a href="formatting">ფორმატირება</a></li>
+                <li><a href="citation">ციტატები</a></li>
+                <li><a href="comments">კომენტარები</a></li>
+                <li><a href="colors">ფერები</a></li>
+                <li><a href="css-in-html">CSS HTML-ში</a></li>
+                <li><a href="links">ლინკები</a></li>
+                <li><a href="photos">ფოტოები</a></li>
+                <li><a href="tables">ცხრილები</a></li>
+                <li><a href="lists">სიები</a></li>
+                <li><a href="clases-and-ids">კლასები და ID</a></li>
+                <li><a href="iframes">ჩაშენებები</a></li>
+                <li><a href="javascript-in-html">JavaScript</a></li>
+                <li><a href="file-paths">ფაილების ლოკაციები</a></li>
+                <li><a href="head">თავი</a></li>
+                <li><a href="layout">წყობა</a></li>
+                <li><a href="responsive-html">რესფონსივი</a></li>
+                <li><a href="computercode">Computercode</a></li>
+                <li><a href="semantics">Semantics</a></li>
+                <li><a href="code-style-guide">კოდის ხელოვნება</a></li>
+                <li><a href="symbols">სიმბოლოები</a></li>
+                <li><a href="http">ბმულები</a></li>
+                <li><a href="charset">Charset</a></li>
+                <li><a href="forms">ფორმები</a></li>
+                <li><a href="graphic-in-html">გრაფიკა</a></li>
+                <li><a href="media">მედია</a></li>
+                <li><a href="apis">APIs</a></li>
+                <br>
+            </ul>
+        </section>
+    </section>
+    <main>
+        <section class="content">
+            <div class="header">
+                <button class="headbtn" onclick="last()"></button>
+                <h1 id="title">სათაური</h1>
+                <button class="headbtn hbtn-r" onclick="next()"></button>
+            </div>
+            <p class="note">
+                HTML ელემენტი იწარმოება საწყისი თეგით, კონტენტით და დახურვის თაგით.
+            </p>
+            <article>
+                <h2>HTML ელემენტები</h2>
+                <p>HTML თეგი ყველაფერია დასაწყისიდან დასასრულამდე.<br><i class="tag">&lt;თეგის-სახელი></i>ㅤკონტენტიㅤ<i class="tag">&lt;/თეგის-სახელი></i><br>რამდენიმე HTML ელემენტის მაგალითი:<br><i class="tag">&lt;h1></i>ჩემი პირველი სათაური<i class="tag">&lt;/h1></i><br><i class="tag">&lt;p></i>ჩემი პირველი პარაგრაფი<i class="tag">&lt;/p></i></p>
+                <table>
+                    <tbody><tr>
+                      <th><i class="caps">საწყისი თეგი</b></th>
+                      <th><i class="caps">კონტენტი</i></th>
+                      <th><i class="caps">საბოლოო თეგი</i></th>
+                    </tr>
+                    <tr>
+                      <td>&lt;h1&gt;</td>
+                      <td>ჩემი პირველი სათაური</td>
+                      <td>&lt;/h1&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>ჩემი პირველი პარაგრაფი</td>
+                        <td>&lt;/p&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td><i>არ აქვს</i></td>
+                        <td><i>არ აქვს</i></td>
+                    </tr>
+                </tbody></table>
+            </article>
+            <p class="note">მინიშნება:ㅤზოგიერთ HTML ელემენტს კონტენტი არ აქვსㅤ(მაგ.&lt;br>)ㅤასეთ ელემენტებს არ აქვთ დახურვის ტეგი!</p>
+            <article>
+                <h2>მშობელი HTML ელემენტები</h2>
+                <p>HTML ელემენტი შესაძლოა მშობელი იყოს.(ეს ნიშნავს, რომ ელემენტი შესაძლოა შეიცავდეს სხვა ელემენტებს).
+                <br>ყველა HTML დოკუმენტი შეიცავს მშობელ HTML ელემენტს.
+                <br>მოცემული მაგალითი გულისხმობს, რომ შეიცავს ოთხ HTML ელემენტს (&lt;html> &lt;body> &lt;h1> და &lt;p>).
+                </p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML" readonly><!DOCTYPE html>
+<html>
+    <head>
+        <title>გვერდის სათაური</title>
+    </head>
+    <body>
+                                                    
+        <h1>ჩემი პირველი სათაური</h1>
+        <p>ჩემი პირველი პარაგრაფი</p>
+                                                    
+    </body>
+</html></textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                </div><br>
+                <h2>მაგალითის ახსნა</h2>
+                <p>&lt;html> ელემენტი საწყისი ელემენტია და მთელ HTML დოკუმენტს აწარმოებს.
+                    <br>მას აქვს გამხსნელი თეგი &lt;html> და დამხურავი თეგი &lt;/html>.
+                    <br>მაშასადამე &lt;html> თეგის შიგნით მდებარეობს &lt;body> ელემენტი.
+                </p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML" readonly><body>
+                                                
+    <h1>ჩემი პირველი სათაური</h1>
+    <p>ჩემი პირველი პარაგრაფი</p>
+                                                
+</body></textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                </div><br>
+                <p>&lt;body> ელემენტი აწარმოებს დოკუმენტის ტანს.
+                    <br>მას აქვს გამხსნელი თეგი &lt;body> და დამხურავი თეგი &lt;/body>.
+                    <br>მაშასადამე &lt;html> თეგის შიგნით მდებარეობს ორი განსხვავებული ელემენტი &lt;h1> და &lt;p>.
+                </p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML" readonly><h1>ჩემი პირველი სათაური</h1>
+<p>ჩემი პირველი პარაგრაფი</p></textarea>
+                            <textarea id="css" placeholder="CSS"></texta>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                </div><br>
+                <p>&lt;h1> ელემენტი წარმოადგენს სათაურს.
+                    <br>მას აქვს გამხსნელი თეგი &lt;h1> და დამხურავი თეგი &lt;/h1>.
+                    <br>&lt;p> წარმოადგენს პარაგრაფს.
+                    <br>მას აქვს გამხსნელი თეგი &lt;p> და დამხურავი თეგი &lt;/p>.
+                </p>
+                <h2>არასდროს გამოტოვო დამხურავი თეგი!</h2>
+                <p>ზოგიერთ ელემენტს შესაძლოა მაინც გამოჰქონდეს სწორი გამოსახულება, მიუხედავად იმისა თუ არ დახურავთ ელემენტს:</p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML" readonly><body>
+
+    <p>ჩემი პირველი პარაგრაფი
+    <p>ჩემი პირველი პარაგრაფი
+
+</body></textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                </div><br>
+                <p>მაგრამ ეს არ ნიშნავს იმას, რომ მათი ასე დატოვება ოდესმე არ გამოიწვევს ერორებს ან გაფრთხილებებს!</p>
+                <h2>ცარიელი HTML ელემენტები</h2>
+                <p>ობიექტებს რომლებსაც კონტენტი არ აქვს ცარიელ ელემენტევს უწოდებენ.
+                    <br> ელემენტი ხაზის გაწყვეტას გულისხმობს და მას დახურვის თეგი არ აქვს.
+                </p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML" readonly><p>ეს არის <br> პარაგრაფი გაწყვეტილი ხაზით</p></textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                </div><br>
+                <h2>HTML უპრეტენზიოა</h2>
+                <p>ეს გამოიხატება იმაში, რომ &lt;P> ნიშნავს იმავეს რაც &lt;p> მიუხედავად იმისა, რომ არ არის სავალდებულო პატარა ასოებით წერა, DEVi-ს რეკომენდაცია იქნება, რომ კოდის წერისას გამოიყენოთ პატარა ასოები.</p>
+            </article>
+            <div class="header">
+                <button class="headbtn" onclick="last()"></button>
+                <button class="headbtn hbtn-r" onclick="next()"></button>
+            </div>
+            <footer>
+                <section class="split-footer">
+                    <a href="../../pages/about-us">ჩვენს შესახებ</a>
+                    <a href="../../pages/privacy-policy">წესდება და პოლიტიკა</a>
+                    <a href="../../pages/partnership">რეკლამის განთავსება</a>
+                    <a href="../../pages/contact">კონტაქტი</a>
+                </section>
+                <section class="split-footer spl-ft-right"><i id="date" style="font-style: normal;"></i>ㅤ© ყველა უფლება დაცულია</section>
+            </footer>
+        </section>
+        <section class="xtkpiq45ulaey">
+            <div class="wxkejt6l0 discordFrame"><iframe src="https://discord.com/widget?id=869528540234805248&amp;theme=dark" width="100%" height="100%" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" class="discord" bis_size="{&quot;x&quot;:1561,&quot;y&quot;:240,&quot;w&quot;:260,&quot;h&quot;:480,&quot;abs_x&quot;:1561,&quot;abs_y&quot;:240}"></iframe></div>
+            <div class="wxkejt6l0" id="displayOne"></div>
+            <div class="wxkejt6l0" id="displayTwo"></div>
+            <div class="wxkejt6l0" id="displayThree"></div>
+            <div class="wxkejt6l0" id="displayFour"></div>
+            <div class="wxkejt6l0" id="displayFive"></div>
+        </section>
+    </main>
+
+    <script>
+        const title = "ელემენტები";
+        document.getElementById("headTitle").innerHTML = title + " | DEVi EDU • დევი";
+        document.getElementById("title").innerHTML = title;
+
+        function next(){
+            window.location.href='attributes';
+        }
+        function last(){
+            window.location.href='basics';
+        }
+    </script>
+    <script src="../../assets/script/darkmode.js"></script>
+    <script src="../../assets/script/basic.js"></script>
+    <script src="../../assets/script/catalog.js"></script>
+    <script src="../../assets/script/app-codeEditor.js"></script>
+    <script src="../../assets/script/display.js"></script>
+</body>
+</html>

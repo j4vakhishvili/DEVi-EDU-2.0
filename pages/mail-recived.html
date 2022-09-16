@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="theme-color" content="#4711ef">
+    <meta name="theme-color" content="#e40046">
     <meta name="robots" content="index, follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>პარტნიორული სისტემა | DEVi EDU • დევი</title>
+    <title>კონტაქტი | DEVi EDU • დევი</title>
     <meta name="language" content="georgian">
     <meta name="distribution" content="georgian">
     <meta name="description" content="DEVi EDU • დევი ედუ - პროგრამირების კურსები უფასოდ">
@@ -20,18 +20,28 @@
     <link rel="stylesheet" href="../assets/style/gakvetilebi.css">
     <link rel="stylesheet" href="../assets/style/footer.css">
     <link rel="stylesheet" href="../assets/moneylol/moneylol.css">
-    <link rel="stylesheet" href="../assets/style/moneylol.css">
+    <link rel="stylesheet" href="../assets/style/contact.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <style>
-        .preview{
+        .mail-recived button{
             width: 100%;
-        }
-        p a{
-            color: #4711ef;
+            height: 10vh;
+            border: 0px;
+            background: #e40046;
+            color: white;
+            font-family: 'MarkGeoCaps';
+            font-size: 3vh;
+            cursor: pointer;
+            border-radius: 1.3vh;
+            transition: 0.3s;
             cursor: url(../assets/cursors/pointer-light.png), pointer;
         }
-        [data-theme="dark"] p a{
+        [data-theme="dark"] .mail-recived button{
             cursor: url(../assets/cursors/pointer-dark.png), pointer;
+        }
+        .mail-recived button:hover{
+            box-shadow: 0px 0px 0px 3px #e400463d, 0px 0px 0px 6px #e4004617;
+            transition: 0.3s;
         }
     </style>
 </head>
@@ -39,7 +49,7 @@
     <div class="nav" id="nav">
         <nav>
             <section class="real-nav">
-                <a>პარტნიორული სისტემა</a>
+                <a>კონტაქტი</a>
                 <div class="dark-mode" bis_skin_checked="1">
                     <input type="checkbox" class="form-check-input" id="darkSwitch" title="მუქი თემა">
                 </div>
@@ -53,7 +63,7 @@
     <header>
         <div class="container">
             <section class="separate-header">
-                <img src="../assets/icons/DEVi logo ads.svg" alt="logo" class="logo" onclick="window.location.href='../index'">
+                <img src="../assets/icons/DEVi logo.svg" alt="logo" class="logo" onclick="window.location.href='../index'">
             </section>
     
             <section class="separate-header">
@@ -64,22 +74,15 @@
             </section>
         </div>
     </header>
-    <section class="catalog" id="catalog">
-        <section class="separate-catalog">
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="მოიძიე კატეგორია..." title="მოიძიე კატეგორია">
-            <button class="closeCatalog" onclick="closeCatalog()"></button>
-        </section>
-    </section>
     <main>
         <section class="content">
-            <img src="../assets/imgs/AD.png" class="preview">
-            <h2>სარეკლამო სივრცე</h2>
-            <p>საიტზე რეკლამის განთავსება შესაძლებელია, მხოლოდ და მხოლოდ ბანერების სახით, აკრძალულია ბანერზე ისეთი ფოტო/ვიდეო მასალის გამოქვეყნება რომელიც დისკომფორტს შეუქმნის მომხმარებელს
-                (მაგ.: ძალადობის ამსახველი კადრები, პორნოგრაფია და ა.შ) რეკლამა მიიღება მხოლოდ მითითებულ ფორმატებში:
-                .jpg, .jpeg, .png, .svg, .webp, .gif სარეკლამო ბანერის ზომა აუცილებელია იყოს:
-                280x550 150ppi/300ppi</p>
-            <p>სარეკლამო პარტნიორობით დაინტერესებულ პირებს შეგიძლიათ დაგვიკავშირდეთ ფოსტაზე: <a href="mailto:devi.reklama@gmail.com">devi.reklama@gmail.com</a></p>
-            <p>დამატებითი შემთხვევებისთვის <a href="contact">მოგვწერეთ საიტზე</a> ან <a href="mailto:ge.devi.info@gmail.com?subject=პარტნიორული შეთავაზება!">ge.devi.info@gmail.com</a></p>
+            <div class="space">
+                <section class="mail-recived">
+                    <object type="image/svg+xml" data="../assets/icons/mail.svg" class="mail"></object>
+                    <h2>თქვენი შეტყობინება მიღებულია<br>მალე დაგიკავშირდებით ツ</h2>
+                    <button onclick="window.location.href='../index'">მთავარზე დაბრუნება</button>
+                </section>
+            </div>
 
             <footer>
                 <section class="split-footer">
@@ -99,6 +102,7 @@
     <script src="../assets/script/darkmode.js"></script>
     <script src="../assets/script/basic.js"></script>
     <script src="../assets/script/catalog.js"></script>
-    <script src="../assets/script/app-codeEditor.js"></script>
+    <script src="../assets/script/app-chatbot.js"></script>
+    <script src="../assets/script/display.js"></script>
 </body>
 </html>
