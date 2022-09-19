@@ -2,11 +2,9 @@
     width: 30%;
     height: 550px;
     background: url(../imgs/cover.svg);
-    margin-bottom: 24px;
     background-position: center;
     background-size: cover;
     border-radius: 24px;
-    margin-right: 34px;
     transition: 0.2s;
 }
 
@@ -14,6 +12,7 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    gap: 6vh;
 }
 
 .onHoverCover{
