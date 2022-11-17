@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#FFBC01">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="headTitle">სათაური | DEVi EDU • დევი</title>
+    <meta name="language" content="georgian">
+    <meta name="distribution" content="georgian">
+    <meta name="description" content="DEVi EDU • დევი ედუ - პროგრამირების კურსები უფასოდ">
+    <meta name="author" content="J4vakhishvili, T3MUR1, Merab Kekelidze">
+    <meta name="publisher" content="DEVi, J4vakhisvhili">
+    <meta name="copyright" content="2022 J4vakhishvili">
+    <meta name="keywords" content="პროგრამირების კურსები უფასოდ,პროგრამირების ენები,პროგრამირების კურსი,პროგრამირების ონლაინ კურსები,პროგრამირება დამწყებთათვის,c პროგრამირება,php პროგრამირება,ვებ პროგრამირება,პითონი პროგრამირება,პროგრამირება შესწავლა,programirebis kursebi,programirebis swavla,programirebis kursi,programirebis ena,programirebis gakvetilebi,პროგრამირების უფასოდ სწავლა, ჰტმლს სწავლა, უფასო გაკვეთილები, როგორ, rogor, ვებდეველოპმენტი, გაკვეთილები, კურსები, web-development, ჰტმლ, ცსს, ჯავასკრიპტი, ufaso gakvetilebi programirebashi, programirebis swavla, ufasod swavla, programirebis ufasod swavla, HTML, CSS, JS, Javascript">
+    <link rel="icon" href="../../assets/icons/devi icon.png">
+    <link rel="stylesheet" href="../../assets/style/default.css">
+    <link rel="stylesheet" href="../../assets/style/header.css">
+    <link rel="stylesheet" href="../../assets/style/gakvetilebi.css">
+    <link rel="stylesheet" href="../../assets/style/footer.css">
+    <link rel="stylesheet" href="../../assets/style/html.css">
+    <link rel="stylesheet" href="../../assets/moneylol/moneylol.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .clr-color{
+            padding: 8px 12px;
+            font-family: 'MarkGeo';
+            line-height: 2.5;
+        }
+        p.clr-bg{
+            background: #C0033D;
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav" id="nav">
+        <nav>
+            <section class="real-nav">
+                <a href="../../lessons" class="active">HTML</a>
+                <a href="../../lessonsPages/css-lessons/css">CSS</a>
+                <div class="dark-mode" bis_skin_checked="1">
+                    <input type="checkbox" class="form-check-input" id="darkSwitch" title="მუქი თემა">
+                </div>
+            </section>
+            <section class="buttons-nav">
+                <button class="openNav" id="openNav" onclick="openNav()"></button>
+                <button class="closeNav" id="closeNav" onclick="closeNav()"></button>
+            </section>
+        </nav>
+    </div>
+    <header>
+        <div class="container">
+            <section class="separate-header">
+                <img src="../../assets/icons/DEVi logo.svg" alt="logo" class="logo" onclick="window.location.href='../../index'">
+                <button class="catalogbtn" onclick="openCatalog()"><div class="head-icon categories-icon"></div>სარჩევი</button>
+            </section>
+    
+            <section class="separate-header">
+                <button onclick="window.location.href='../../lessons'" class="menubtn active" title="გაკვეთილები"><div class="head-icon lessons-icon"></div></button>
+                <button onclick="window.location.href='../../video-lessons/video-lessons'" class="menubtn" title="ვიდეო გაკვეთილები"><div class="head-icon vlessons-icon"></div></button>
+                <button onclick="window.location.href='../../exercises/exercises'" class="menubtn" title="სავარჯიშოები"><div class="head-icon exercises-icon"></div></button>
+                <button onclick="window.location.href='../../pages/code-editor'" class="menubtn" title="კოდედიტორი"><div class="head-icon code-editor-icon"></div></button>
+            </section>
+        </div>
+    </header>
+    <section class="catalog" id="catalog">
+        <section class="separate-catalog">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="მოიძიე კატეგორია..." title="მოიძიე კატეგორია">
+            <button class="closeCatalog" onclick="closeCatalog()"></button>
+        </section>
+        <section class="separate-catalog catalog-scrollable">
+            <ul id="myUL">
+                <li><a href="../../lessons">შესავალი</a></li>
+                <li><a href="intro">გაცნობა</a></li>
+                <li><a href="code-editors">კოდედიტორები</a></li>
+                <li><a href="basics">საწყისები</a></li>
+                <li><a href="elements">ელემენტები</a></li>
+                <li><a href="attributes">ატრიბუტები</a></li>
+                <li><a href="headings">Headings</a></li>
+                <li><a href="paragraphs">პარაგრაფები</a></li>
+                <li><a href="styles-html">სტილები</a></li>
+                <li><a href="formatting">ფორმატირება</a></li>
+                <li><a href="citation">ციტატები</a></li>
+                <li><a href="comments">კომენტარები</a></li>
+                <li><a href="colors">ფერები</a></li>
+                <li class="on"><a href="css-in-html">CSS HTML-ში</a></li>
+                <li><a href="links">ლინკები</a></li>
+                <li><a href="photos">ფოტოები</a></li>
+                <li><a href="tables">ცხრილები</a></li>
+                <li><a href="lists">სიები</a></li>
+                <li><a href="clases-and-ids">კლასები და ID</a></li>
+                <li><a href="iframes">ჩაშენებები</a></li>
+                <li><a href="javascript-in-html">JavaScript</a></li>
+                <li><a href="file-paths">ფაილების ლოკაციები</a></li>
+                <li><a href="head">თავი</a></li>
+                <li><a href="layout">წყობა</a></li>
+                <li><a href="responsive-html">რესფონსივი</a></li>
+                <li><a href="computercode">Computercode</a></li>
+                <li><a href="semantics">Semantics</a></li>
+                <li><a href="code-style-guide">კოდის ხელოვნება</a></li>
+                <li><a href="symbols">სიმბოლოები</a></li>
+                <li><a href="http">ბმულები</a></li>
+                <li><a href="charset">Charset</a></li>
+                <li><a href="forms">ფორმები</a></li>
+                <li><a href="graphic-in-html">გრაფიკა</a></li>
+                <li><a href="media">მედია</a></li>
+                <li><a href="apis">APIs</a></li>
+                <br>
+            </ul>
+        </section>
+    </section>
+    <main>
+        <section class="content">
+            <div class="header">
+                <button class="headbtn" onclick="last()"></button>
+                <h1 id="title">სათაური</h1>
+                <button class="headbtn hbtn-r" onclick="next()"></button>
+            </div>
+            <article>
+                <p>CSS იშიფრება როგორც კასკადური სტილური ფურცლები(Cascading Style Sheets).
+                    <br>CSS ზოგავს სამუშაოს, მას შეუძლია აკონტროლოს სტილები სხვადასხვა გვერდზე ერთდროულად.
+                </p>
+                <h2>რა არის CSS?</h2>
+                <p>CSS-ს ვიყენებთ ვებსაიტისთვის სტილების მისაცემად. <br>
+                CSS-ს მეშვეობით შენ შეგიძია აკონტროლო ობიექტის ფერები, ზომები, ფონტები, დაშორებები ელემენტებს შორის, პოზიციები და კიდევ უამრავი რამ!
+                </p>
+            </article>
+            <p class="note"><b>შენიშვნა:</b> სიტყვა <b>კასკადური</b> ნიშნავს რომ სტილი, რომელიც მინიჭებული აქვს მშობელ ელემენტს ასევე ენიჭება მის შიგნით განთავსებულს ობიექტს. ანუ თუ body-ს მივანიჭებთ სტილს color: blue;  მის შიგნით განთავსებული ყოველი სათაური, პარაგრაფი თუ ტექსტი იქნება ლურჯი. (თუ სათითაოდ არ მიანიჭებ ელემენტს რაიმე განსხვავებულს)</p>
+            <article>
+                <h2>CSS-ის გამოყენება</h2>
+                <p>CSS-ს HTML დოკუმენტში დამატება სამი ტიპის ხერხით შეიძლება:</p>
+                <ul>
+                    <li><b>კონკრეტულ ხაზზე</b> - style ატრიბუტის გამოყენებით HTML ელემენტში.</li>
+                    <li><b>ჩაშენებული</b> - &lt;style> ელემენტის გამოყენებით &lt;head> სექციაში.</li>
+                    <li><b>გარე დოკუმენტში</b> - &lt;link> ელემენტის გამოყენებით &lt;head> სექციაში გარე ფაილის მიბმა.</li>
+                </ul>
+                <p>გაითვალისწინე, რომ ყველაზე მიღებული ფორმა CSS-ს მიბმისა არის გარე დოკუმეტის გამოყენება.</p>
+                <h2>კონკრეტულ ხაზზე განთავსებული CSS</h2>
+                <p>მსგავსი ტიპის CSS გამოიყენება იმისთვის რომ ელემენტს მივანიჭოთ უნიკალური სტილი, ისეთი რაც არ გამეორდება.</p>
+                <p>ნაჩვენებ მაგალითში ჩანს თუ როგორ მივანიჭოთ &lt;h1>-ს ნარინჯისფერი.</p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML"><h1 style="color:orange;">ნარინჯისფერი სათაური<h1></textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                    <section class="separate-codeEditor">
+                        <iframe id="code"></iframe>
+                    </section>
+                </div><br>
+                <h2>ჩაშენებული CSS</h2>
+                <p>მსგავსი ტიპის CSS-ს ვიყენებთ იმისთვის, რომ კონკრეტული სტილი მივანიჭოთ კონკრეტულ HTML დოკუმენტს</p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML" readonly><!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+            body { background-color: GhostWhite; }
+            h1{ color: orange; }
+            p{ color: orangered; }
+            
+        </style>
+    </head>
+    <body>
+
+        <h1>ეს სათაურია.</h1>
+        <p>ეს პარაგრაფია.</p>
+
+    </body>
+</html></textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                    <section class="separate-codeEditor">
+                        <div id="preview" style="background: GhostWhite;">
+<h1 style="color: orange;">ეს სათაურია.</h1>
+<p style="color: orangered;">ეს პარაგრაფია.</p>
+                        </div>
+                    </section>
+                </div><br>
+                <h2>გარე CSS</h2>
+                <p>მსგავსი ტიპის CSS-ს ვიყენებთ იმისთვის, რომ ერთი და იმავე სტილით მოვახერხოთ მრავალი გვერდის წარმოება.</p>
+                <div class="codeEditor">
+                    <section class="separate-codeEditor">
+                        <div class="switchEditor">
+                            <button onclick="openHTML()" id="htmlBtn">HTML</button>
+                            <button onclick="openCSS()" id="cssBtn">CSS</button>
+                            <button onclick="openJS()" id="jsBtn">JavaScript</button>
+                        </div>
+                        <div class="editor">
+                            <textarea id="html" placeholder="HTML">&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;My First Heading&lt;/h1&gt;
+        &lt;p&gt;My first paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+                            <textarea id="css" placeholder="CSS"></textarea>
+                            <textarea id="js" placeholder="JavaScript"></textarea>
+                        </div>
+                    </section>
+                    <section class="separate-codeEditor">
+                        <iframe id="code"></iframe>
+                    </section>
+                </div>
+            </article>
+            <div class="header">
+                <button class="headbtn" onclick="last()"></button>
+                <button class="headbtn hbtn-r" onclick="next()"></button>
+            </div>
+            <footer>
+                <section class="split-footer">
+                    <a href="../../pages/about-us">ჩვენს შესახებ</a>
+                    <a href="../../pages/privacy-policy">წესდება და პოლიტიკა</a>
+                    <a href="../../pages/partnership">რეკლამის განთავსება</a>
+                    <a href="../../pages/contact">კონტაქტი</a>
+                </section>
+                <section class="split-footer spl-ft-right"><i id="date" style="font-style: normal;"></i>ㅤ© ყველა უფლება დაცულია</section>
+            </footer>
+        </section>
+        <section class="xtkpiq45ulaey">
+            <div class="wxkejt6l0 discordFrame"><iframe src="https://discord.com/widget?id=869528540234805248&amp;theme=dark" width="100%" height="100%" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" class="discord" bis_size="{&quot;x&quot;:1561,&quot;y&quot;:240,&quot;w&quot;:260,&quot;h&quot;:480,&quot;abs_x&quot;:1561,&quot;abs_y&quot;:240}"></iframe></div>
+            <div class="wxkejt6l0" id="displayOne"></div>
+            <div class="wxkejt6l0" id="displayTwo"></div>
+            <div class="wxkejt6l0" id="displayThree"></div>
+        </section>
+    </main>
+
+    <script>
+        const title = "CSS HTML-ში";
+        document.getElementById("headTitle").innerHTML = title + " | DEVi EDU • დევი";
+        document.getElementById("title").innerHTML = title;
+
+        function next(){
+            window.location.href='links';
+        }
+        function last(){
+            window.location.href='colors';
+        }
+    </script>
+    <script src="../../assets/script/darkmode.js"></script>
+    <script src="../../assets/script/basic.js"></script>
+    <script src="../../assets/script/catalog.js"></script>
+    <script src="../../assets/script/app-codeEditor.js"></script>
+    <script src="../../assets/script/display.js"></script>
+</body>
+</html>
